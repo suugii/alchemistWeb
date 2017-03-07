@@ -8,7 +8,7 @@
 		<a href="#">Odoo</a>-р бүтээв
 	</small>
 </h1>
-<span class="ui centered lead" style="font-size: 18px"> Ямар ч төрлийн аж ахуйн нэгж, төрийн өмчит байгууллагуудад зориулсан <br>зардалын <strong>хяналт, хэмнэлт, </strong>удирдлагын цогц шийдэл.</span>
+<span class="ui centered lead" style="font-size: 18px">Бүх төрлийн аж ахуйн нэгж болон төрийн өмчит байгууллагуудад зориулсан <br>зардлын удирдлага хяналтын цогц шийдэл.</span>
 <div class="ui stackable grid">
 	<div class="four wide column"></div>
 	<div class="four wide column"> 
@@ -38,34 +38,36 @@
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
 						<i class="flaticon-layers icon"></i>
-						ТӨСВИЙН ЗАРЦУУЛАЛТ
+						ТӨСВИЙН УДИРДЛАГА
 					</div>
-					<p><strong>Төсвийн бүрдэл,тооцоолол</strong> түүний хувиарлалт зарцуулалтын бүртгэл, уридлагын баталгаажуулалт хийх боломжтой.</p>
+					<p>Төсөв бүртгэл, <strong>тодотгол</strong> хийж төсвийн гүйцэтгэлийг зардлын төрөл, хэлтэс, алба байгууллагын нэгж тус бүрээр хянаж зохицуулна.</p>
 					<div class="ui checkbox">
 						<input type="checkbox" name="example" checked>
-						<label>Үндсэн модул</label>
+						<label>Үндсэн модуль</label>
 					</div>
 				</div>
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
 						<i class="flaticon-connecting icon"></i>
-						ЗАХИРАН ЗАРЦУУЛАЛТ
+						ТӨЛБӨРИЙН УДИРДЛАГА
 					</div>
-					<p>Өдөр тутмын зарцуулалтын мэдээг цаг бүрт хянах, <strong>төсөвлөөгүй зардалыг хяналт хийх,</strong> хариуцсан нэгж, хэлтэс, ажилтанд хариуцлага тооцох боломжтой.</p>
+					<p>Байгууллагын үйл ажиллагаатай холбоотой <strong>бүх зардлыг бүртгэж</strong>, тэдгээрийг төсөвтэй холбон, төсвийн зарцуулалтыг ажлын урсгалаар дамжуулан хянана.</p>
 					<div class="ui checkbox">
 						<input type="checkbox" name="example">
-						<label>Сонгох модул</label>
+						<label>Үндсэн модуль</label>
 					</div>
 				</div>
+
+
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-calendar icon"></i>
-						ХӨРӨНГИЙН БҮРТГЭЛ
+						<i class="flaticon-tick icon"></i>
+						ХУДАЛДАН АВАЛТЫН УДИРДЛАГА
 					</div>
-					<p>Байгууллагын нийт хөрөнгийг бүртгэлжүүлж,<strong> хөрөнгийн элэгдэл, алдагдалыг хянах,</strong> үйлчлүүлэгчдын худалдан авсан хөрөнгийн бүртгэл хийгдэх боломжтой.</p>
+					<p> Худалдан авалтын захиалга түүний төлбөр тооцоо, <strong>захиалга нь бэлтгэн нийлүүлэлт болж агуулахад хүргэгдэн,</strong> анхны захиалагчид ирэх хүртэлх бүх процессийг гүйцэтгэнэ. </p>
 					<div class="ui checkbox">
 						<input type="checkbox" name="example">
-						<label>Сонгох модул</label>
+						<label>Үндсэн модуль</label>
 					</div>
 				</div>
 			</div>
@@ -75,32 +77,32 @@
 						<i class="flaticon-tick icon"></i>
 						ТОМИЛОЛТЫН УДИРДЛАГА
 					</div>
-					<p>Томилолтын нийт зардлын тооцолол, томилолтын турших зардалын бүртгэл хийх, <strong>баримт, видео</strong> хавсаргах боломжтой.</p>
+					<p>Нэг болон түүнээс олон ажилтны томилолтыг бүртгэж, тухайн нэг ажилтан эсвэл <strong>томилолтын багтай холбоотой бүх зардлын тооцоог хийж,</strong> зөвшөөрлийг олгох, тооцоог хаах хүртэлх процессийг гүйцэтгэнэ.</p>
 					<div class="ui checkbox">
 						<input type="checkbox" name="example">
-						<label>Сонгох модул</label>
+						<label>Сонгох модуль</label>
 					</div>
 				</div>
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-tick icon"></i>
-						ХУДАЛДАН АВАЛТЫН БҮРТГЭЛ
+						<i class="flaticon-calendar icon"></i>
+						ХӨРӨНГИЙН УДИРДЛАГА
 					</div>
-					<p>Худалдан авалтыг үе шаттай болгож нийлүүлэгчдийн үнэлгээ хийх, үнийн санал харьцуулах боломжтой. Худалдан авагчийн мэдээллийг баримтжуулж болно.</p>
+					<p>Агуулах болон <strong>хөрөнгө, бараа материалын дотоод шилжилт хөдөлгөөн,</strong> орлого, зарлагыг удирдана.</p>
 					<div class="ui checkbox">
 						<input type="checkbox" name="example">
-						<label>Сонгох модул</label>
+						<label>Сонгох модуль</label>
 					</div>
 				</div>
 				 <div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
 						<i class="flaticon-settings icon"></i>
-						СУУРИЛУУЛАЛТ
+						ГЭРЭЭНИЙ УДИРДЛАГА
 					</div>
-					<p>Одоогоор энэ системийг таны өөрийн сервер эсвэл зохиомол сервер дээр суурилуулан ашиглах боломтжой.</p>
+					<p> Байгууллагын үйл ажиллагаатай холбоотой <strong>тогтмол төлбөр төлөлтийн гэрээг </strong>бүртгэж, гэрээт төлбөр төлөлтийг цаг тухай бүрт хийх боломжийг олгоно.</p>
 					<div class="ui checkbox">
 						<input type="checkbox" name="example">
-						<label>Зохиомол сервер авах</label>
+						<label>Сонгох модуль</label>
 					</div>
 				</div>
 			</div>
@@ -108,7 +110,7 @@
 	</div>
 	<div class="ui centered page grid">
 		<h3 class="subscribe-header">Үнийн санал авах</h3> 
-		<p class="ui centered lead large">Та дээрх модулуудаас өөрийн хүссэн модулуудаа сонгоод цахим шуудангаа үлдээгээрэй. Зохиомал серверийн үнийг доороос үзнэ үү</p>
+		<p class="ui centered lead large">Та дээрх модулиудаас өөрийн хүссэн модулиа сонгоод цахим шуудангаа үлдээгээрэй.</p>
 		<div class="ui form eight wide subscribe column">
 			<div class="field">
 				<div class="ui fluid action input">
@@ -123,7 +125,7 @@
 	<div class="ui very relaxed stackable centered page grid">
 		<div class="row">
 			<div class="eight wide centered column">
-				<h1 class="center aligned ui inverted header">ЗОХИОМОЛ СЕРВЕР (VPS)</h1>
+				<h1 class="center aligned ui inverted header">СЕРВЕР-ийн үйлчилгээ</h1>
 				<div class="ui horizontal divider">
 					<i class="white flaticon-attachment icon"></i>
 				</div>

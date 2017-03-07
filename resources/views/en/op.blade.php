@@ -33,7 +33,7 @@
 					<div class="header">Lhamour.mn revised</div>
 					<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
 					<div class="description">
-						Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
+						Mentor who guided  us in Silicon Valley. International venture captalist.<br/><br/>
 						Managing director of Concordia Ventures
 						<br/>
 						<a href="#">Web Platfrom</a> | <a href="#">Contribute</a>
@@ -50,9 +50,8 @@
 					<div class="header">Deelstore.mn</div>
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
-						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
+						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system.<br/><br/>
 						Founder of Startup Mongolia
-				 
 						<br/>
 						<a href="#">Online shop</a> | <a href="#">Tweet</a> | <a href="#">Share</a> 
 					</div>

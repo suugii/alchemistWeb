@@ -12,7 +12,7 @@
 	<div class="ui grid stackable centered center aligned">
 		<div class="three wide column"></div>
 		<div class="three wide column"> 
-			<a href="#" class="large basic inverted animated fade ui button">
+			<a class="large basic inverted animated fade ui button" onclick="$('#schedule-meeting').modal('show')">
 				<div class="visible content">REQUEST A DEMO</div>
 				<div class="hidden content">Make appoinment?</div>
 			</a>
@@ -25,101 +25,102 @@
 @endsection
 
 @section('content')
-<div class="ui vertical feature segment">
-	<div class="ui centered page grid">
-		<div class="fourteen wide column">
-			<div class="ui three column center aligned stackable divided grid">
-				<div class="column column-feature">
-					<div class="ui icon header">
-						<i class="flaticon-layers icon"></i>
-						WAREHOUSE INVENTORY
+<form class="ui form" id="price-offer">
+	{{ csrf_field() }}
+	<div class="ui vertical feature segment">
+		<div class="ui centered page grid">
+			<div class="fourteen wide column">
+				<div class="ui three column center aligned stackable divided grid">
+					<div class="column column-feature">
+						<div class="ui icon header">
+							<i class="flaticon-layers icon"></i>
+							WAREHOUSE INVENTORY
+						</div>
+						<p><strong>Track your stock</strong> information. Document your purchase order and invoice items in one place. Alert on finishing products.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="warehouse-inventory" checked>
+							<label>Primary module</label>
+						</div>
 					</div>
-					<p><strong>Track your stock</strong> information. Document your purchase order and invoice items in one place. Alert on finishing products.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example" checked>
-						<label>Primary module</label>
+					<div class="column column-feature">
+						<div class="ui icon header">
+							<i class="flaticon-connecting icon"></i>
+							SALES, CUSTOMER HISTORY
+						</div>
+						<p>Make sales trought customer history based integration. Build <strong>better customer service</strong> with background information.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="sales-customer-history" checked>
+							<label>Primary module</label>
+						</div>
 					</div>
-				</div>
-				<div class="column column-feature">
-					<div class="ui icon header">
-						<i class="flaticon-connecting icon"></i>
-						SALES, CUSTOMER HISTORY
-					</div>
-					<p>Make sales trought customer history based integration. Build <strong>better customer service</strong> with background information.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example" checked>
-						<label>Primary module</label>
-					</div>
-				</div>
-				<div class="column column-feature">
-					<div class="ui icon header">
-						<i class="flaticon-calendar icon"></i>
-						ACTIVITY MANAGEMENT
-					</div>
-					<p>Document your <strong>daily activities</strong> to get better per customer leads and deals. Organize your staffs under one system.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example" checked>
-						<label>Primary module</label>
-					</div>
-				</div>
-			</div>
-			<div class="ui three column center aligned stackable divided grid">
-				<div class="column column-feature">
-					<div class="ui icon header">
-						<i class="flaticon-tick icon"></i>
-						PROJECT MANAGEMENT
-					</div>
-					<p>Define your project managemnet and team members. Use <strong>task management</strong> for each project. Manage duration based task list.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Optional module</label>
+					<div class="column column-feature">
+						<div class="ui icon header">
+							<i class="flaticon-calendar icon"></i>
+							ACTIVITY MANAGEMENT
+						</div>
+						<p>Document your <strong>daily activities</strong> to get better per customer leads and deals. Organize your staffs under one system.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="activity-management" checked>
+							<label>Primary module</label>
+						</div>
 					</div>
 				</div>
-				<div class="column column-feature">
-					<div class="ui icon header">
-						<i class="flaticon-tick icon"></i>
-						SUPPLY CHAIN
+				<div class="ui three column center aligned stackable divided grid">
+					<div class="column column-feature">
+						<div class="ui icon header">
+							<i class="flaticon-tick icon"></i>
+							PROJECT MANAGEMENT
+						</div>
+						<p>Define your project managemnet and team members. Use <strong>task management</strong> for each project. Manage duration based task list.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="project-management">
+							<label>Optional module</label>
+						</div>
 					</div>
-					<p>Controll your purchase and estimate your warehouse earnings. Choose your <strong>best vendor</strong> compare price offers.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Optional module</label>
+					<div class="column column-feature">
+						<div class="ui icon header">
+							<i class="flaticon-tick icon"></i>
+							SUPPLY CHAIN
+						</div>
+						<p>Controll your purchase and estimate your warehouse earnings. Choose your <strong>best vendor</strong> compare price offers.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="supply-chain">
+							<label>Optional module</label>
+						</div>
 					</div>
-				</div>
-				 <div class="column column-feature">
-					<div class="ui icon header">
-						<i class="flaticon-settings icon"></i>
-						CLOUD or ONSITE
-					</div>
-					<p>Our system can be installed on your server. We suggest suitable VPS solutions. We can secure your in our cloud version.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Onsite</label>
+					 <div class="column column-feature">
+						<div class="ui icon header">
+							<i class="flaticon-settings icon"></i>
+							CLOUD or ONSITE
+						</div>
+						<p>Our system can be installed on your server. We suggest suitable VPS solutions. We can secure your in our cloud version.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="cloud-or-onsite">
+							<label>Onsite</label>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="ui stackable centered page grid">
+			<h3 class="subscribe-header">Request a price offer</h3> 
+			<p class="ui centered lead large">Check your required modules we will sent you onsite installation price offer. For cloud price <a href="#">click here.</a></p>
+			<div class="ui eight wide subscribe column">
+				<div class="field">
+	 				<div class="ui fluid action input">
+						<input type="email" name="email" placeholder="Email">
+						<div class="ui submit button">Get price offer</div>
+					</div>
+				</div>
+			</div>
+		</div>       
 	</div>
-	<div class="ui centered page grid">
-		<h3 class="subscribe-header">Request a price offer</h3> 
-		<p class="ui centered lead large">Check your requierd modules we wills sent you onsite installation price offer. For cloud price <a href="#">click here.</a></p>
-		<div class="ui form eight wide subscribe column">
-			<div class="field">
- 				<div class="ui fluid action input">
-					<input placeholder="Email" type="text">
-					<div class="ui button">Get price offer  </div>
-				</div>
-			</div>
-		</div>
-	</div>       
-</div>
+</form>
 <div class="ui recent-works vertical segment ">
 	<div class="ui very relaxed stackable centered page grid ">
 		<div class="row">
 			<div class="eight center aligned wide column centered">
-				<h1 class="center aligned ui inverted header">
-					CLOUD PRICE
-				</h1>
+				<h1 class="center aligned ui inverted header">CLOUD PRICE</h1>
 				<div class="ui horizontal divider"><i class="white flaticon-attachment icon"></i></div>
 				<p class="ui centered lead">No need worry about servers we can handle it for you!.</p>
 			</div>
@@ -127,7 +128,7 @@
 		<div class="fourteen wide column">
 			<div class="ui three column stackable grid">
 				<div class="column">
-					<div class="ui card centered" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="ui fluid card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Startup</div>
 							<div class="description">Perfect for when you begin your own retail company. Ideal for selling B2C. <br/>Suitable for up to 5 employees.<br/><br/>* Warehouse Management <br/>* Activity Management <br/>* Sales Management <br/>
@@ -139,7 +140,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="ui card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
+					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Retailer</div>
 							<div class="description">Most suited for mid-sized businesses. You can configure your company hierarchy and create certain roles for your employees.<br/><br/>* Start up pack <br/>* Supply Chain management <br/>* Project Management <br/>
@@ -151,15 +152,15 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="ui card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Enterprise </div>
 							<div class="description">We can establish your enterprise solution using our Alchemist Platform. It will be the exact solution for your concerns. We have built hospital, fitness, call center and many other organization softwares using our platform.<br/><br/>* Custom system <br/>* Long term support <br/>
 							</div>
 						</div>
 						<div class="ui two bottom attached buttons">
-							<div class="ui button">Request price offer</div>
-							<div class="ui pink button">Schedule a meeting ?</div>
+							<div class="ui button" onclick="$('#cloud-price').modal('show')">Request price offer</div>
+							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Schedule a meeting ?</div>
 						</div>
 					</div>
 				</div>
@@ -171,9 +172,7 @@
 	<div class="ui stackable center aligned page grid">
 		<div class="row">
 			<div class="eight wide column">
-				<h1 class="ui header">
-					Our Top Clients
-				</h1>
+				<h1 class="ui header">Our Top Clients</h1>
 				<div class="ui horizontal divider">
 					<i class="flaticon-settings icon"></i>
 				</div>
@@ -196,4 +195,93 @@
 		</div>
 	</div>
 </div>
+<div class="ui small modal" id="cloud-price">
+	<div class="header">Request a price offer</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui fluid action input">
+					<input type="email" name="email" placeholder="Email">
+					<div class="ui submit button">Get price offer</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="ui small modal" id="schedule-meeting">
+	<div class="header">Schedule meeting</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+				<div class="ui calendar" id="calendar">
+					<div class="ui input left icon">
+						<i class="calendar icon"></i>
+						<input type="text" placeholder="Date">
+					</div>
+				</div>
+			</div>
+			<div class="field">
+ 				<div class="ui fluid action input">
+					<input type="hidden" name="date">
+					<input type="email" name="email" placeholder="Email">
+					<div class="ui submit button">Schedule</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$('#calendar').calendar();
+	$("#price-offer").find('.submit').click(function() {
+		$('#price-offer').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/crm/price") }}',
+           	data: $('#price-offer').serialize(),
+           	success: function() {
+				$('#price-offer').find('.submit').removeClass('loading disabled');
+				$('#price-offer').find('.submit').state('flash text', 'Successfully sent');
+       		},
+			error: function(){
+				$('#price-offer').find('.submit').removeClass('loading disabled');
+				$('#price-offer').find('.submit').state('flash text', 'Error occured');
+			}
+		});
+	});
+	$('#cloud-price').find('.submit').click(function() {
+		$('#cloud-price').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/crm/cloud/price") }}',
+           	data: $('#cloud-price').find('form').serialize(),
+           	success: function() {
+				$('#cloud-price').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#cloud-price').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+	$("#schedule-meeting").find('.submit').click(function() {
+		var date = $('#calendar').calendar('get date');
+		$('#schedule-meeting').find('input[name=date]').val(date);
+		$('#schedule-meeting').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/crm/meeting") }}',
+           	data: $('#schedule-meeting').find('form').serialize(),
+           	success: function() {
+				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+</script>
+@endpush

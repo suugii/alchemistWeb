@@ -9,7 +9,7 @@
 <p class="ui centered lead">We develop and market worldly useful applications.</p>
 <h2 class="ui inverted centered header">Our team</h2>
 <p class="ui centered lead">We possess a huge passion for creating things together. <br />"World is full of things to do"</p>
-<a href="#" class="large basic inverted animated fade ui button">
+<a class="large basic inverted animated fade ui button">
 	<div class="visible content">Contact us</div>
 	<div class="hidden content">+976-88021087</div>
 </a>
@@ -24,20 +24,21 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-graduates icon"></i>
 				</div>
-				<p class="ui centered lead">xWe consider every employee as our partner. We devote those who have a true passion for learning and developing. Please send us your CV. If you are just swinging by please don't waste our time :)</p>
+				<p class="ui centered lead">We consider every employee as our partner. We devote those who have a true passion for learning and developing. Please send us your CV. If you are just swinging by please don't waste your time :)</p>
 				<p class="ui centered lead"><a href="#">info@alchemist.mn</a></p><br/>
 			</div>
 		</div>
-		<div class="ui centered page grid">
+		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Subscribe for job openings</h3> 
-			<div class="ui form eight wide subscribe column">
+			<form class="ui form eight wide subscribe column" id="subscribe">
+				{{ csrf_field() }}
 				<div class="field">
 					<div class="ui fluid action input">
-						<input placeholder="Email" type="text">
-						<div class="ui button">Subscribe </div>
+						<input type="email" name="email" placeholder="Email">
+						<div class="ui submit button">Subscribe</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 </div>
@@ -55,7 +56,7 @@
 		<div class="fourteen wide column center aligned">
 			<div class="ui three column aligned stackable divided grid">
 				<div class="column">
-					<div class="ui card">
+					<div class="ui fluid card">
 						<div class="image small">
 							<img class="ui image small" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJDdmZTU3MzlmLWNmMzItNGNhNC05M2ViLTYzN2RhMGU5ZTM4OA.jpg">
 						</div>
@@ -71,7 +72,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="ui card">
+					<div class="ui fluid card">
 						<div class="image">
 							<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhwAAAAJDkxZmUwOTI5LWQ1N2QtNGY4NC1iNzU5LWM3MTJkNjc2YjE4ZQ.jpg">
 						</div>
@@ -87,7 +88,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="ui card">
+					<div class="ui fluid card">
 						<div class="image">
 							<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/098/28e/0e636d1.jpg">
 						</div>
@@ -115,18 +116,52 @@
 				<p class="ui centered lead">Please check our <a href="https://www.f6s.com/khangaikhurelbaatar">F6s projects.</a> We are raising seed funds.</p>
 				<br/>
 			</div>
-			<div class="ui centered page grid">
+			<div class="ui stackable centered page grid">
 				<h3 class="subscribe-header">Contact us for meeing</h3> 
-				<div class="ui form eight wide subscribe column">
+				<form class="ui form eight wide subscribe column" id="schedule-meeting">
+					{{ csrf_field() }}
 					<div class="field">
 						<div class="ui fluid action input">
-							<input placeholder="Email" type="text">
-							<div class="ui button">Send</div>
+							<input type="email" name="email" placeholder="Email">
+							<div class="ui submit button">Send</div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div> 
 		</div>
 	</div>
 </div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$("#subscribe").find('.submit').click(function() {
+		$('#subscribe').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/contact/subscribe") }}',
+           	data: $('#subscribe').serialize(),
+           	success: function() {
+				$('#subscribe').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#subscribe').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+	$("#schedule-meeting").find('.submit').click(function() {
+		$('#schedule-meeting').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/contact/meeting") }}',
+           	data: $('#schedule-meeting').serialize(),
+           	success: function() {
+				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+</script>
+@endpush

@@ -4,7 +4,7 @@
 
 @section('masthead')
 <h1 class="ui inverted centered header">Өрөөний удирдлагын систем <small style="font-size: 12px"><a href="#">Алкэмист платформ & MyAllocator </a>-р бүтээв</small></h1><br/>
-<span class="ui centered lead" style="font-size: 18px">Зочид буудлын <strong>өрөөний зохион байгуулалт, </strong> <br>түрээслэгчийн бүртгэл, хурал, арга хэмээний заалны уридлагын систем</span>
+<span class="ui centered lead" style="font-size: 18px">Зочид буудлын <strong>өрөөний зохион байгуулалт, </strong> <br>түрээслэгчийн бүртгэл, хурал, арга хэмжээ заалны уридлагын систем</span>
 <div class="ui stackable grid relaxed">
 	<div class="four wide column"></div>
 	<div class="four wide column"> 
@@ -36,21 +36,21 @@
 						<i class="flaticon-layers icon"></i>
 						ӨРӨӨНИЙ УДИРДЛАГА
 					</div>
-					<p>Өрөө болон түрээсийн заалуудаа системчилсэн байдлаар бүртгэлжүүлж. Үйл ажиллагааны горим тохируулах боломжтой.</p>
+					<p>Өрөө болон түрээсийн талбай(заал)-гаа системчлэн бүртгэлжүүлж үйл ажиллагааны горим тохируулах боломжтой.</p>
 				</div>
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
 						<i class="flaticon-tick icon"></i>
 						ҮНЭЛГЭЭ, ТӨЛБӨР
 					</div>
-					<p>Үнэлгээ өгөхдөө талбай хэмжээ болон бусад эд зүйлсээр ангилан тооцох боломжтой. Хямдарылн төлөвлөөгөө оруулах боломжтой.</p>
+					<p>Үнэлгээ өгөхдөө талбайн хэмжээ болон бусад эд зүйлсээр ангилан тооцож болохоос гадна хямдралын төлөвлөгөө оруулах боломжтой.</p>
 				</div>
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
 						<i class="flaticon-tick icon"></i>
 						CЕРВИС ҮЙЛЧИЛГЭЭ
 					</div>
-					<p>Тухайн үйлчлэгчийн хүсэлтээр өрөө эсвэл зааланд нэмэлт үйлчилгээний бүртгэл түүний төлбөр тооцоог удирдах боломжтой.</p>
+					<p>Тухайн үйлчлүүлэгчийн хүсэлтээр өрөө эсвэл зааланд нэмэлт үйлчилгээний бүртгэл үүсгэн, тэдгээрийн төлбөр тооцоог удирдах боломжтой.</p>
 				</div>
 			</div>
 			<div class="ui three column center aligned stackable divided grid">
@@ -59,14 +59,14 @@
 						<i class="flaticon-tick icon"></i>
 						ҮЙЛЧЛҮҮЛЭГЧИЙН БҮРТГЭЛ
 					</div>
-					<p>Үйлчлүүлэгчдийг бүртгэлжүүлж, түүхээр нь лояалти хэрэгжүүлэх боломжтой. Нэхэмжлэх, зарлагын баримт хэвлэх боломжтой.</p>
+					<p>Үйлчлүүлэгчдийг бүртгэлжүүлж, түүхээр нь лояалти хэрэгжүүлэх мөн нэхэмжлэх болон E-баримт хэвлэх боломжтой.</p>
 				</div>
 				<div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
 						<i class="flaticon-tick icon"></i>
 						ТӨЛБӨР ТООЦОО
 					</div>
-					<p>Төлбөр тооцооны автомажсан сануулга. Бэлэн болон дараа төлбөрт орлогын мэдээ. Тооцооны цахим шуудан илгээлт. eBarimt холболт</p>
+					<p>Төлбөр тооцооны автоматжуулсан сануулга. Шууд болон дараа төлбөрт орлогын мэдээ. Тооцооны цахим шуудан илгээлт.</p>
 				</div>
 				 <div class="column column-feature">
 					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
@@ -79,8 +79,8 @@
 		</div>
 	</div>
 	<div class="ui centered page grid">
-		<h3 class="subscribe-header">Танд илүү тохирсон систем хайж байна уу?</h3> 
-		<p class="ui centered lead large">Тэгвэл та мэдээллээ үлдээгээрэй. Энэ тал дээр ярилцаж болно.</p>
+		<h3 class="subscribe-header">Танд илүү тохирсон систем хайж байна уу?</h3>
+		<p class="ui centered lead large">Тэгвэл та мэдээллээ үлдээгээрэй. Бид танд цогц шийдэл санал болгох болно.</p>
 		<div class="ui form eight wide subscribe column">
 			<div class="field">
 				<div class="ui fluid action input">
@@ -109,12 +109,12 @@
 					<div class="ui card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Зочид буудал</div>
-							<div class="description">Буудал, хостел, жуулчны баазад тохиромжтой захиалга бүртгэлийн цогц шийдэл.<br / ><br / >
-								* Өрөөний удирдлага<br / >
-								* Сервис үйлчилгээ <br / >
-								* Төлбөр тооцоо<br / >
-								* Үйлчлүүлэгчийн бүртгэл<br / > 
-								* Үнэлгээний удирдлага<br / > 
+							<div class="description">Буудал, хостел, жуулчны баазад тохиромжтой захиалга бүртгэлийн цогц систем.<br/><br/>
+								* Өрөөний удирдлага <br/>
+								* Сервис үйлчилгээ <br/>
+								* Төлбөр тооцоо <br/>
+								* Үйлчлүүлэгчийн бүртгэл <br/> 
+								* Үнэлгээний удирдлага <br/> 
 							</div>
 							<div class="center aligned ui">
 								<h2 class="center aligned ui">69 000₮ / <small style="font-size: 16px"> сар бүр</small></h2>
@@ -126,12 +126,12 @@
 					<div class="ui card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Хөрөнгө жууч</div>
-							<div class="description">Хөрөнгө жуучийн байгууллагуудад мэдээллээ нэгтгэх төлбөр тооцооны хяналтын цогц шийдэл.<br / ><br / >
-								* Хөрөнгийн бүртгэл<br / >
-								* Төлбөр тооцоо<br / >
-								* Үйлчлүүлэгчийн бүртгэл<br / > 
-								* Үнэлгээний удирдлага<br / > 
-								* Автомат нэхэмжлэх,сануулга <br / > 
+							<div class="description">Хөрөнгө зуучийн байгууллагуудад мэдээллээ нэгтгэх төлбөр тооцооны хяналт хийх цогц систем.<br/><br/>
+								* Хөрөнгийн бүртгэл <br/>
+								* Төлбөр тооцоо <br/>
+								* Үйлчлүүлэгчийн бүртгэл <br/> 
+								* Үнэлгээний удирдлага <br/> 
+								* Автомат нэхэмжлэх,сануулга <br/> 
 							</div>
 							<div class="center aligned ui">
 								<h2 class="center aligned ui">89 000 ₮ / <small style="font-size: 16px"> сар бүр</small></h2>
@@ -143,10 +143,10 @@
 					<div class="ui card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Дурын загвар</div>
-							<div class="description">Бид танай байгууллагын онцлогт тааруулан хөрөнгийн бүртгэлийн цогц системийг нэвтрүүлэх боломжтой.<br / ><br / >
-								* Дурын загварчлал<br / >
-								* Урт хугацааны дэмжлэг <br / >
-								* Үнэ тохиролцно <br / >
+							<div class="description">Бид танай байгууллагын онцлогт тааруулан хөрөнгийн бүртгэлийн цогц системийг нэвтрүүлэх боломжтой.<br/><br/>
+								* Дурын загварчлал<br/>
+								* Урт хугацааны дэмжлэг <br/>
+								* Уян хатан үнэ <br/>
 							</div>
 						</div>
 						<div class="ui two bottom attached buttons">
@@ -167,7 +167,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-settings icon"></i>
 				</div>
-				<p class="ui centered lead">Бид үйлчлүүлэгчдээ анхааран байнгын хамтын ажиллагаа өрнүүлдэг.</p><br/>
+				<p class="ui centered lead">Бид үйлчлүүлэгчидээ анхааран байнгын хамтын ажиллагаа өрнүүлдэг.</p><br/>
 			</div>
 		</div>
 		<div class="four column logo row">

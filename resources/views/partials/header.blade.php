@@ -25,7 +25,8 @@
 	<a class="active item" href="{{ url('/') }}">{{ trans('crm') }}</a>
 	<a class="item" href="{{ url('pms') }}">{{ trans('pms') }}</a>
 	<a class="item" href="{{ url('eprocurement') }}">{{ trans('messages.spend control & eprocurement') }}</a>
-	<a class="item">{{ trans('messages.messages.nomadic bear games') }}</a>
+	<a class="item">{{ trans('messages.nomadic bear games') }}</a>
 	<a class="item" href="{{ url('projects') }}">{{ trans('messages.other projects') }}</a>
 	<a class="item">{{ trans('messages.login') }}</a>
+	<a class="item" href="{{ url('change') }}">{{ trans('messages.language') }}</a>
 </div>

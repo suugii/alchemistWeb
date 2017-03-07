@@ -19,7 +19,7 @@
 					<a class="toc item">
 						<i class="sidebar icon"></i>
 					</a>
-					 <a class="logo item" href="{{ url('/') }}">
+					<a class="logo item" href="{{ url('/') }}">
 						Alchemist
 					</a>
 					<a class="item active" href="{{ url('/') }}">
@@ -43,7 +43,7 @@
 						</a>
 						<a class="ui item" style="color:white;text-transform: uppercase;">
 							{{ trans('messages.login') }}
-						</a> 
+						</a>
 					</div>
 				</div>
 				<div class="ui hidden transition information">
@@ -55,7 +55,9 @@
 	@yield('content')
 	@include('partials.footer')
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/calendar.min.js') }}"></script>
 	<script src="{{ asset('js/semantic.min.js') }}"></script>
 	<script src="{{ asset('js/app.js') }}"></script>
+	@stack('script')
 </body>
 </html>

@@ -4,11 +4,11 @@
 
 @section('masthead')
 <h2 class="ui inverted centered header">Бидний үнэт зүйл</h2>
-<p class="ui centered lead">Бид оюуны бүтээлийг хийх <strong>жинхэнэ хүсэлтэй</strong>, түүний төлөө ажиллаж, үр дүнг бий болгож,<br> хүсэл эрмэлзлээ байнга хурцалж  өөрийгөө дайчлан тэмүүлэх чадварыг үнэт зүйлсээ болгон ажилладаг.</p>
+<p class="ui centered lead">Бид оюуны бүтээлийг хийх <strong>жинхэнэ хүсэлтэй</strong>, түүний төлөө ажиллаж, үр дүнг бий болгож,<br> хүсэл эрмэлзлэлээ байнга хурцалж  өөрийгөө дайчлан тэмүүлэх чадварыг үнэт зүйлсээ болгон ажилладаг.</p>
 <h2 class="ui inverted centered header">Бид юу хийдэг вэ?</h2>
 <p class="ui centered lead">Бид олон улсад өрсөлдөх бүтээгдэхүүнийг хөгжүүлдэг.</p>
 <h2 class="ui inverted centered header">Манай хамт олон</h2>
-<p class="ui centered lead">Бид хамтран олон зүйлийг хийж бүтээх оргилуун хүсэлтэй залуус.<br> "Хорвоо дэлхий уужим хийх зүйл их байна."</p>
+<p class="ui centered lead">Бид хамтран олон зүйлийг хийж бүтээх оргилуун хүсэлтэй залуус.<br> "Хорвоо дэлхий уудам хийх ажил их байна."</p>
 <a href="#" class="large basic inverted animated fade ui button">
 	<div class="visible content">Холбоо барих</div>
 	<div class="hidden content">+976-88021087</div>
@@ -24,7 +24,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-graduates icon"></i>
 				</div>
-				<p class="ui centered lead">Ажилтан гэхээсээ илүү хамтрагч гэвэл зөв байх. Бид хийж бүтээж чаддаг нэгнээ үнэлж, сурах чинь хүсэлтэй залууст боломж олгодог. CV-гээ явуулаарай. Хэрвээ та зүгээр л сонирхож байгаа бол бидний цагийг битгий үрээрэй :)</p>
+				<p class="ui centered lead">Ажилтан гэхээсээ илүү хамтрагч гэвэл зөв байх. Бид хийж бүтээж чаддаг нэгнээ үнэлж, сурах чинь хүсэлтэй залууст боломж олгодог. CV-гээ явуулаарай. Хэрвээ та зүгээр л сонирхож байгаа бол өөрийнхөө цагийг битгий үрээрэй :)</p>
 				<p class="ui centered lead"><a href="#">info@alchemist.mn</a></p><br/>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 							<div class="header">В.Баярсайхан</div>
 							 
 							<div class="description">
-								Манай анхы хөрөнгө оруулагч. Амжилттай энтропренор. Үүсгэн байгуулагч<br/>
+								Манай анхы хөрөнгө оруулагч. Амжилттай энтерпренор. Үүсгэн байгуулагч<br/><br/>
 								Dell EMC менежер
 								<br/>
 								<a href="#">Linkedin</a> 
@@ -79,7 +79,7 @@
 						<div class="content">
 							<div class="header">Рик Расмуссен</div>
 							<div class="description">
-								Цахиуртын хөндийн зааварлагч багш. Олон улсын хөрөнгө оруулагч. Coursera хувь эзэмшигч <br/>
+								Цахиуртын хөндийн зааварлагч багш. Олон улсын хөрөнгө оруулагч. Coursera хувь эзэмшигч<br/><br/>
 								Concordia Ventures - үүсгэн байгуулагч
 								<br />
 								<a href="#">Linkedin</a>
@@ -95,8 +95,8 @@
 						<div class="content">
 							<div class="header">Д.Око</div>
 							<div class="description">
-								Mонголын ихэнх гарааны бизнесийн ментор гэж хэлж болно. Олон улсын хөрөнгө оруулагч. <br/>
-								Старт Апп Монголын үүсгэн байгуулагч
+								Mонголын ихэнх гарааны бизнесийн ментор гэж хэлж болно. Олон улсын хөрөнгө оруулагч.<br/><br/>
+								Start Up Mongolia-н үүсгэн байгуулагч
 								<br />
 								<a href="#">Linkedin</a>
 							</div>
@@ -115,7 +115,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-speech icon"></i>
 				</div>
-				<p class="ui centered lead">Та манай дараах сайт дахь хөрөнгө оруулалтын санлуудтай танилцаарай <a href="https://www.f6s.com/khangaikhurelbaatar">F6s төслүүд.</a></p><br/>
+				<p class="ui centered lead">Та дараах сайт дахь манай хөрөнгө оруулалтын саналуудтай танилцаарай <a href="https://www.f6s.com/khangaikhurelbaatar">F6s төслүүд.</a></p><br/>
 			</div>
 			<div class="ui centered page grid">
 				<h3 class="subscribe-header">Уулзалт товлох уу?</h3> 

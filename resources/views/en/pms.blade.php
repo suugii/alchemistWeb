@@ -12,15 +12,15 @@
 <div class="ui stackable grid relaxed">
 	<div class="four wide column"></div>
 	<div class="four wide column"> 
-		<a href="#" class="large basic inverted animated fade ui button">
+		<a class="large basic inverted animated fade ui button" onclick="$('#request-demo').modal('show')">
 			<div class="visible content">REQUEST A DEMO</div>
 			<div class="hidden content">14 days Trail</div>
 		</a>
 	</div>
 	<div class="four wide column">
 		<a href="#" class="large basic inverted animated fade ui button">
-			<div class="visible content">INTRODUCTION PDF</div>
-			<div class="hidden content">14 days Trail</div>
+			<div class="visible content">INTRODUCTION</div>
+			<div class="hidden content">Download PDF</div>
 		</a>
 	</div>
 	<div class="four wide column"></div>
@@ -82,17 +82,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui centered page grid">
+	<div class="ui stackable centered page grid">
 		<h3 class="subscribe-header">Do you want something more custom?</h3> 
 		<p class="ui centered lead large">Please leave your email for custom solutions. We happy to discuss about it.</p>
-		<div class="ui form eight wide subscribe column">
+		<form class="ui form eight wide subscribe column" id="custom-pms">
+			{{ csrf_field() }}
 			<div class="field">
 				<div class="ui fluid action input">
-					<input placeholder="Email" type="text">
-					<div class="ui button">Send</div>
+					<input type="text" name="email" placeholder="Email">
+					<div class="ui submit button">Send</div>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>       
 </div>
 <div class="ui recent-works vertical segment">
@@ -109,7 +110,7 @@
 		<div class="fourteen wide column">
 			<div class="ui three column aligned stackable divided grid">
 				<div class="column">
-					<div class="ui card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="ui fluid card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Hotel frontdesk </div>
 							<div class="description">
@@ -128,7 +129,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="ui card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
+					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Property lesser</div>
 							<div class="description">
@@ -148,7 +149,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<div class="ui card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
 						<div class="content">
 							<div class="header">Custom Solution</div>
 							<div class="description">
@@ -160,11 +161,8 @@
 							</div>
 						</div>
 						<div class="ui two bottom attached buttons">
-							<div class="ui button">Request</div>
-							<div class="ui pink button">
-								<i class="flaticon-call icon"></i>
-								Meeting?
-							</div>
+							<div class="ui button" onclick="$('#cloud-price').modal('show')">Request price offer</div>
+							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Schedule a meeting ?</div>
 						</div>
 					</div>
 				</div>
@@ -223,4 +221,119 @@
 		</div>
 	</div>
 </div>
+<div class="ui small modal" id="request-demo">
+	<div class="header">Request a demo</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui fluid action input">
+					<input type="email" name="email" placeholder="Email">
+					<div class="ui submit button">Get demo</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="ui small modal" id="cloud-price">
+	<div class="header">Request a price offer</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui fluid action input">
+					<input type="email" name="email" placeholder="Email">
+					<div class="ui submit button">Get price offer</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="ui small modal" id="schedule-meeting">
+	<div class="header">Schedule meeting</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+				<div class="ui calendar" id="calendar">
+					<div class="ui input left icon">
+						<i class="calendar icon"></i>
+						<input type="text" placeholder="Date">
+					</div>
+				</div>
+			</div>
+			<div class="field">
+ 				<div class="ui fluid action input">
+					<input type="hidden" name="date">
+					<input type="email" name="email" placeholder="Email">
+					<div class="ui submit button">Schedule</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$('#calendar').calendar();
+	$('#custom-pms').find('.submit').click(function() {
+		$('#custom-pms').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/pms/custom") }}',
+           	data: $('#custom-pms').serialize(),
+           	success: function() {
+				$('#custom-pms').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#custom-pms').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+	$('#request-demo').find('.submit').click(function() {
+		$('#request-demo').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/pms/demo") }}',
+           	data: $('#request-demo').find('form').serialize(),
+           	success: function() {
+				$('#request-demo').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#request-demo').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+	$('#cloud-price').find('.submit').click(function() {
+		$('#cloud-price').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/pms/cloud/price") }}',
+           	data: $('#cloud-price').find('form').serialize(),
+           	success: function() {
+				$('#cloud-price').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#cloud-price').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+	$("#schedule-meeting").find('.submit').click(function() {
+		var date = $('#calendar').calendar('get date');
+		$('#schedule-meeting').find('input[name=date]').val(date);
+		$('#schedule-meeting').find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/pms/meeting") }}',
+           	data: $('#schedule-meeting').find('form').serialize(),
+           	success: function() {
+				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+       		},
+			error: function(){
+				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+			}
+		});
+	});
+</script>
+@endpush

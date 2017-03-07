@@ -14,10 +14,7 @@
 					<div class="header">Eej.mn revised</div>
 					<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
 					<div class="description">
-						Eej.mn Mongolian first mother site.
-						<br/>
-						<br/>
-						<br/>
+						Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
 						<br/>
 						<a href="#">Web Platfrom</a> | <a href="#">Contribute</a>
 					</div>
@@ -33,9 +30,8 @@
 					<div class="header">Lhamour.mn revised</div>
 					<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
 					<div class="description">
-						Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
-						Managing director of Concordia Ventures
-						<br />
+						Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
+						<br/>
 						<a href="#">Web Platfrom</a> | <a href="#">Contribute</a>
 					</div>
 				</div>
@@ -50,11 +46,8 @@
 					<div class="header">Deelstore.mn</div>
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
-						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-						Founder of Startup Mongolia
-				 
-						<br />
-						<a href="#">Online shop</a> | <a href="#">Tweet</a> | <a href="#">Share</a> 
+					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.<br/>
+						<a href="#">Online shop</a> | <a href="#">Tweet</a> | <a href="#">Share</a>
 					</div>
 				</div>
 			</div>
@@ -70,7 +63,7 @@
 					<div class="description">
 						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 						Founder of Startup Mongolia
-						<br />
+						<br/>
 						<a href="#">Online shop</a> | <a href="#">Tweet</a> | <a href="#">Share</a>
 					</div>
 				</div>
@@ -87,9 +80,8 @@
 					<div class="header">Honey - Retail sales app</div>
 					<div class="description"><i class="flaticon-more icon"></i>Pre-released</div><br/>
 					<div class="description">
-						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-						Founder of Startup Mongolia
-						<br />
+						Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
+						<br/>
 						<a href="#">IOS</a> | <a href="#">PDF</a> | <a href="#">Invest</a> | <a href="#">Contribute</a>
 					</div>
 				</div>
@@ -104,8 +96,7 @@
 					<div class="header">iHotel.mn</div>
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
-						Our angel investor who showed our way to market. Successfull entrprenuer. Co-founder<br/>
-						Product Manager at Dell EMC
+						Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
 						<br/>
 						<a href="#">Web Platfrom</a> | <a href="#">Tweet</a> | <a href="#">Share</a>
 					</div>
@@ -118,13 +109,12 @@
 					<img src="{{ asset('img/marchaakhai.jpg') }}"/>
 				</div>
 				<div class="content">
-					<div class="header">Marchaakhia.mn</div>
+					<div class="header">marchaahai.mn</div>
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
-						Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
-						Managing director of Concordia Ventures
-						<br />
-						<a href="#">Content server</a> | <a href="#">IOS</a>  | <a href="#">Android</a> | <a href="#">Share</a> 
+						Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
+						<br/>
+						<a href="#">Content server</a> | <a href="#">IOS</a>  | <a href="#">Android</a> | <a href="#">Share</a>
 					</div>
 				</div>
 			</div>
@@ -138,9 +128,8 @@
 					<div class="header">1nicething.net</div>
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
-						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-						Founder of Startup Mongolia
-						<br />
+						Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
+						<br/>
 						<a href="#">Web </a> | <a href="#">Invest</a> |  <a href="#">Share</a> |  <a href="#">Tweet</a> |  <a href="#">Contribute</a>
 					</div>
 				</div>
