@@ -111,15 +111,29 @@
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Request a price offer</h3> 
 			<p class="ui centered lead large">Check your required modules we will sent you onsite installation price offer. For server prices <a href="#">click here.</a></p>
-			<div class="ui form eight wide subscribe column">
+			<div class="eight wide subscribe column">
 				<div class="field">
-					<div class="ui fluid action input">
-						<input type="text" name="email" placeholder="Email">
-						<div class="ui submit button">Get price offer</div>
+					<div class="ui action input">
+						<input type="text" name="email" placeholder="Email" required>
+						<button class="ui submit button" type="submit">Get price offer</button>
 					</div>
 				</div>
 			</div>
-		</div>       
+		</div>  
+		<div class="ui stackable centered page grid" id="status">
+			<div class="eight wide subscribe column">
+				<div class="ui hidden success message">
+					<i class="close icon"></i>
+					<div class="header">Successfully</div>
+					<p>We will send you onsite installation price offer</p>
+				</div>
+				<div class="ui hidden warning message">
+					<i class="close icon"></i>
+					<div class="header">Error</div>
+					<p>Error occured. Please try again.</p>
+				</div>
+			</div>
+		</div>     
 	</div>
 </form>
 <div class="ui recent-works vertical segment">
@@ -240,12 +254,22 @@
 		<form class="ui form">
 			{{ csrf_field() }}
 			<div class="field">
- 				<div class="ui fluid action input">
-					<input type="email" name="email" placeholder="Email">
-					<div class="ui submit button">Get demo</div>
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Get demo</button>
 				</div>
 			</div>
 		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Successfully</div>
+			<p>We will send you onsite installation price offer</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Error</div>
+			<p>Error occured. Please try again.</p>
+		</div>
 	</div>
 </div>
 <div class="ui small modal" id="cloud-price">
@@ -254,12 +278,22 @@
 		<form class="ui form">
 			{{ csrf_field() }}
 			<div class="field">
- 				<div class="ui fluid action input">
-					<input type="email" name="email" placeholder="Email">
-					<div class="ui submit button">Get price offer</div>
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Get price offer</button>
 				</div>
 			</div>
 		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Successfully</div>
+			<p>We will send you onsite installation price offer</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Error</div>
+			<p>Error occured. Please try again.</p>
+		</div>
 	</div>
 </div>
 <div class="ui small modal" id="schedule-meeting">
@@ -271,81 +305,119 @@
 				<div class="ui calendar" id="calendar">
 					<div class="ui input left icon">
 						<i class="calendar icon"></i>
-						<input type="text" placeholder="Date">
+						<input type="text" placeholder="Date" required>
 					</div>
 				</div>
 			</div>
 			<div class="field">
- 				<div class="ui fluid action input">
+ 				<div class="ui action input">
 					<input type="hidden" name="date">
-					<input type="email" name="email" placeholder="Email">
-					<div class="ui submit button">Schedule</div>
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Schedule</button>
 				</div>
 			</div>
 		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Successfully</div>
+			<p>We will send you onsite installation price offer</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Error</div>
+			<p>Error occured. Please try again.</p>
+		</div>
 	</div>
 </div>
 @endsection
 
 @push('script')
 <script type="text/javascript">
-	$('#calendar').calendar();
-	$("#price-offer").find('.submit').click(function() {
-		$('#price-offer').find('.submit').addClass('loading disabled');
-	    $.ajax({
-			type: 'POST',
-			url: '{{ url("send/scs/price") }}',
-           	data: $('#price-offer').serialize(),
-           	success: function() {
-				$('#price-offer').find('.submit').removeClass('loading disabled');
-       		},
-			error: function(){
-				$('#price-offer').find('.submit').removeClass('loading disabled');
-			}
+	$(document).ready(function() {
+		$('#calendar').calendar();
+		$('#price-offer').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/price") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$('#status .success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$('#status .warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
 		});
-	});
-	$('#request-demo').find('.submit').click(function() {
-		$('#request-demo').find('.submit').addClass('loading disabled');
-	    $.ajax({
-			type: 'POST',
-			url: '{{ url("send/scs/demo") }}',
-           	data: $('#request-demo').find('form').serialize(),
-           	success: function() {
-				$('#request-demo').find('.submit').removeClass('loading disabled');
-       		},
-			error: function(){
-				$('#request-demo').find('.submit').removeClass('loading disabled');
-			}
+		$('#request-demo form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/demo") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
 		});
-	});
-	$('#cloud-price').find('.submit').click(function() {
-		$('#cloud-price').find('.submit').addClass('loading disabled');
-	    $.ajax({
-			type: 'POST',
-			url: '{{ url("send/scs/cloud/price") }}',
-           	data: $('#cloud-price').find('form').serialize(),
-           	success: function() {
-				$('#cloud-price').find('.submit').removeClass('loading disabled');
-       		},
-			error: function(){
-				$('#cloud-price').find('.submit').removeClass('loading disabled');
-			}
+		$('#cloud-price form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/cloud/price") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
 		});
-	});
-	$("#schedule-meeting").find('.submit').click(function() {
-		var date = $('#calendar').calendar('get date');
-		$('#schedule-meeting').find('input[name=date]').val(date);
-		$('#schedule-meeting').find('.submit').addClass('loading disabled');
-	    $.ajax({
-			type: 'POST',
-			url: '{{ url("send/scs/meeting") }}',
-           	data: $('#schedule-meeting').find('form').serialize(),
-           	success: function() {
-				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
-       		},
-			error: function(){
-				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
-			}
+		$('#schedule-meeting form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/meeting") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
 		});
 	});
 </script>

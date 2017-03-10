@@ -16,7 +16,7 @@
 					<div class="description">
 						Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
 						<br/>
-						<a href="#">Web Platfrom</a> | <a href="#">Contribute</a>
+						<a href="http://www.eej.mn" target="_blank">Web Platfrom</a> | <a class="openContribute" data-title="Eej.mn">Contribute</a>
 					</div>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 					<div class="description">
 						Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
 						<br/>
-						<a href="#">Web Platfrom</a> | <a href="#">Contribute</a>
+						<a href="http://www.lhamour.mn" target="_blank">Web Platfrom</a> | <a class="openContribute" data-title="Lhamour.mn">Contribute</a>
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
 					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.<br/>
-						<a href="#">Online shop</a> | <a href="#">Tweet</a> | <a href="#">Share</a>
+						<a href="http://www.deelstore.mn" target="_blank">Online shop</a> | <a href="https://twitter.com/intent/tweet?text=http://www.deelstore.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.deelstore.mn" target="_blank">Share</a> 
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 						Founder of Startup Mongolia
 						<br/>
-						<a href="#">Online shop</a> | <a href="#">Tweet</a> | <a href="#">Share</a>
+						<a href="http://www.cardmall.mn" target="_blank">Online shop</a> | <a href="https://twitter.com/intent/tweet?text=http://www.cardmall.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.cardmall.mn" target="_blank">Share</a>
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,7 @@
 					<div class="description">
 						Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
 						<br/>
-						<a href="#">IOS</a> | <a href="#">PDF</a> | <a href="#">Invest</a> | <a href="#">Contribute</a>
+						<a href="#">IOS</a> | <a href="#">PDF</a> | <a class="openInvest" data-title="Honey">Invest</a> | <a class="openContribute" data-title="Honey">Contribute</a>
 					</div>
 				</div>
 			</div>
@@ -98,7 +98,7 @@
 					<div class="description">
 						Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
 						<br/>
-						<a href="#">Web Platfrom</a> | <a href="#">Tweet</a> | <a href="#">Share</a>
+						<a href="http://www.ihotel.mn">Web Platfrom</a> | <a href="https://twitter.com/intent/tweet?text=http://www.ihotel.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.ihotel.mn" target="_blank">Share</a>
 					</div>
 				</div>
 			</div>
@@ -114,7 +114,7 @@
 					<div class="description">
 						Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
 						<br/>
-						<a href="#">Content server</a> | <a href="#">IOS</a>  | <a href="#">Android</a> | <a href="#">Share</a>
+						<a href="http://www.marchaakhai.mn" target="_blank">Content server</a> | <a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">IOS</a>  | <a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">Android</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.marchaakhai.mn" target="_blank">Share</a>
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@
 					<div class="description">
 						Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
 						<br/>
-						<a href="#">Web </a> | <a href="#">Invest</a> |  <a href="#">Share</a> |  <a href="#">Tweet</a> |  <a href="#">Contribute</a>
+						<a href="http://www.1nicething.net" target="_blank">Web</a> | <a class="openInvest" data-title="1nicething.net">Invest</a> |  <a href="https://twitter.com/intent/tweet?text=http://www.1nicething.net" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.1nicething.net" target="_blank">Share</a> |  <a class="openContribute" data-title="1nicething.net">Contribute</a>
 					</div>
 				</div>
 			</div>
@@ -153,4 +153,113 @@
 		</div>
 	</div>
 </div>
+<div class="ui small modal" id="contribute-modal">
+	<div class="header">Contribute</div>
+	<div class="content">
+		<form class="ui form">
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Send</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
+<div class="ui small modal" id="invest-modal">
+	<div class="header">Invest</div>
+	<div class="content">
+		<form class="ui form">
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Send</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.openContribute').click(function() {
+			var title = $(this).data('title');
+			$('#contribute-modal').modal({
+				onShow : function() {
+					$('#contribute-modal form').submit(function(e) {
+						$(this).find('.submit').addClass('loading disabled');
+					    $.ajax({
+							type: 'POST',
+							url: '{{ url("send/contribute") }}',
+				           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+				           	context: this,
+				           	success: function() {
+				           		$(this).trigger('reset');
+				           		$(this).find('input').trigger('blur');
+								$(this).find('.submit').removeClass('loading disabled');
+								$(this).siblings('.success.message').transition('fade in');
+				       		},
+							error: function(){
+				           		$(this).find('input').trigger('blur');
+								$(this).find('.submit').removeClass('loading disabled');
+								$(this).siblings('.warning.message').transition('fade in');
+							}
+						});
+						e.preventDefault();
+					});
+				}
+			}).modal('show');
+		});
+		$('.openInvest').click(function() {
+			var title = $(this).data('title');
+			$('#invest-modal').modal({
+				onShow : function() {
+					$('#invest-modal form').submit(function(e) {
+						$(this).find('.submit').addClass('loading disabled');
+					    $.ajax({
+							type: 'POST',
+							url: '{{ url("send/invest") }}',
+				           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+				           	context: this,
+				           	success: function() {
+				           		$(this).trigger('reset');
+				           		$(this).find('input').trigger('blur');
+								$(this).find('.submit').removeClass('loading disabled');
+								$(this).siblings('.success.message').transition('fade in');
+				       		},
+							error: function(){
+				           		$(this).find('input').trigger('blur');
+								$(this).find('.submit').removeClass('loading disabled');
+								$(this).siblings('.warning.message').transition('fade in');
+							}
+						});
+						e.preventDefault();
+					});
+				}
+			}).modal('show');
+		});
+	});
+</script>
+@endpush

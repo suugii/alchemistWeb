@@ -28,17 +28,32 @@
 				<p class="ui centered lead"><a href="#">info@alchemist.mn</a></p><br/>
 			</div>
 		</div>
-		<div class="ui centered page grid">
+		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Ажлын байрны мэдээ хүлээн авах</h3> 
-			<div class="ui form eight wide subscribe column">
+			<form class="ui form eight wide subscribe column">
+				{{ csrf_field() }}
 				<div class="field">
-					<div class="ui fluid action input">
-						<input placeholder="Цахим шуудан" type="text">
-						<div class="ui button">Хүлээн авах</div>
+					<div class="ui action input">
+						<input type="email" name="email" placeholder="Цахим шуудан">
+						<button class="ui submit button" type="submit">Хүлээн авах</button>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>  
+		<div class="ui stackable centered page grid" id="invest-status">
+			<div class="eight wide subscribe column">
+				<div class="ui hidden success message">
+					<i class="close icon"></i>
+					<div class="header">Амжилттай</div>
+					<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+				</div>
+				<div class="ui hidden warning message">
+					<i class="close icon"></i>
+					<div class="header">Алдаа</div>
+					<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="ui recent-works vertical segment" id="mentors">
@@ -61,7 +76,6 @@
 						</div>
 						<div class="content">
 							<div class="header">В.Баярсайхан</div>
-							 
 							<div class="description">
 								Манай анхы хөрөнгө оруулагч. Амжилттай энтерпренор. Үүсгэн байгуулагч<br/><br/>
 								Dell EMC менежер
@@ -117,15 +131,29 @@
 				</div>
 				<p class="ui centered lead">Та дараах сайт дахь манай хөрөнгө оруулалтын саналуудтай танилцаарай <a href="https://www.f6s.com/khangaikhurelbaatar">F6s төслүүд.</a></p><br/>
 			</div>
-			<div class="ui centered page grid">
+			<div class="ui stackable centered page grid">
 				<h3 class="subscribe-header">Уулзалт товлох уу?</h3> 
-				<p class="ui centered lead large"></a></p>
-				<div class="ui form eight wide subscribe column">
+				<form class="ui form eight wide subscribe column" id="schedule-meeting">
+					{{ csrf_field() }}
 					<div class="field">
-						<div class="ui fluid action input">
-							<input placeholder="Цахим шуудан" type="text">
-							<div class="ui button">Илгээх</div>
+						<div class="ui action input">
+							<input type="email" name="email" placeholder="Цахим шуудан">
+							<button class="ui submit button" type="submit">Илгээх</button>
 						</div>
+					</div>
+				</form>
+			</div>
+			<div class="ui stackable centered page grid" id="invest-status">
+				<div class="eight wide subscribe column">
+					<div class="ui hidden success message">
+						<i class="close icon"></i>
+						<div class="header">Амжилттай</div>
+						<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+					</div>
+					<div class="ui hidden warning message">
+						<i class="close icon"></i>
+						<div class="header">Алдаа</div>
+						<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
 					</div>
 				</div>
 			</div> 
@@ -133,3 +161,50 @@
 	</div>
 </div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$('#subscribe').submit(function(e) {
+		$(this).find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/contact/subscribe") }}',
+           	data: $(this).serialize(),
+           	context: this,
+           	success: function() {
+           		$(this).trigger('reset');
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#subscribe-status .success.message').transition('fade in');
+       		},
+			error: function(){
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#subscribe-status .warning.message').transition('fade in');
+			}
+		});
+		e.preventDefault();
+	});
+	$('#schedule-meeting').submit(function(e) {
+		$(this).find('.submit').addClass('loading disabled');
+	    $.ajax({
+			type: 'POST',
+			url: '{{ url("send/contact/meeting") }}',
+           	data: $(this).serialize(),
+           	context: this,
+           	success: function() {
+           		$(this).trigger('reset');
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#invest-status .success.message').transition('fade in');
+       		},
+			error: function(){
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#invest-status .warning.message').transition('fade in');
+			}
+		});
+		e.preventDefault();
+	});
+</script>
+@endpush

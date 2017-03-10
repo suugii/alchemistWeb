@@ -8,13 +8,13 @@
 <div class="ui stackable grid relaxed">
 	<div class="four wide column"></div>
 	<div class="four wide column"> 
-		<a href="#" class="large basic inverted animated fade ui button">
+		<a class="large basic inverted animated fade ui button" onclick="$('#request-demo').modal('show')">
 			<div class="visible content">Дэмо авах</div>
 			<div class="hidden content">14 хоног үнэгүй</div>
 		</a>
 	</div>
 	<div class="four wide column">
-		<a href="#" class="large basic inverted animated fade ui button">
+		<a class="large basic inverted animated fade ui button">
 			<div class="visible content">ТАНИЛЦУУЛГА</div>
 			<div class="hidden content">PDF ТАТАХ</div>
 		</a>
@@ -78,18 +78,33 @@
 			</div>
 		</div>
 	</div>
-	<div class="ui centered page grid">
+	<div class="ui stackable centered page grid">
 		<h3 class="subscribe-header">Танд илүү тохирсон систем хайж байна уу?</h3>
 		<p class="ui centered lead large">Тэгвэл та мэдээллээ үлдээгээрэй. Бид танд цогц шийдэл санал болгох болно.</p>
-		<div class="ui form eight wide subscribe column">
+		<form class="ui form eight wide subscribe column" id="custom-pms">
+			{{ csrf_field() }}
 			<div class="field">
-				<div class="ui fluid action input">
-					<input placeholder="Цахим шуудан" type="text">
-					<div class="ui button">Илгээх</div>
+				<div class="ui action input">
+					<input type="email" name="email" placeholder="Цахим шуудан">
+					<button class="ui submit button">Илгээх</button>
 				</div>
 			</div>
+		</form>
+	</div> 
+	<div class="ui stackable centered page grid" id="status">
+		<div class="eight wide subscribe column">
+			<div class="ui hidden success message">
+				<i class="close icon"></i>
+				<div class="header">Амжилттай</div>
+				<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+			</div>
+			<div class="ui hidden warning message">
+				<i class="close icon"></i>
+				<div class="header">Алдаа</div>
+				<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+			</div>
 		</div>
-	</div>       
+	</div>        
 </div>
 
 <div class="ui recent-works vertical segment">
@@ -150,8 +165,8 @@
 							</div>
 						</div>
 						<div class="ui two bottom attached buttons">
-							<div class="ui button">Үнийн санал авах</div>
-							<div class="ui pink button">Уулзалт товлох ?</div>
+							<div class="ui button" onclick="$('#cloud-price').modal('show')">Үнийн санал авах</div>
+							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Уулзалт товлох ?</div>
 						</div>
 					</div>
 				</div>
@@ -210,4 +225,177 @@
 		</div>
 	</div>
 </div>
+<div class="ui small modal" id="request-demo">
+	<div class="header">Request a demo</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Get demo</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
+<div class="ui small modal" id="cloud-price">
+	<div class="header">Үнийн санал авах</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Цахим шуудан" required>
+					<button class="ui submit button" type="submit">Үнийн санал авах</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
+<div class="ui small modal" id="schedule-meeting">
+	<div class="header">Уулзалт товлох</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+				<div class="ui calendar" id="calendar">
+					<div class="ui input left icon">
+						<i class="calendar icon"></i>
+						<input type="text" placeholder="Огноо" required>
+					</div>
+				</div>
+			</div>
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="hidden" name="date">
+					<input type="email" name="email" placeholder="Цахим шуудан" required>
+					<button class="ui submit button" type="submit">Уулзалт товлох</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#calendar').calendar();
+		$('#custom-pms').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/pms/custom") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$('#status .success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$('#status .warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+		$('#request-demo form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/pms/demo") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+		$('#cloud-price form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/pms/cloud/price") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+		$('#schedule-meeting form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/pms/meeting") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+	});
+</script>
+@endpush

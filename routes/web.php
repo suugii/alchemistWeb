@@ -103,5 +103,8 @@ Route::post('send/scs/price', 'SCSController@price');
 Route::post('send/scs/cloud/price', 'SCSController@cloudPrice');
 Route::post('send/scs/meeting', 'SCSController@meeting');
 
-Route::post('send/contact/subscribe', 'ContactController@subscribe');
-Route::post('send/contact/meeting', 'ContactController@meeting');
+Route::post('send/contact/subscribe', 'AppController@subscribe');
+Route::post('send/contact/meeting', 'AppController@meeting');
+
+Route::post('send/contribute', 'AppController@contribute');
+Route::post('send/invest', 'AppController@invest');

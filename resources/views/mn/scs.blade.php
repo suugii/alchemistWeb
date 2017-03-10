@@ -5,16 +5,16 @@
 @section('masthead')
 <h1 class="ui inverted centered header">Зардалын удирдлагын систем 
 	<small style="font-size: 12px">
-		<a href="#">Odoo</a>-р бүтээв
+		<a href="https://www.odoo.com/">Odoo</a>-р бүтээв
 	</small>
 </h1>
 <span class="ui centered lead" style="font-size: 18px">Бүх төрлийн аж ахуйн нэгж болон төрийн өмчит байгууллагуудад зориулсан <br>зардлын удирдлага хяналтын цогц шийдэл.</span>
 <div class="ui stackable grid">
 	<div class="four wide column"></div>
 	<div class="four wide column"> 
-		<a href="#" class="large basic inverted animated fade ui button">
-			<div class="visible content">ДЕМО ҮЗЭХ</div>
-			<div class="hidden content">Уулзалт товлох уу?</div>
+		<a class="large basic inverted animated fade ui button" onclick="$('#request-demo').modal('show')">
+			<div class="visible content">Дэмо авах</div>
+			<div class="hidden content">14 хоног үнэгүй</div>
 		</a>
 	</div>
 	<div class="four wide column">
@@ -31,96 +31,113 @@
 @endsection
 
 @section('content')
-<div class="ui vertical feature segment">
-	<div class="ui centered page grid">
-		<div class="fourteen wide column">
-			<div class="ui three column center aligned stackable divided grid">
-				<div class="column column-feature">
-					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-layers icon"></i>
-						ТӨСВИЙН УДИРДЛАГА
+<form class="ui form" id="price-offer">
+	{{ csrf_field() }}
+	<div class="ui vertical feature segment">
+		<div class="ui centered page grid">
+			<div class="fourteen wide column">
+				<div class="ui three column center aligned stackable divided grid">
+					<div class="column column-feature">
+						<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
+							<i class="flaticon-layers icon"></i>
+							ТӨСВИЙН УДИРДЛАГА
+						</div>
+						<p>Төсөв бүртгэл, <strong>тодотгол</strong> хийж төсвийн гүйцэтгэлийг зардлын төрөл, хэлтэс, алба байгууллагын нэгж тус бүрээр хянаж зохицуулна.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="budget-management" checked>
+							<label>Үндсэн модуль</label>
+						</div>
 					</div>
-					<p>Төсөв бүртгэл, <strong>тодотгол</strong> хийж төсвийн гүйцэтгэлийг зардлын төрөл, хэлтэс, алба байгууллагын нэгж тус бүрээр хянаж зохицуулна.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example" checked>
-						<label>Үндсэн модуль</label>
+					<div class="column column-feature">
+						<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
+							<i class="flaticon-connecting icon"></i>
+							ТӨЛБӨРИЙН УДИРДЛАГА
+						</div>
+						<p>Байгууллагын үйл ажиллагаатай холбоотой <strong>бүх зардлыг бүртгэж</strong>, тэдгээрийг төсөвтэй холбон, төсвийн зарцуулалтыг ажлын урсгалаар дамжуулан хянана.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="payment-management">
+							<label>Үндсэн модуль</label>
+						</div>
 					</div>
-				</div>
-				<div class="column column-feature">
-					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-connecting icon"></i>
-						ТӨЛБӨРИЙН УДИРДЛАГА
-					</div>
-					<p>Байгууллагын үйл ажиллагаатай холбоотой <strong>бүх зардлыг бүртгэж</strong>, тэдгээрийг төсөвтэй холбон, төсвийн зарцуулалтыг ажлын урсгалаар дамжуулан хянана.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Үндсэн модуль</label>
-					</div>
-				</div>
 
 
-				<div class="column column-feature">
-					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-tick icon"></i>
-						ХУДАЛДАН АВАЛТЫН УДИРДЛАГА
-					</div>
-					<p> Худалдан авалтын захиалга түүний төлбөр тооцоо, <strong>захиалга нь бэлтгэн нийлүүлэлт болж агуулахад хүргэгдэн,</strong> анхны захиалагчид ирэх хүртэлх бүх процессийг гүйцэтгэнэ. </p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Үндсэн модуль</label>
-					</div>
-				</div>
-			</div>
-			<div class="ui three column center aligned stackable divided grid">
-				<div class="column column-feature">
-					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-tick icon"></i>
-						ТОМИЛОЛТЫН УДИРДЛАГА
-					</div>
-					<p>Нэг болон түүнээс олон ажилтны томилолтыг бүртгэж, тухайн нэг ажилтан эсвэл <strong>томилолтын багтай холбоотой бүх зардлын тооцоог хийж,</strong> зөвшөөрлийг олгох, тооцоог хаах хүртэлх процессийг гүйцэтгэнэ.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Сонгох модуль</label>
+					<div class="column column-feature">
+						<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
+							<i class="flaticon-tick icon"></i>
+							ХУДАЛДАН АВАЛТЫН УДИРДЛАГА
+						</div>
+						<p> Худалдан авалтын захиалга түүний төлбөр тооцоо, <strong>захиалга нь бэлтгэн нийлүүлэлт болж агуулахад хүргэгдэн,</strong> анхны захиалагчид ирэх хүртэлх бүх процессийг гүйцэтгэнэ. </p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="asset-management">
+							<label>Үндсэн модуль</label>
+						</div>
 					</div>
 				</div>
-				<div class="column column-feature">
-					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-calendar icon"></i>
-						ХӨРӨНГИЙН УДИРДЛАГА
+				<div class="ui three column center aligned stackable divided grid">
+					<div class="column column-feature">
+						<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
+							<i class="flaticon-tick icon"></i>
+							ТОМИЛОЛТЫН УДИРДЛАГА
+						</div>
+						<p>Нэг болон түүнээс олон ажилтны томилолтыг бүртгэж, тухайн нэг ажилтан эсвэл <strong>томилолтын багтай холбоотой бүх зардлын тооцоог хийж,</strong> зөвшөөрлийг олгох, тооцоог хаах хүртэлх процессийг гүйцэтгэнэ.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="business-trip-management">
+							<label>Сонгох модуль</label>
+						</div>
 					</div>
-					<p>Агуулах болон <strong>хөрөнгө, бараа материалын дотоод шилжилт хөдөлгөөн,</strong> орлого, зарлагыг удирдана.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Сонгох модуль</label>
+					<div class="column column-feature">
+						<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
+							<i class="flaticon-calendar icon"></i>
+							ХӨРӨНГИЙН УДИРДЛАГА
+						</div>
+						<p>Агуулах болон <strong>хөрөнгө, бараа материалын дотоод шилжилт хөдөлгөөн,</strong> орлого, зарлагыг удирдана.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="purchase-management">
+							<label>Сонгох модуль</label>
+						</div>
 					</div>
-				</div>
-				 <div class="column column-feature">
-					<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
-						<i class="flaticon-settings icon"></i>
-						ГЭРЭЭНИЙ УДИРДЛАГА
-					</div>
-					<p> Байгууллагын үйл ажиллагаатай холбоотой <strong>тогтмол төлбөр төлөлтийн гэрээг </strong>бүртгэж, гэрээт төлбөр төлөлтийг цаг тухай бүрт хийх боломжийг олгоно.</p>
-					<div class="ui checkbox">
-						<input type="checkbox" name="example">
-						<label>Сонгох модуль</label>
+					 <div class="column column-feature">
+						<div class="ui icon header" style="font-family: 'Roboto Condensed', sans-serif;">
+							<i class="flaticon-settings icon"></i>
+							ГЭРЭЭНИЙ УДИРДЛАГА
+						</div>
+						<p> Байгууллагын үйл ажиллагаатай холбоотой <strong>тогтмол төлбөр төлөлтийн гэрээг </strong>бүртгэж, гэрээт төлбөр төлөлтийг цаг тухай бүрт хийх боломжийг олгоно.</p>
+						<div class="ui checkbox">
+							<input type="checkbox" name="onsite">
+							<label>Сонгох модуль</label>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="ui stackable centered page grid">
+			<h3 class="subscribe-header">Үнийн санал авах</h3> 
+			<p class="ui centered lead large">Та дээрх модулиудаас өөрийн хүссэн модулиа сонгоод цахим шуудангаа үлдээгээрэй.</p>
+			<div class="eight wide subscribe column">
+				<div class="field">
+					<div class="ui action input">
+						<input type="email" name="email" placeholder="Цахим шуудан" required>
+						<button class="ui submit button" type="submit">Илгээх</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui stackable centered page grid" id="status">
+			<div class="eight wide subscribe column">
+				<div class="ui hidden success message">
+					<i class="close icon"></i>
+					<div class="header">Амжилттай</div>
+					<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+				</div>
+				<div class="ui hidden warning message">
+					<i class="close icon"></i>
+					<div class="header">Алдаа</div>
+					<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+				</div>
+			</div>
+		</div>      
 	</div>
-	<div class="ui centered page grid">
-		<h3 class="subscribe-header">Үнийн санал авах</h3> 
-		<p class="ui centered lead large">Та дээрх модулиудаас өөрийн хүссэн модулиа сонгоод цахим шуудангаа үлдээгээрэй.</p>
-		<div class="ui form eight wide subscribe column">
-			<div class="field">
-				<div class="ui fluid action input">
-					<input placeholder="Цахим шуудан" type="text">
-					<div class="ui button">Илгээх</div>
-				</div>
-			</div>
-		</div>
-	</div>       
-</div>
+</form>
 <div class="ui recent-works vertical segment">
 	<div class="ui very relaxed stackable centered page grid">
 		<div class="row">
@@ -171,8 +188,8 @@
 							</div>
 						</div>
 						<div class="ui two bottom attached buttons">
-							<div class="ui button">Холбогдох</div>
-							<div class="ui pink button">Уулзах</div>
+							<div class="ui button" onclick="$('#cloud-price').modal('show')">Үнийн санал авах</div>
+							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Уулзалт товлох</div>
 						</div>
 					</div>
 				</div>
@@ -234,4 +251,177 @@
 		</div>
 	</div>
 </div>
+<div class="ui small modal" id="request-demo">
+	<div class="header">Демо авах</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Email" required>
+					<button class="ui submit button" type="submit">Демо авах</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
+<div class="ui small modal" id="cloud-price">
+	<div class="header">Үнийн санал авах</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="email" name="email" placeholder="Цахим шуудан" required>
+					<button class="ui submit button" type="submit">Үнийн санал авах</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
+<div class="ui small modal" id="schedule-meeting">
+	<div class="header">Уулзалт товлох</div>
+	<div class="content">
+		<form class="ui form">
+			{{ csrf_field() }}
+			<div class="field">
+				<div class="ui calendar" id="calendar">
+					<div class="ui input left icon">
+						<i class="calendar icon"></i>
+						<input type="text" placeholder="Огноо" required>
+					</div>
+				</div>
+			</div>
+			<div class="field">
+ 				<div class="ui action input">
+					<input type="hidden" name="date">
+					<input type="email" name="email" placeholder="Цахим шуудан" required>
+					<button class="ui submit button" type="submit">Schedule</button>
+				</div>
+			</div>
+		</form>
+		<div class="ui hidden success message">
+			<i class="close icon"></i>
+			<div class="header">Амжилттай</div>
+			<p>Бид таны цахим шуудан руу хариу илгээх болно.</p>
+		</div>
+		<div class="ui hidden warning message">
+			<i class="close icon"></i>
+			<div class="header">Алдаа</div>
+			<p>Алдаа гарлаа. Та дахин оролдоно уу!</p>
+		</div>
+	</div>
+</div>
 @endsection
+
+@push('script')
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#calendar').calendar();
+		$('#price-offer').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/price") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$('#status .success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$('#status .warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+		$('#request-demo form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/demo") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+		$('#cloud-price form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/cloud/price") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+		$('#schedule-meeting form').submit(function(e) {
+			$(this).find('.submit').addClass('loading disabled');
+		    $.ajax({
+				type: 'POST',
+				url: '{{ url("send/scs/meeting") }}',
+	           	data: $(this).serialize(),
+	           	context: this,
+	           	success: function() {
+	           		$(this).trigger('reset');
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.success.message').transition('fade in');
+	       		},
+				error: function(){
+	           		$(this).find('input').trigger('blur');
+					$(this).find('.submit').removeClass('loading disabled');
+					$(this).siblings('.warning.message').transition('fade in');
+				}
+			});
+			e.preventDefault();
+		});
+	});
+</script>
+@endpush

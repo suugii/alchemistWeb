@@ -24,6 +24,9 @@ $(document).ready(function() {
 	});
 	$('.ui.sidebar').sidebar('attach events', '.toc.item');
 	$('.ui.checkbox').checkbox();
+	$('.message .close').on('click', function() {
+		$(this).closest('.message').transition('fade out');
+	});
 	$('.ui.list').list();
 
 	setInterval(changeSides, 3000);

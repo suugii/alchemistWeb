@@ -33,12 +33,26 @@
 			<form class="ui form eight wide subscribe column" id="subscribe">
 				{{ csrf_field() }}
 				<div class="field">
-					<div class="ui fluid action input">
+					<div class="ui action input">
 						<input type="email" name="email" placeholder="Email">
-						<div class="ui submit button">Subscribe</div>
+						<button class="ui submit button" type="submit">Subscribe</button>
 					</div>
 				</div>
 			</form>
+		</div>
+		<div class="ui stackable centered page grid" id="subscribe-status">
+			<div class="eight wide subscribe column">
+				<div class="ui hidden success message">
+					<i class="close icon"></i>
+					<div class="header">Successfully</div>
+					<p>We will send you onsite installation price offer</p>
+				</div>
+				<div class="ui hidden warning message">
+					<i class="close icon"></i>
+					<div class="header">Error</div>
+					<p>Error occured. Please try again.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -121,13 +135,27 @@
 				<form class="ui form eight wide subscribe column" id="schedule-meeting">
 					{{ csrf_field() }}
 					<div class="field">
-						<div class="ui fluid action input">
+						<div class="ui action input">
 							<input type="email" name="email" placeholder="Email">
-							<div class="ui submit button">Send</div>
+							<button class="ui submit button" type="Submit">Send</button>
 						</div>
 					</div>
 				</form>
 			</div> 
+			<div class="ui stackable centered page grid" id="invest-status">
+				<div class="eight wide subscribe column">
+					<div class="ui hidden success message">
+						<i class="close icon"></i>
+						<div class="header">Successfully</div>
+						<p>We will send you onsite installation price offer</p>
+					</div>
+					<div class="ui hidden warning message">
+						<i class="close icon"></i>
+						<div class="header">Error</div>
+						<p>Error occured. Please try again.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -135,33 +163,47 @@
 
 @push('script')
 <script type="text/javascript">
-	$("#subscribe").find('.submit').click(function() {
-		$('#subscribe').find('.submit').addClass('loading disabled');
+	$('#subscribe').submit(function(e) {
+		$(this).find('.submit').addClass('loading disabled');
 	    $.ajax({
 			type: 'POST',
 			url: '{{ url("send/contact/subscribe") }}',
-           	data: $('#subscribe').serialize(),
+           	data: $(this).serialize(),
+           	context: this,
            	success: function() {
-				$('#subscribe').find('.submit').removeClass('loading disabled');
+           		$(this).trigger('reset');
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#subscribe-status .success.message').transition('fade in');
        		},
 			error: function(){
-				$('#subscribe').find('.submit').removeClass('loading disabled');
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#subscribe-status .warning.message').transition('fade in');
 			}
 		});
+		e.preventDefault();
 	});
-	$("#schedule-meeting").find('.submit').click(function() {
-		$('#schedule-meeting').find('.submit').addClass('loading disabled');
+	$('#schedule-meeting').submit(function(e) {
+		$(this).find('.submit').addClass('loading disabled');
 	    $.ajax({
 			type: 'POST',
 			url: '{{ url("send/contact/meeting") }}',
-           	data: $('#schedule-meeting').serialize(),
+           	data: $(this).serialize(),
+           	context: this,
            	success: function() {
-				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+           		$(this).trigger('reset');
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#invest-status .success.message').transition('fade in');
        		},
 			error: function(){
-				$('#schedule-meeting').find('.submit').removeClass('loading disabled');
+           		$(this).find('input').trigger('blur');
+				$(this).find('.submit').removeClass('loading disabled');
+				$('#invest-status .warning.message').transition('fade in');
 			}
 		});
+		e.preventDefault();
 	});
 </script>
 @endpush
