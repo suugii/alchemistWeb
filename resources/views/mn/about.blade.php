@@ -164,47 +164,76 @@
 
 @push('script')
 <script type="text/javascript">
-	$('#subscribe').submit(function(e) {
-		$(this).find('.submit').addClass('loading disabled');
-	    $.ajax({
-			type: 'POST',
-			url: '{{ url("send/contact/subscribe") }}',
-           	data: $(this).serialize(),
-           	context: this,
-           	success: function() {
-           		$(this).trigger('reset');
-           		$(this).find('input').trigger('blur');
-				$(this).find('.submit').removeClass('loading disabled');
-				$('#subscribe-status .success.message').transition('fade in');
-       		},
-			error: function(){
-           		$(this).find('input').trigger('blur');
-				$(this).find('.submit').removeClass('loading disabled');
-				$('#subscribe-status .warning.message').transition('fade in');
+	$(document).ready(function() {
+		var validationRules = {
+			email: {
+	            identifier  : 'email',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please enter an email'
+	                },
+	                {
+	                    type   : 'email',
+	                    prompt : 'Please enter a valid email'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Too Long'
+	                }
+	            ]
+	        },
+		};
+		$('#subscribe').submit(function(e) {
+			e.preventDefault();
+		}).form(validationRules, {
+			inline: true,
+			onSuccess: function() {
+				$(this).find('.submit').addClass('loading disabled');
+			    $.ajax({
+					type: 'POST',
+					url: '{{ url("send/contact/subscribe") }}',
+		           	data: $(this).serialize(),
+		           	context: this,
+		           	success: function() {
+		           		$(this).trigger('reset');
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$('#subscribe-status .success.message').transition('fade in');
+		       		},
+					error: function(){
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$('#subscribe-status .warning.message').transition('fade in');
+					}
+				});
 			}
 		});
-		e.preventDefault();
-	});
-	$('#schedule-meeting').submit(function(e) {
-		$(this).find('.submit').addClass('loading disabled');
-	    $.ajax({
-			type: 'POST',
-			url: '{{ url("send/contact/meeting") }}',
-           	data: $(this).serialize(),
-           	context: this,
-           	success: function() {
-           		$(this).trigger('reset');
-           		$(this).find('input').trigger('blur');
-				$(this).find('.submit').removeClass('loading disabled');
-				$('#invest-status .success.message').transition('fade in');
-       		},
-			error: function(){
-           		$(this).find('input').trigger('blur');
-				$(this).find('.submit').removeClass('loading disabled');
-				$('#invest-status .warning.message').transition('fade in');
+		$('#schedule-meeting').submit(function(e) {
+			e.preventDefault();
+		}).form(validationRules, {
+			inline: true,
+			onSuccess: function() {
+				$(this).find('.submit').addClass('loading disabled');
+			    $.ajax({
+					type: 'POST',
+					url: '{{ url("send/contact/meeting") }}',
+		           	data: $(this).serialize(),
+		           	context: this,
+		           	success: function() {
+		           		$(this).trigger('reset');
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$('#invest-status .success.message').transition('fade in');
+		       		},
+					error: function(){
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$('#invest-status .warning.message').transition('fade in');
+					}
+				});
 			}
 		});
-		e.preventDefault();
 	});
 </script>
 @endpush

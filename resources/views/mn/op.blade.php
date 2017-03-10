@@ -204,30 +204,53 @@
 @push('script')
 <script type="text/javascript">
 	$(document).ready(function() {
+		var validationRules = {
+			email: {
+	            identifier  : 'email',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please enter an email'
+	                },
+	                {
+	                    type   : 'email',
+	                    prompt : 'Please enter a valid email'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Too Long'
+	                }
+	            ]
+	        },
+		};
 		$('.openContribute').click(function() {
 			var title = $(this).data('title');
 			$('#contribute-modal').modal({
 				onShow : function() {
 					$('#contribute-modal form').submit(function(e) {
-						$(this).find('.submit').addClass('loading disabled');
-					    $.ajax({
-							type: 'POST',
-							url: '{{ url("send/contribute") }}',
-				           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
-				           	context: this,
-				           	success: function() {
-				           		$(this).trigger('reset');
-				           		$(this).find('input').trigger('blur');
-								$(this).find('.submit').removeClass('loading disabled');
-								$(this).siblings('.success.message').transition('fade in');
-				       		},
-							error: function(){
-				           		$(this).find('input').trigger('blur');
-								$(this).find('.submit').removeClass('loading disabled');
-								$(this).siblings('.warning.message').transition('fade in');
-							}
-						});
 						e.preventDefault();
+					}).form(validationRules, {
+						inline: true,
+						onSuccess: function() {
+							$(this).find('.submit').addClass('loading disabled');
+						    $.ajax({
+								type: 'POST',
+								url: '{{ url("send/contribute") }}',
+					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+					           	context: this,
+					           	success: function() {
+					           		$(this).trigger('reset');
+					           		$(this).find('input').trigger('blur');
+									$(this).find('.submit').removeClass('loading disabled');
+									$(this).siblings('.success.message').transition('fade in');
+					       		},
+								error: function(){
+					           		$(this).find('input').trigger('blur');
+									$(this).find('.submit').removeClass('loading disabled');
+									$(this).siblings('.warning.message').transition('fade in');
+								}
+							});
+						}
 					});
 				}
 			}).modal('show');
@@ -237,25 +260,29 @@
 			$('#invest-modal').modal({
 				onShow : function() {
 					$('#invest-modal form').submit(function(e) {
-						$(this).find('.submit').addClass('loading disabled');
-					    $.ajax({
-							type: 'POST',
-							url: '{{ url("send/invest") }}',
-				           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
-				           	context: this,
-				           	success: function() {
-				           		$(this).trigger('reset');
-				           		$(this).find('input').trigger('blur');
-								$(this).find('.submit').removeClass('loading disabled');
-								$(this).siblings('.success.message').transition('fade in');
-				       		},
-							error: function(){
-				           		$(this).find('input').trigger('blur');
-								$(this).find('.submit').removeClass('loading disabled');
-								$(this).siblings('.warning.message').transition('fade in');
-							}
-						});
 						e.preventDefault();
+					}).form(validationRules, {
+						inline: true,
+						onSuccess: function() {
+							$(this).find('.submit').addClass('loading disabled');
+						    $.ajax({
+								type: 'POST',
+								url: '{{ url("send/invest") }}',
+					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+					           	context: this,
+					           	success: function() {
+					           		$(this).trigger('reset');
+					           		$(this).find('input').trigger('blur');
+									$(this).find('.submit').removeClass('loading disabled');
+									$(this).siblings('.success.message').transition('fade in');
+					       		},
+								error: function(){
+					           		$(this).find('input').trigger('blur');
+									$(this).find('.submit').removeClass('loading disabled');
+									$(this).siblings('.warning.message').transition('fade in');
+								}
+							});
+						}
 					});
 				}
 			}).modal('show');

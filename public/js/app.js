@@ -28,7 +28,6 @@ $(document).ready(function() {
 		$(this).closest('.message').transition('fade out');
 	});
 	$('.ui.list').list();
-
 	setInterval(changeSides, 3000);
 });
 

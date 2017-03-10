@@ -321,90 +321,134 @@
 @push('script')
 <script type="text/javascript">
 	$(document).ready(function() {
+		var validationRules = {
+			email: {
+	            identifier  : 'email',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please enter an email'
+	                },
+	                {
+	                    type   : 'email',
+	                    prompt : 'Please enter a valid email'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Too Long'
+	                }
+	            ]
+	        },
+	        date: {
+	            identifier  : 'datepicker',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please pick a date'
+	                }
+	            ]
+	        }
+		};
 		$('#calendar').calendar();
 		$('#custom-pms').submit(function(e) {
-			$(this).find('.submit').addClass('loading disabled');
-		    $.ajax({
-				type: 'POST',
-				url: '{{ url("send/pms/custom") }}',
-	           	data: $(this).serialize(),
-	           	context: this,
-	           	success: function() {
-	           		$(this).trigger('reset');
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$('#status .success.message').transition('fade in');
-	       		},
-				error: function(){
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$('#status .warning.message').transition('fade in');
-				}
-			});
 			e.preventDefault();
+		}).form(validationRules, {
+			inline: true,
+			onSuccess: function() {
+				$(this).find('.submit').addClass('loading disabled');
+			    $.ajax({
+					type: 'POST',
+					url: '{{ url("send/pms/custom") }}',
+		           	data: $(this).serialize(),
+		           	context: this,
+		           	success: function() {
+		           		$(this).trigger('reset');
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$('#status .success.message').transition('fade in');
+		       		},
+					error: function(){
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$('#status .warning.message').transition('fade in');
+					}
+				});
+			}
 		});
 		$('#request-demo form').submit(function(e) {
-			$(this).find('.submit').addClass('loading disabled');
-		    $.ajax({
-				type: 'POST',
-				url: '{{ url("send/pms/demo") }}',
-	           	data: $(this).serialize(),
-	           	context: this,
-	           	success: function() {
-	           		$(this).trigger('reset');
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$(this).siblings('.success.message').transition('fade in');
-	       		},
-				error: function(){
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$(this).siblings('.warning.message').transition('fade in');
-				}
-			});
 			e.preventDefault();
+		}).form(validationRules, {
+			inline: true,
+			onSuccess: function() {
+				$(this).find('.submit').addClass('loading disabled');
+			    $.ajax({
+					type: 'POST',
+					url: '{{ url("send/pms/demo") }}',
+		           	data: $(this).serialize(),
+		           	context: this,
+		           	success: function() {
+		           		$(this).trigger('reset');
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$(this).siblings('.success.message').transition('fade in');
+		       		},
+					error: function(){
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$(this).siblings('.warning.message').transition('fade in');
+					}
+				});
+			}
 		});
 		$('#cloud-price form').submit(function(e) {
-			$(this).find('.submit').addClass('loading disabled');
-		    $.ajax({
-				type: 'POST',
-				url: '{{ url("send/pms/cloud/price") }}',
-	           	data: $(this).serialize(),
-	           	context: this,
-	           	success: function() {
-	           		$(this).trigger('reset');
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$(this).siblings('.success.message').transition('fade in');
-	       		},
-				error: function(){
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$(this).siblings('.warning.message').transition('fade in');
-				}
-			});
 			e.preventDefault();
+		}).form(validationRules, {
+			inline: true,
+			onSuccess: function() {
+				$(this).find('.submit').addClass('loading disabled');
+			    $.ajax({
+					type: 'POST',
+					url: '{{ url("send/pms/cloud/price") }}',
+		           	data: $(this).serialize(),
+		           	context: this,
+		           	success: function() {
+		           		$(this).trigger('reset');
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$(this).siblings('.success.message').transition('fade in');
+		       		},
+					error: function(){
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$(this).siblings('.warning.message').transition('fade in');
+					}
+				});
+			}
 		});
 		$('#schedule-meeting form').submit(function(e) {
-			$(this).find('.submit').addClass('loading disabled');
-		    $.ajax({
-				type: 'POST',
-				url: '{{ url("send/pms/meeting") }}',
-	           	data: $(this).serialize(),
-	           	context: this,
-	           	success: function() {
-	           		$(this).trigger('reset');
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$(this).siblings('.success.message').transition('fade in');
-	       		},
-				error: function(){
-	           		$(this).find('input').trigger('blur');
-					$(this).find('.submit').removeClass('loading disabled');
-					$(this).siblings('.warning.message').transition('fade in');
-				}
-			});
 			e.preventDefault();
+		}).form(validationRules, {
+			inline: true,
+			onSuccess: function() {
+				$(this).find('.submit').addClass('loading disabled');
+			    $.ajax({
+					type: 'POST',
+					url: '{{ url("send/pms/meeting") }}',
+		           	data: $(this).serialize(),
+		           	context: this,
+		           	success: function() {
+		           		$(this).trigger('reset');
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$(this).siblings('.success.message').transition('fade in');
+		       		},
+					error: function(){
+		           		$(this).find('input').trigger('blur');
+						$(this).find('.submit').removeClass('loading disabled');
+						$(this).siblings('.warning.message').transition('fade in');
+					}
+				});
+			}
 		});
 	});
 </script>
