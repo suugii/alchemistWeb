@@ -25,8 +25,8 @@
 	</div>
 	<div class="four wide column"></div>
 </div>
- <div class="ui centerted image">
-	<p><img src="{{ asset('img/banner3.png') }}" /></p>
+<div class="videoWrapper">
+	<iframe width="1280" height="720" src="https://www.youtube.com/embed/8nl4hRo7BZw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 @endsection
 

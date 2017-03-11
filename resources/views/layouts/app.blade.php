@@ -22,19 +22,19 @@
 					<a class="logo item" href="{{ url('/') }}">
 						Alchemist
 					</a>
-					<a class="item active" href="{{ url('/') }}">
+					<a class="item {{ (Request::is('/') ? 'active' : '') }}" href="{{ url('/') }}">
 						{{ trans('messages.crm') }}
 					</a>
-					<a class="item" href="{{ url('pms') }}">
+					<a class="item {{ (Request::is('pms') ? 'active' : '') }}" href="{{ url('pms') }}">
 						{{ trans('messages.pms') }}
 					</a>
-					<a class="item" href="{{ url('eprocurement') }}">
+					<a class="item {{ (Request::is('scs') ? 'active' : '') }}" href="{{ url('scs') }}">
 						{{ trans('messages.spend control & eprocurement') }}
 					</a>
-					<a class="item" href="{{ url('projects') }}">
+					<a class="item {{ (Request::is('projects') ? 'active' : '') }}" href="{{ url('projects') }}">
 						{{ trans('messages.other projects') }}
 					</a>
-					<a class="item">
+					<a class="item" href="http://nomadicbeargames.com">
 						{{ trans('messages.nomadic bear games') }}
 					</a>
 					<div class="right menu">

@@ -36,7 +36,7 @@ Route::group(['middleware' => 'locale'], function () {
         	return view('mn.pms');
 		}
     });
-    Route::get('eprocurement', function () {
+    Route::get('scs', function () {
 		$locale = Config::get('app.locale');
 	    if (Session::has('locale')) {
 	        $locale = Session::get('locale');

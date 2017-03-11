@@ -3,25 +3,25 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-	<h1 class="ui inverted centered center aligned header">Customer relationship management 
-		<small style="font-size: 12px">powered by 
-			<a href="#">Alchemist Platfrom & vTiger Frontend</a>
-		</small>
-	</h1><br/>
-	<span class="ui centered lead" style="font-size: 18px">Customized for mid-sized <strong>retail</strong> companies<br/> to document, controll and manage their sales, purchases and warehouses</span>
-	<div class="ui grid stackable centered center aligned">
-		<div class="three wide column"></div>
-		<div class="three wide column"> 
-			<a class="large basic inverted animated fade ui button" onclick="$('#schedule-meeting').modal('show')">
-				<div class="visible content">REQUEST A DEMO</div>
-				<div class="hidden content">Make appoinment?</div>
-			</a>
-		</div>
-		<div class="three wide column"></div>
+<h1 class="ui inverted centered center aligned header">Customer relationship management 
+	<small style="font-size: 12px">powered by 
+		<a href="#">Alchemist Platfrom & vTiger Frontend</a>
+	</small>
+</h1><br/>
+<span class="ui centered lead" style="font-size: 18px">Customized for mid-sized <strong>retail</strong> companies<br/> to document, controll and manage their sales, purchases and warehouses</span>
+<div class="ui grid stackable centered center aligned">
+	<div class="three wide column"></div>
+	<div class="three wide column"> 
+		<a class="large basic inverted animated fade ui button" onclick="$('#schedule-meeting').modal('show')">
+			<div class="visible content">REQUEST A DEMO</div>
+			<div class="hidden content">Make appoinment?</div>
+		</a>
 	</div>
-	<div class="ui centerted image device only">
-		<p><img src="{{ asset('img/banner2.png') }}"/></p>
-	</div>
+	<div class="three wide column"></div>
+</div>
+<div class="videoWrapper">
+	<iframe width="1280" height="720" src="https://www.youtube.com/embed/8nl4hRo7BZw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 @endsection
 
 @section('content')

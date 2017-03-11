@@ -117,7 +117,7 @@
 					<img src="{{ asset('img/marchaakhai.jpg') }}"/>
 				</div>
 				<div class="content">
-					<div class="header">Marchaakhia.mn</div>
+					<div class="header">Marchaakhai.mn</div>
 					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 					<div class="description">
 						Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
