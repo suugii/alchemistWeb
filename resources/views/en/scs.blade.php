@@ -25,8 +25,26 @@
 	</div>
 	<div class="four wide column"></div>
 </div>
-<div class="videoWrapper">
-	<iframe width="1280" height="720" src="https://www.youtube.com/embed/8nl4hRo7BZw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+@endsection
+
+@section('slider')
+<div class="containerSlide">
+	<ul id="slider" class="cS-hidden">
+		<li>
+			<img src="{{ asset('img/scs-1.png') }}"/>
+		</li>
+		<li>
+			<img src="{{ asset('img/scs-2.png') }}"/>
+		</li>
+		<li>
+			<img src="{{ asset('img/scs-3.png') }}"/>
+		</li>
+		<li>
+			<div class="videoWrapper">
+				<iframe id="ytplayer" width="1280" height="720" src="https://www.youtube.com/embed/8nl4hRo7BZw?enablejsapi=1&version=3&rel=0&controls=0&showinfo=0" frameborder="0"></iframe>
+			</div>
+		</li>
+	</ul>
 </div>
 @endsection
 
@@ -114,7 +132,7 @@
 			<div class="eight wide subscribe column">
 				<div class="field">
 					<div class="ui action input">
-						<input type="text" name="email" placeholder="Email" required>
+						<input type="text" name="email" placeholder="Email">
 						<button class="ui submit button" type="submit">Get price offer</button>
 					</div>
 				</div>
@@ -279,7 +297,7 @@
 			{{ csrf_field() }}
 			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Email" required>
+					<input type="email" name="email" placeholder="Email">
 					<button class="ui submit button" type="submit">Get price offer</button>
 				</div>
 			</div>
@@ -305,14 +323,17 @@
 				<div class="ui calendar" id="calendar">
 					<div class="ui input left icon">
 						<i class="calendar icon"></i>
-						<input type="text" placeholder="Date" required>
+						<input type="text" name="datepicker" placeholder="Date">
 					</div>
 				</div>
 			</div>
+			<input type="hidden" name="date">
+			<div class="field">
+				<input type="email" name="email" placeholder="Email">
+			</div>
 			<div class="field">
  				<div class="ui action input">
-					<input type="hidden" name="date">
-					<input type="email" name="email" placeholder="Email" required>
+					<input type="number" name="phone" placeholder="Phone">
 					<button class="ui submit button" type="submit">Schedule</button>
 				</div>
 			</div>
@@ -352,6 +373,19 @@
 	                }
 	            ]
 	        },
+			phone: {
+	            identifier  : 'phone',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please enter a phone number'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Too Long'
+	                }
+	            ]
+	        },
 	        date: {
 	            identifier  : 'datepicker',
 	            rules: [
@@ -362,7 +396,9 @@
 	            ]
 	        }
 		};
-		$('#calendar').calendar();
+		$('#calendar').calendar({
+			type: 'date'
+		});
 		$('#price-offer').submit(function(e) {
 			e.preventDefault();
 		}).form(validationRules, {

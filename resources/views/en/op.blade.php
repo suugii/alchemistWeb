@@ -169,8 +169,15 @@
 	<div class="content">
 		<form class="ui form">
 			<div class="field">
+				<select name="type" class="ui fluid dropdown">
+					<option value="">Select type</option>
+					<option value="coding">Coding</option>
+					<option value="designing">Designing</option>
+				</select>
+			</div>
+			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Email" required>
+					<input type="email" name="email" placeholder="Email">
 					<button class="ui submit button" type="submit">Send</button>
 				</div>
 			</div>
@@ -192,8 +199,11 @@
 	<div class="content">
 		<form class="ui form">
 			<div class="field">
+				<input type="email" name="email" placeholder="Email">
+			</div>
+			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Email" required>
+					<input type="number" name="phone" placeholder="Phone">
 					<button class="ui submit button" type="submit">Send</button>
 				</div>
 			</div>
@@ -233,6 +243,28 @@
 	                }
 	            ]
 	        },
+			phone: {
+	            identifier  : 'phone',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please enter a phone number'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Too Long'
+	                }
+	            ]
+	        },
+			type: {
+	            identifier  : 'type',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Please select a type'
+	                }
+	            ]
+	        },
 		};
 		$('.openContribute').click(function() {
 			var title = $(this).data('title');
@@ -247,7 +279,7 @@
 						    $.ajax({
 								type: 'POST',
 								url: '{{ url("send/contribute") }}',
-					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+					           	data: {_token: '{{ csrf_token() }}', type: $(this).find('select[name=type]').val(), email: $(this).find('input[name=email]').val(), title: title},
 					           	context: this,
 					           	success: function() {
 					           		$(this).trigger('reset');
@@ -279,7 +311,7 @@
 						    $.ajax({
 								type: 'POST',
 								url: '{{ url("send/invest") }}',
-					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), phone: $(this).find('input[name=phone]').val(), title: title},
 					           	context: this,
 					           	success: function() {
 					           		$(this).trigger('reset');

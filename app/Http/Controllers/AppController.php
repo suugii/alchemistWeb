@@ -40,6 +40,7 @@ class AppController extends Controller
 
 	public function contribute(Request $request) {
 		$options = [];
+		$options[] = $request->get('type');
 		$email = $request->get('email');
 		$title = $request->get('title');
 
@@ -60,6 +61,7 @@ class AppController extends Controller
 
 	public function invest(Request $request) {
 		$options = [];
+		$options[] = $request->get('phone');
 		$email = $request->get('email');
 		$title = $request->get('title');
 

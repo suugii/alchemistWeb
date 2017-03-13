@@ -171,15 +171,15 @@
 	            rules: [
 	                {
 	                    type   : 'empty',
-	                    prompt : 'Please enter an email'
+	                    prompt : 'Цахим шуудан оруулна уу'
 	                },
 	                {
 	                    type   : 'email',
-	                    prompt : 'Please enter a valid email'
+	                    prompt : 'Цахим шуудан оруулна уу'
 	                },
 	                {
 	                    type   : 'maxLength[191]',
-	                    prompt : 'Too Long'
+	                    prompt : 'Хэт урт тэмдэгт оруулсан байна'
 	                }
 	            ]
 	        },

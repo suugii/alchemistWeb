@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/flaticon.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/lightslider.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/flexslider.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 	<title>@yield('title')</title>
 </head>
@@ -34,7 +36,7 @@
 					<a class="item {{ (Request::is('projects') ? 'active' : '') }}" href="{{ url('projects') }}">
 						{{ trans('messages.other projects') }}
 					</a>
-					<a class="item" href="http://nomadicbeargames.com">
+					<a class="item" href="http://nomadicbeargames.com" target="_blank">
 						{{ trans('messages.nomadic bear games') }}
 					</a>
 					<div class="right menu">
@@ -49,6 +51,9 @@
 				<div class="ui hidden transition information">
 					@yield('masthead')
 				</div>
+				<div class="slider">
+					@yield('slider')
+				</div>
 			</div>
 		</div>
 	</div>
@@ -56,6 +61,7 @@
 	@include('partials.footer')
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
 	<script src="{{ asset('js/calendar.min.js') }}"></script>
+	<script src="{{ asset('js/lightslider.min.js') }}"></script>
 	<script src="{{ asset('js/semantic.min.js') }}"></script>
 	<script src="{{ asset('js/app.js') }}"></script>
 	@stack('script')

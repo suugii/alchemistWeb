@@ -258,7 +258,7 @@
 			{{ csrf_field() }}
 			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Email" required>
+					<input type="email" name="email" placeholder="Email">
 					<button class="ui submit button" type="submit">Демо авах</button>
 				</div>
 			</div>
@@ -282,7 +282,7 @@
 			{{ csrf_field() }}
 			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Цахим шуудан" required>
+					<input type="email" name="email" placeholder="Цахим шуудан">
 					<button class="ui submit button" type="submit">Үнийн санал авах</button>
 				</div>
 			</div>
@@ -308,14 +308,17 @@
 				<div class="ui calendar" id="calendar">
 					<div class="ui input left icon">
 						<i class="calendar icon"></i>
-						<input type="text" placeholder="Огноо" required>
+						<input type="text" name="datepicker" placeholder="Огноо">
 					</div>
 				</div>
 			</div>
+			<input type="hidden" name="date">
+			<div class="field">
+				<input type="email" name="email" placeholder="Цахим шуудан">
+			</div>
 			<div class="field">
  				<div class="ui action input">
-					<input type="hidden" name="date">
-					<input type="email" name="email" placeholder="Цахим шуудан" required>
+					<input type="number" name="phone" placeholder="Утасны дугаар">
 					<button class="ui submit button" type="submit">Schedule</button>
 				</div>
 			</div>
@@ -333,6 +336,8 @@
 	</div>
 </div>
 @endsection
+
+@push('script')
 <script type="text/javascript">
 	$(document).ready(function() {
 		var validationRules = {
@@ -341,15 +346,28 @@
 	            rules: [
 	                {
 	                    type   : 'empty',
-	                    prompt : 'Please enter an email'
+	                    prompt : 'Цахим шуудан оруулна уу'
 	                },
 	                {
 	                    type   : 'email',
-	                    prompt : 'Please enter a valid email'
+	                    prompt : 'Цахим шуудан оруулна уу'
 	                },
 	                {
 	                    type   : 'maxLength[191]',
-	                    prompt : 'Too Long'
+	                    prompt : 'Хэт урт тэмдэгт оруулсан байна'
+	                }
+	            ]
+	        },
+			phone: {
+	            identifier  : 'phone',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Утасны дугаар оруулна уу'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Хэт урт тэмдэгт оруулсан байна'
 	                }
 	            ]
 	        },
@@ -358,12 +376,14 @@
 	            rules: [
 	                {
 	                    type   : 'empty',
-	                    prompt : 'Please pick a date'
+	                    prompt : 'Огноо сонгоно уу'
 	                }
 	            ]
 	        }
 		};
-		$('#calendar').calendar();
+		$('#calendar').calendar({
+			type: 'date'
+		});
 		$('#price-offer').submit(function(e) {
 			e.preventDefault();
 		}).form(validationRules, {

@@ -84,6 +84,7 @@ class SCSController extends Controller
 	public function meeting(Request $request) {
 		$options = [];
 		$options[] = $request->get('date'); 
+		$options[] = $request->get('phone');
 		$email = $request->get('email');
 
 	    Mail::send('email.email', [

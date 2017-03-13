@@ -33,7 +33,7 @@
 				<addr>
 					<p>"{{ trans('messages.dream it & then do it') }}"</p>
 					<p>+976-88021087<br/>
-						<a href="#">info@alchemist.mn</a><br/>
+						<a>info@alchemist.mn</a><br/>
 						<a href="http://w3w.co/contrived.domain.smart">contrived.domain.smart</a>
 					</p>
 				</addr>

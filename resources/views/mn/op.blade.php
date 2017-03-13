@@ -158,9 +158,16 @@
 	<div class="content">
 		<form class="ui form">
 			<div class="field">
+				<select name="type" class="ui fluid dropdown">
+					<option value="">Төрөл сонгоно уу</option>
+					<option value="coding">Coding</option>
+					<option value="designing">Designing</option>
+				</select>
+			</div>
+			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Email" required>
-					<button class="ui submit button" type="submit">Send</button>
+					<input type="email" name="email" placeholder="Цахим шуудан">
+					<button class="ui submit button" type="submit">Илгээх</button>
 				</div>
 			</div>
 		</form>
@@ -181,9 +188,12 @@
 	<div class="content">
 		<form class="ui form">
 			<div class="field">
+				<input type="email" name="email" placeholder="Цахим шуудан">
+			</div>
+			<div class="field">
  				<div class="ui action input">
-					<input type="email" name="email" placeholder="Email" required>
-					<button class="ui submit button" type="submit">Send</button>
+					<input type="number" name="phone" placeholder="Утасны дугаар">
+					<button class="ui submit button" type="submit">Илгээх</button>
 				</div>
 			</div>
 		</form>
@@ -210,15 +220,41 @@
 	            rules: [
 	                {
 	                    type   : 'empty',
-	                    prompt : 'Please enter an email'
+	                    prompt : 'Цахим шуудан оруулна уу'
 	                },
 	                {
 	                    type   : 'email',
-	                    prompt : 'Please enter a valid email'
+	                    prompt : 'Цахим шуудан оруулна уу'
 	                },
 	                {
 	                    type   : 'maxLength[191]',
-	                    prompt : 'Too Long'
+	                    prompt : 'Хэт урт тэмдэгт оруулсан байна'
+	                }
+	            ]
+	        },
+			phone: {
+	            identifier  : 'phone',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Утасны дугаар оруулна уу'
+	                },
+	                {
+	                    type   : 'number',
+	                    prompt : 'Утасны дугаар оруулна уу'
+	                },
+	                {
+	                    type   : 'maxLength[191]',
+	                    prompt : 'Хэт урт тэмдэгт оруулсан байна'
+	                }
+	            ]
+	        },
+			type: {
+	            identifier  : 'type',
+	            rules: [
+	                {
+	                    type   : 'empty',
+	                    prompt : 'Төрөл сонгоно уу'
 	                }
 	            ]
 	        },
@@ -236,7 +272,7 @@
 						    $.ajax({
 								type: 'POST',
 								url: '{{ url("send/contribute") }}',
-					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+					           	data: {_token: '{{ csrf_token() }}', type: $(this).find('select[name=type]').val(), email: $(this).find('input[name=email]').val(), title: title},
 					           	context: this,
 					           	success: function() {
 					           		$(this).trigger('reset');
@@ -268,7 +304,7 @@
 						    $.ajax({
 								type: 'POST',
 								url: '{{ url("send/invest") }}',
-					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), title: title},
+					           	data: {_token: '{{ csrf_token() }}', email: $(this).find('input[name=email]').val(), phone: $(this).find('input[name=phone]').val(), title: title},
 					           	context: this,
 					           	success: function() {
 					           		$(this).trigger('reset');
