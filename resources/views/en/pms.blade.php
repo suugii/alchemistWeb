@@ -5,7 +5,7 @@
 @section('masthead')
 <h1 class="ui inverted centered header">Property Management System 
 	<small style="font-size: 12px">powered by 
-		<a href="#">Alchemist Platfrom & MyAllocator</a>
+		<a>Alchemist Platfrom & MyAllocator</a>
 	</small>
 </h1><br/>
 <span class="ui centered lead" style="font-size: 18px">Customized for property, hotel, renting <strong>service</strong> companies<br/>to control and manage their daily avialability and income & expense.</span>

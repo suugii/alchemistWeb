@@ -6,7 +6,7 @@
 <div class="fourteen wide column center aligned">
 	<div class="ui four column aligned stackable divided grid">
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image small">
 					<img class="ui image small" src="{{ asset('img/eejmn.jpg') }}">
 				</div>
@@ -19,13 +19,14 @@
 						<br/>
 						<br/>
 						<br/>
-						<a href="http://www.eej.mn" target="_blank">Web Platfrom</a> | <a class="openContribute" data-title="Eej.mn">Contribute</a>
+						<a href="http://www.eej.mn" target="_blank">Web Platfrom</a> | 
+						<a class="openContribute" data-title="Eej.mn">Contribute</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image">
 					<img src="{{ asset('img/lhamour.png') }}">
 				</div>
@@ -36,13 +37,14 @@
 						Mentor who guided  us in Silicon Valley. International venture captalist.<br/><br/>
 						Managing director of Concordia Ventures
 						<br/>
-						<a href="http://www.lhamour.mn" target="_blank">Web Platfrom</a> | <a class="openContribute" data-title="Lhamour.mn">Contribute</a>
+						<a href="http://www.lhamour.mn" target="_blank">Web Platfrom</a> | 
+						<a class="openContribute" data-title="Lhamour.mn">Contribute</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image">
 					<img src="{{ asset('img/deelstore.png') }}">
 				</div>
@@ -53,13 +55,15 @@
 						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system.<br/><br/>
 						Founder of Startup Mongolia
 						<br/>
-						<a href="http://www.deelstore.mn" target="_blank">Online shop</a> | <a href="https://twitter.com/intent/tweet?text=http://www.deelstore.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.deelstore.mn" target="_blank">Share</a> 
+						<a href="http://www.deelstore.mn" target="_blank">Online shop</a> | 
+						<a onclick="tweet('http://www.deelstore.mn')">Tweet</a> | 
+						<a onclick="share('http://www.deelstore.mn')">Share</a> 
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image">
 					<img src="{{ asset('img/cardmall.png') }}">
 				</div>
@@ -70,7 +74,9 @@
 						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 						Founder of Startup Mongolia
 						<br/>
-						<a href="http://www.cardmall.mn" target="_blank">Online shop</a> | <a href="https://twitter.com/intent/tweet?text=http://www.cardmall.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.cardmall.mn" target="_blank">Share</a>
+						<a href="http://www.cardmall.mn" target="_blank">Online shop</a> | 
+						<a onclick="tweet('http://www.cardmall.mn')">Tweet</a> | 
+						<a onclick="share('http://www.cardmall.mn')">Share</a>
 					</div>
 				</div>
 			</div>
@@ -78,7 +84,7 @@
 	</div>
 	<div class="ui four column aligned stackable divided grid">
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image">
 					<img src="{{ asset('img/honey.jpg') }}">
 				</div>
@@ -89,13 +95,16 @@
 						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 						Founder of Startup Mongolia
 						<br/>
-						<a href="#">IOS</a> | <a href="#">PDF</a> | <a class="openInvest" data-title="Honey">Invest</a> | <a class="openContribute" data-title="Honey">Contribute</a>
+						<a href="#">IOS</a> | 
+						<a href="#">PDF</a> | 
+						<a class="openInvest" data-title="Honey">Invest</a> | 
+						<a class="openContribute" data-title="Honey">Contribute</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image small">
 					<img class="ui image small" src="{{ asset('img/ihotel.jpg') }}">
 				</div>
@@ -106,13 +115,15 @@
 						Our angel investor who showed our way to market. Successfull entrprenuer. Co-founder<br/>
 						Product Manager at Dell EMC
 						<br/>
-						<a href="http://www.ihotel.mn">Web Platfrom</a> | <a href="https://twitter.com/intent/tweet?text=http://www.ihotel.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.ihotel.mn" target="_blank">Share</a>
+						<a href="http://www.ihotel.mn">Web Platfrom</a> | 
+						<a onclick="tweet('http://www.ihotel.mn')">Tweet</a> | 
+						<a onclick="share('http://www.ihotel.mn')">Share</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image">
 					<img src="{{ asset('img/marchaakhai.jpg') }}"/>
 				</div>
@@ -123,13 +134,17 @@
 						Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
 						Managing director of Concordia Ventures
 						<br/>
-						<a href="http://www.marchaakhai.mn" target="_blank">Content server</a> | <a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">IOS</a>  | <a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">Android</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.marchaakhai.mn" target="_blank">Share</a>
+						<a href="http://www.marchaakhai.mn" target="_blank">Content server</a> | 
+						<a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">IOS</a>  | 
+						<a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">Android</a> | 
+						<a onclick="tweet('http://www.marchaakhai.mn')">Tweet</a> | 
+						<a onclick="share('http://www.marchaakhai.mn')">Share</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="column">
-			<div class="ui card">
+			<div class="ui fluid card">
 				<div class="image">
 					<img src="{{ asset('img/onenicething.jpg') }}">
 				</div>
@@ -140,7 +155,11 @@
 						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 						Founder of Startup Mongolia
 						<br/>
-						<a href="http://www.1nicething.net" target="_blank">Web</a> | <a class="openInvest" data-title="1nicething.net">Invest</a> |  <a href="https://twitter.com/intent/tweet?text=http://www.1nicething.net" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.1nicething.net" target="_blank">Share</a> |  <a class="openContribute" data-title="1nicething.net">Contribute</a>
+						<a href="http://www.1nicething.net" target="_blank">Web</a> | 
+						<a class="openInvest" data-title="1nicething.net">Invest</a> |  
+						<a onclick="tweet('http://www.1nicething.net')">Tweet</a> | 
+						<a onclick="share('http://www.1nicething.net')">Share</a> |  
+						<a class="openContribute" data-title="1nicething.net">Contribute</a>
 					</div>
 				</div>
 			</div>
@@ -331,5 +350,15 @@
 			}).modal('show');
 		});
 	});
+	function share(url) {
+        var winTop = (screen.height / 2) - 175;
+        var winLeft = (screen.width / 2) - 260;
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=350');
+    }
+    function tweet(url) {
+        var winTop = (screen.height / 2) - 175;
+        var winLeft = (screen.width / 2) - 260;
+        window.open('https://twitter.com/intent/tweet?text=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=350');
+    }
 </script>
 @endpush

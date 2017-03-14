@@ -16,7 +16,7 @@
 				<a>info@alchemist.mn</a>
 			</div>
 			<div class="item">
-				<a class="ui button">{{ trans('messages.login') }}</a>
+				<a class="ui button" href="http://platform.alchemist.mn/login">{{ trans('messages.login') }}</a>
 			</div>
 		</div>
 	</div>
@@ -27,6 +27,6 @@
 	<a class="item {{ (Request::is('scs') ? 'active' : '') }}" href="{{ url('scs') }}">{{ trans('messages.spend control & eprocurement') }}</a>
 	<a class="item" href="http://nomadicbeargames.com" target="_blank">{{ trans('messages.nomadic bear games') }}</a>
 	<a class="item {{ (Request::is('projects') ? 'active' : '') }}" href="{{ url('projects') }}">{{ trans('messages.other projects') }}</a>
-	<a class="item">{{ trans('messages.login') }}</a>
+	<a class="item" href="http://platform.alchemist.mn/login">{{ trans('messages.login') }}</a>
 	<a class="item" href="{{ url('change') }}">{{ trans('messages.language') }}</a>
 </div>

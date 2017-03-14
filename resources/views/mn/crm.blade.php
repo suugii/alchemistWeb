@@ -3,7 +3,11 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<h1 class="ui inverted centered center aligned header">Харилцагчийн уялдаа холбооны систем</h1><br/>
+<h1 class="ui inverted centered center aligned header">Харилцагчийн уялдаа холбооны систем 
+	<small style="font-size: 12px">
+		<a>Алкэмист платформ & vTiger Frontend </a>-р бүтээв
+	</small>
+</h1><br/>
 <span class="ui centered lead" style="font-size: 18px">Жижиг дунд борлуулалт, үйлчилгээ эрхэлсэн аж ахуйн нэгжид зориулсан <br/> <strong>агуулах, ханган нийлүүлэлт</strong>, харилцагчийн бүртгэлийн цогц шийдэл</span>
 <div class="ui grid stackable centered center aligned">
 	<div class="three wide column"></div>

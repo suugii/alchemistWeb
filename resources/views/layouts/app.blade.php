@@ -44,7 +44,7 @@
 							<a class="ui item" href="{{ url('change') }}">
 								{{ trans('messages.language') }}
 							</a>
-							<a class="ui item" style="color:white;text-transform: uppercase;">
+							<a class="ui item" style="color:white;text-transform: uppercase;" href="http://platform.alchemist.mn/login">
 								{{ trans('messages.login') }}
 							</a>
 						</div>

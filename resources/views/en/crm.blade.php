@@ -5,7 +5,7 @@
 @section('masthead')
 <h1 class="ui inverted centered center aligned header">Customer relationship management 
 	<small style="font-size: 12px">powered by 
-		<a href="#">Alchemist Platfrom & vTiger Frontend</a>
+		<a>Alchemist Platfrom & vTiger Frontend</a>
 	</small>
 </h1><br/>
 <span class="ui centered lead" style="font-size: 18px">Customized for mid-sized <strong>retail</strong> companies<br/> to document, controll and manage their sales, purchases and warehouses</span>

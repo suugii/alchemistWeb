@@ -5,7 +5,7 @@
 @section('masthead')
 <h1 class="ui inverted centered header">Spend Control System 
 	<small style="font-size: 12px">powered by 
-		<a href="#">Odoo</a>
+		<a href="https://www.odoo.com/">Odoo</a>
 	</small>
 </h1>
 <p class="ui centered lead">Customized for Mongolian <strong>enterpriese</strong> companies<br/>to control and manage their daily expense and spends.</p>

@@ -13,7 +13,7 @@
 			<div class="column">
 				<h5 class="ui inverted header">{{ trans('messages.nomadic bear games') }}</h5>
 				<div class="ui inverted link list">
-					<a class="item">Mars Challenge</a>
+					<a class="item" href="">Mars Challenge</a>
 					<a class="item">Brick Shot ice</a>
 					<a class="item">Forgetton Warrior</a>
 					<a class="item">Ajalote</a>

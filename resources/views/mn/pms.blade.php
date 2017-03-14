@@ -3,7 +3,11 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<h1 class="ui inverted centered header">Өрөөний удирдлагын систем <small style="font-size: 12px"><a href="#">Алкэмист платформ & MyAllocator </a>-р бүтээв</small></h1><br/>
+<h1 class="ui inverted centered header">Өрөөний удирдлагын систем 
+	<small style="font-size: 12px">
+		<a>Алкэмист платформ & MyAllocator </a>-р бүтээв
+	</small>
+</h1><br/>
 <span class="ui centered lead" style="font-size: 18px">Зочид буудлын <strong>өрөөний зохион байгуулалт, </strong> <br>түрээслэгчийн бүртгэл, хурал, арга хэмжээ заалны уридлагын систем</span>
 <div class="ui stackable grid relaxed">
 	<div class="four wide column"></div>
