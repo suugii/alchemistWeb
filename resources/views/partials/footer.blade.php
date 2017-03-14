@@ -13,10 +13,10 @@
 			<div class="column">
 				<h5 class="ui inverted header">{{ trans('messages.nomadic bear games') }}</h5>
 				<div class="ui inverted link list">
-					<a class="item" href="">Mars Challenge</a>
-					<a class="item">Brick Shot ice</a>
-					<a class="item">Forgetton Warrior</a>
-					<a class="item">Ajalote</a>
+					<a class="item" href="https://itunes.apple.com/us/app/mars-challenge/id1189889053">Mars Challenge</a>
+					<a class="item" href="https://play.google.com/store/apps/details?id=com.brickshot.brickshotice&hl=en">Brick Shot ice</a>
+					<a class="item" href="https://itunes.apple.com/app/forgotten-warrior/id1212207488">Forgetton Warrior</a>
+					<a class="item" href="https://apps.facebook.com/ajolote/">Ajalote</a>
 				</div>
 			</div>
 			<div class="column">
