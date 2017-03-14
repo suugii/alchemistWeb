@@ -17,7 +17,7 @@ class SCSController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Дэмо авах хүсэлт');
 		});
 
@@ -53,7 +53,7 @@ class SCSController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Үнийн санал авах хүсэлт');
 		});
 
@@ -72,7 +72,7 @@ class SCSController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Үнийн санал авах хүсэлт');
 		});
 
@@ -93,7 +93,7 @@ class SCSController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Уулзалт товлох хүсэлт');
 		});
 

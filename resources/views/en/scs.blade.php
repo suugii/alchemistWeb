@@ -28,24 +28,22 @@
 @endsection
 
 @section('slider')
-<div class="containerSlide">
-	<ul id="slider" class="cS-hidden">
-		<li>
-			<img src="{{ asset('img/scs-1.png') }}"/>
-		</li>
-		<li>
-			<img src="{{ asset('img/scs-2.png') }}"/>
-		</li>
-		<li>
-			<img src="{{ asset('img/scs-3.png') }}"/>
-		</li>
-		<li>
-			<div class="videoWrapper">
-				<iframe id="ytplayer" width="1280" height="720" src="https://www.youtube.com/embed/8nl4hRo7BZw?enablejsapi=1&version=3&rel=0&controls=0&showinfo=0" frameborder="0"></iframe>
-			</div>
-		</li>
-	</ul>
-</div>
+<ul id="slider" class="cS-hidden">
+	<li>
+		<img src="{{ asset('img/scs-1.png') }}"/>
+	</li>
+	<li>
+		<img src="{{ asset('img/scs-2.png') }}"/>
+	</li>
+	<li>
+		<img src="{{ asset('img/scs-3.png') }}"/>
+	</li>
+	<li>
+		<div class="videoWrapper">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/fra7CZaDVAI?rel=0&showinfo=0&controls=0" frameborder="0"></iframe>
+		</div>
+	</li>
+</ul>
 @endsection
 
 @section('content')

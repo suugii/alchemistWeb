@@ -19,7 +19,7 @@ return [
     'crm' => 'CRM',
     'pms' => 'PMS',
     'nomadic bear games' => 'Nomadic Bear Games',
-    'spend control & eprocurement' => 'Зардалын Удирдлагын Систем',
+    'spend control & eprocurement' => 'Зардлын Удирдлагын Систем',
     'other projects' => 'Төслүүд',
     'login' => 'Нэвтрэх',
     'language' => 'English',
@@ -34,6 +34,6 @@ return [
     'career' => 'Ажлын байр',
     'mentors' => 'Ментор',
     'invest' => 'Хөрөнгө оруулалт',
-    'socials' => 'Ниймгийн сүлжээ',
+    'socials' => 'Нийгмийн сүлжээ',
     'dream it & then do it' => 'Мөрөөд тэгээд дараа нь бүтээ.',
 ];

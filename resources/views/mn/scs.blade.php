@@ -25,9 +25,25 @@
 	</div>
 	<div class="four wide column"></div>
 </div>
-<div class="videoWrapper">
-	<iframe width="1280" height="720" src="https://www.youtube.com/embed/8nl4hRo7BZw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
+@endsection
+
+@section('slider')
+<ul id="slider" class="cS-hidden">
+	<li>
+		<img src="{{ asset('img/scs-1.png') }}"/>
+	</li>
+	<li>
+		<img src="{{ asset('img/scs-2.png') }}"/>
+	</li>
+	<li>
+		<img src="{{ asset('img/scs-3.png') }}"/>
+	</li>
+	<li>
+		<div class="videoWrapper">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/fra7CZaDVAI?rel=0&showinfo=0&controls=0" frameborder="0"></iframe>
+		</div>
+	</li>
+</ul>
 @endsection
 
 @section('content')

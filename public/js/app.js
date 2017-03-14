@@ -9,7 +9,9 @@ $(document).ready(function() {
 	$('.ui.dropdown').dropdown({
 		on: 'hover'
 	});
-	$('.masthead .information').transition('scale in', 1000);
+	$('.masthead .information').transition('scale in', 800, function() {
+		$('.containerSlide').addClass('animated');
+	});
 	$('.ui.card').popup();
 	$('.ui.checkbox').checkbox();
 	$('.masthead').visibility({
@@ -29,9 +31,7 @@ $(document).ready(function() {
 	setInterval(changeSides, 3000);
 	$("#slider").lightSlider({
 		item: 1,
-		slideMove: 1,
-	    slideMargin: 10,
-	    auto:true,
+	    auto: true,
 	    loop: true,
 	    pauseOnHover: true,
 	    speed: 400,
@@ -40,44 +40,3 @@ $(document).ready(function() {
 	    },
 	});
 });
-// var tag = document.createElement('script');
-
-// tag.src = "https://www.youtube.com/iframe_api";
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// var player;
-// function onYouTubeIframeAPIReady() {
-// 	player = new YT.Player('player', {
-// 		height: '720',
-// 		width: '1280',
-// 		videoId: '8nl4hRo7BZw',
-// 		rel: 0,
-// 		controls: 0,
-// 		showinfo: 0,
-// 		events: {
-// 			'onReady': onPlayerReady,
-// 		}
-// 	});
-// }
-// function onPlayerReady(event) {
-// 	event.target.playVideo();
-// }
-// function pausePlayer() {
-// 	player.pauseVideo();
-// }
-// $("#slider").lightSlider({
-// 	item: 1,
-// 	slideMove: 1,
-//     slideMargin: 10,
-//     auto:true,
-//     loop: true,
-//     pauseOnHover: true,
-//     speed: 400,
-//     onSliderLoad: function() {
-//         $('#slider').removeClass('cS-hidden');
-//     },
-//     onAfterSlide: function () {
-// 		pausePlayer();
-//     },
-// });

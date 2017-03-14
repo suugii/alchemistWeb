@@ -35,7 +35,7 @@ class CRMController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Үнийн санал авах хүсэлт');
 		});
 
@@ -54,7 +54,7 @@ class CRMController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Үнийн санал авах хүсэлт');
 		});
 
@@ -75,7 +75,7 @@ class CRMController extends Controller
 	    	'options' => $options,
     		'email' => $email,
 	    ], function($message) {
-			$message->to('byambaa.122@gmail.com');
+			$message->to('info@alchemist.mn');
 			$message->subject('Уулзалт товлох хүсэлт');
 		});
 
