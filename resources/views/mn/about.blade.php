@@ -30,7 +30,7 @@
 		</div>
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Ажлын байрны мэдээ хүлээн авах</h3> 
-			<form class="ui form eight wide subscribe column">
+			<form class="ui form eight wide subscribe column" id="subscribe">
 				{{ csrf_field() }}
 				<div class="field">
 					<div class="ui action input">
@@ -40,7 +40,7 @@
 				</div>
 			</form>
 		</div>  
-		<div class="ui stackable centered page grid" id="invest-status">
+		<div class="ui stackable centered page grid" id="subscribe-status">
 			<div class="eight wide subscribe column">
 				<div class="ui hidden success message">
 					<i class="close icon"></i>
