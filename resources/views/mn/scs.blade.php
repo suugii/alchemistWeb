@@ -40,7 +40,7 @@
 	</li>
 	<li>
 		<div class="videoWrapper">
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/fra7CZaDVAI?rel=0&showinfo=0&controls=0" frameborder="0"></iframe>
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/fra7CZaDVAI?enablejsapi=1&rel=0&showinfo=0&controls=0" frameborder="0"></iframe>
 		</div>
 	</li>
 </ul>

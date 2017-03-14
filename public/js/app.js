@@ -29,14 +29,45 @@ $(document).ready(function() {
 		$(this).closest('.message').transition('fade out');
 	});
 	setInterval(changeSides, 3000);
-	$("#slider").lightSlider({
-		item: 1,
-	    auto: true,
-	    loop: true,
-	    pauseOnHover: true,
-	    speed: 400,
-	    onSliderLoad: function() {
-	        $('#slider').removeClass('cS-hidden');
-	    },
-	});
 });
+
+var slider = $("#slider").lightSlider({
+	item: 1,
+    auto: true,
+    loop: true,
+    pauseOnHover: true,
+    speed: 600,
+    onSliderLoad: function() {
+        $('#slider').removeClass('cS-hidden');
+    },
+}); 
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+	
+function onYouTubeIframeAPIReady() {
+	$('#slider iframe').each(function() {
+		var player = new YT.Player(this, {
+			events: {
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	});
+}
+function onPlayerStateChange(event) {
+	changeStatus(event.data);
+}
+function changeStatus(playerStatus) {
+	if (playerStatus == 0) {
+		slider.play();
+	} else if (playerStatus == 1) {
+		slider.pause();
+	} else if (playerStatus == 2) {
+		slider.play();
+	} else if (playerStatus == 3) {
+		slider.pause();
+	}
+}
