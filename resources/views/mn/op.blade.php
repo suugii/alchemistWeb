@@ -3,199 +3,213 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<div class="ui four stackable cards" style="text-align: left">
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/eejmn.jpg') }}">
-		</div>
-		<div class="content">
-			<div class="header">Eej.mn revised</div>
-			<div class="description">
-				<i class="flaticon-settings icon"></i>Coming soon
-			</div><br/>
-			<div class="description">
-				Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
-			</div><br/>
-			<div class="description">
-				<a href="http://www.eej.mn" target="_blank">
-					<i class="world icon"></i>
-				</a>
-				<a class="openContribute" data-title="Eej.mn">Оролцох</a>
+<div class="fourteen wide column">
+	<div class="ui four stackable cards" style="text-align: left">
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/eejmn.jpg') }}">
+			</div>
+			<div class="content">
+				<div class="header">Eej.mn revised</div>
+				<div class="description">
+					<i class="flaticon-settings icon"></i>Coming soon
+				</div><br/>
+				<div class="description">
+					Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
+				</div><br/>
+				<div class="description">
+					<a href="http://www.eej.mn" target="_blank">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a class="openContribute" data-title="Eej.mn">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/lhamour.png') }}">
-		</div>
-		<div class="content">
-			<div class="header">Lhamour.mn revised</div>
-			<div class="description">
-				<i class="flaticon-settings icon"></i>Coming soon
-			</div><br/>
-			<div class="description">
-				Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
-			</div><br/>
-			<div class="description">
-				<a href="http://www.lhamour.mn" target="_blank">
-					<i class="world icon"></i>
-				</a>
-				<a class="openContribute" data-title="Lhamour.mn">Оролцох</a>
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/lhamour.png') }}">
+			</div>
+			<div class="content">
+				<div class="header">Lhamour.mn revised</div>
+				<div class="description">
+					<i class="flaticon-settings icon"></i>Coming soon
+				</div><br/>
+				<div class="description">
+					Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
+				</div><br/>
+				<div class="description">
+					<a href="http://www.lhamour.mn" target="_blank">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a class="openContribute" data-title="Lhamour.mn">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/deelstore.png') }}">
-		</div>
-		<div class="content">
-			<div class="header">Deelstore.mn</div>
-			<div class="description">
-				<i class="flaticon-tick icon"></i>Released
-			</div><br/>
-			<div class="description">
-				Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.
-			</div><br/>
-			<div class="description">
-				<a href="http://www.deelstore.mn" target="_blank">
-					<i class="shop icon"></i>
-				</a>
-				<a onclick="tweet('http://www.deelstore.mn')">
-					<i class="twitter icon"></i>
-				</a>
-				<a onclick="share('http://www.deelstore.mn')">
-					<i class="facebook icon"></i>
-				</a>  
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/deelstore.png') }}">
+			</div>
+			<div class="content">
+				<div class="header">Deelstore.mn</div>
+				<div class="description">
+					<i class="flaticon-tick icon"></i>Released
+				</div><br/>
+				<div class="description">
+					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.
+				</div><br/>
+				<div class="description">
+					<a href="http://www.deelstore.mn" target="_blank">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a onclick="tweet('http://www.deelstore.mn')">
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Жиргэх"></i>
+					</a>
+					<a onclick="share('http://www.deelstore.mn')">
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Хуваалцах"></i>
+					</a>  
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/cardmall.png') }}">
-		</div>
-		<div class="content">
-			<div class="header">Cardmall.mn</div>
-			<div class="description">
-				<i class="flaticon-tick icon"></i>Released
-			</div><br/>
-			<div class="description">
-				Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-				Founder of Startup Mongolia
-			</div><br/>
-			<div class="description">
-				<a href="http://www.cardmall.mn" target="_blank">
-					<i class="shop icon"></i>
-				</a>
-				<a onclick="tweet('http://www.cardmall.mn')">
-					<i class="twitter icon"></i>
-				</a>
-				<a onclick="share('http://www.cardmall.mn')">
-					<i class="facebook icon"></i>
-				</a>
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/cardmall.png') }}">
+			</div>
+			<div class="content">
+				<div class="header">Cardmall.mn</div>
+				<div class="description">
+					<i class="flaticon-tick icon"></i>Released
+				</div><br/>
+				<div class="description">
+					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
+					Founder of Startup Mongolia
+				</div><br/>
+				<div class="description">
+					<a href="http://www.cardmall.mn" target="_blank">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a onclick="tweet('http://www.cardmall.mn')">
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Жиргэх"></i>
+					</a>
+					<a onclick="share('http://www.cardmall.mn')">
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Хуваалцах"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/honey.jpg') }}">
-		</div>
-		<div class="content">
-			<div class="header">Honey - Retail sales app</div>
-			<div class="description">
-				<i class="flaticon-more icon"></i>Pre-released
-			</div><br/>
-			<div class="description">
-				Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
-			</div><br/>
-			<div class="description">
-				<a href="#">
-					<i class="apple icon"></i>
-				</a>
-				<a class="openInvest" data-title="Honey">Хөрөнгө оруулах</a>
-				<a class="openContribute" data-title="Honey">Оролцох</a>
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/honey.jpg') }}">
+			</div>
+			<div class="content">
+				<div class="header">Honey - Retail sales app</div>
+				<div class="description">
+					<i class="flaticon-more icon"></i>Pre-released
+				</div><br/>
+				<div class="description">
+					Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
+				</div><br/>
+				<div class="description">
+					<a href="#">
+						<i class="apple icon" data-position="top center" data-variation="basic" data-title="iOS апп"></i>
+					</a>
+					<a class="openInvest" data-title="Honey">
+						<i class="money icon" data-position="top center" data-variation="basic" data-title="Хөрөнгө оруулах"></i>
+					</a>
+					<a class="openContribute" data-title="Honey">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image small">
-			<img class="ui image small" src="{{ asset('img/ihotel.jpg') }}">
-		</div>
-		<div class="content">
-			<div class="header">iHotel.mn</div>
-			<div class="description">
-				<i class="flaticon-tick icon"></i>Released
-			</div><br/>
-			<div class="description">
-				Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
-			</div><br/>
-			<div class="description">
-				<a href="http://www.ihotel.mn">
-					<i class="world icon"></i>
-				</a>
-				<a onclick="tweet('http://www.ihotel.mn')">
-					<i class="twitter icon"></i>
-				</a>
-				<a onclick="share('http://www.ihotel.mn')">
-					<i class="facebook icon"></i>
-				</a>
+		<div class="card">
+			<div class="image small">
+				<img class="ui image small" src="{{ asset('img/ihotel.jpg') }}">
+			</div>
+			<div class="content">
+				<div class="header">iHotel.mn</div>
+				<div class="description">
+					<i class="flaticon-tick icon"></i>Released
+				</div><br/>
+				<div class="description">
+					Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
+				</div><br/>
+				<div class="description">
+					<a href="http://www.ihotel.mn">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a onclick="tweet('http://www.ihotel.mn')">
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Жиргэх"></i>
+					</a>
+					<a onclick="share('http://www.ihotel.mn')">
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Хуваалцах"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/marchaakhai.jpg') }}"/>
-		</div>
-		<div class="content">
-			<div class="header">marchaahai.mn</div>
-			<div class="description">
-				<i class="flaticon-tick icon"></i>Released
-			</div><br/>
-			<div class="description">
-				Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
-			</div><br/>
-			<div class="description">
-				<a href="http://www.marchaakhai.mn" target="_blank">
-					<i class="world icon"></i>
-				</a>
-				<a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">
-					<i class="apple icon"></i>
-				</a>
-				<a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">
-					<i class="android icon"></i>
-				</a>
-				<a onclick="tweet('http://www.marchaakhai.mn')">
-					<i class="twitter icon"></i>
-				</a>
-				<a onclick="share('http://www.marchaakhai.mn')">
-					<i class="facebook icon"></i>
-				</a>
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/marchaakhai.jpg') }}"/>
+			</div>
+			<div class="content">
+				<div class="header">marchaahai.mn</div>
+				<div class="description">
+					<i class="flaticon-tick icon"></i>Released
+				</div><br/>
+				<div class="description">
+					Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
+				</div><br/>
+				<div class="description">
+					<a href="http://www.marchaakhai.mn" target="_blank">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">
+						<i class="apple icon" data-position="top center" data-variation="basic" data-title="iOS апп"></i>
+					</a>
+					<a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">
+						<i class="android icon" data-position="top center" data-variation="basic" data-title="Андроид апп"></i>
+					</a>
+					<a onclick="tweet('http://www.marchaakhai.mn')">
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Жиргэх"></i>
+					</a>
+					<a onclick="share('http://www.marchaakhai.mn')">
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Хуваалцах"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="card">
-		<div class="image">
-			<img src="{{ asset('img/onenicething.jpg') }}">
-		</div>
-		<div class="content">
-			<div class="header">1nicething.net</div>
-			<div class="description">
-				<i class="flaticon-tick icon"></i>Released
-			</div><br/>
-			<div class="description">
-				Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
-			</div><br/>
-			<div class="description">
-				<a href="http://www.1nicething.net" target="_blank">
-					<i class="world icon"></i>
-				</a>
-				<a onclick="tweet('http://www.1nicething.net')">
-					<i class="twitter icon"></i>
-				</a>
-				<a onclick="share('http://www.1nicething.net')">
-					<i class="facebook icon"></i>
-				</a>
-				<a class="openInvest" data-title="1nicething.net">Хөрөнгө оруулах</a>
-				<a class="openContribute" data-title="1nicething.net">Оролцох</a>
+		<div class="card">
+			<div class="image">
+				<img src="{{ asset('img/onenicething.jpg') }}">
+			</div>
+			<div class="content">
+				<div class="header">1nicething.net</div>
+				<div class="description">
+					<i class="flaticon-tick icon"></i>Released
+				</div><br/>
+				<div class="description">
+					Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
+				</div><br/>
+				<div class="description">
+					<a href="http://www.1nicething.net" target="_blank">
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
+					</a>
+					<a onclick="tweet('http://www.1nicething.net')">
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Жиргэх"></i>
+					</a>
+					<a onclick="share('http://www.1nicething.net')">
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Хуваалцах"></i>
+					</a>
+					<a class="openInvest" data-title="1nicething.net">
+						<i class="money icon" data-position="top center" data-variation="basic" data-title="Хөрөнгө оруулах"></i>
+					</a>
+					<a class="openContribute" data-title="1nicething.net">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -211,20 +225,24 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-speech icon"></i>
 				</div>
-				<p class="ui centered lead">Та дээрх төслүүдээс <a>Хөрөнгө оруулах</a> гэсэн бичиглэлтэй товч дээр дарж харгалзах төсөлд санал илгээх боломжтой.</p><br/>
+				<p class="ui centered lead">Та дээрх төслүүдээс <a>
+					<i class="money icon" data-position="top center" data-variation="basic" data-title="Хөрөнгө оруулах"></i>
+				</a> гэсэн тэмдэглэгээтэй товч дээр дарж харгалзах төсөлд санал илгээх боломжтой.</p><br/>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="ui small modal" id="contribute-modal">
-	<div class="header">Contribute</div>
+	<div class="header">Оролцох</div>
 	<div class="content">
 		<form class="ui form">
 			<div class="field">
 				<select name="type" class="ui fluid dropdown">
 					<option value="">Төрөл сонгоно уу</option>
-					<option value="coding">Coding</option>
-					<option value="designing">Designing</option>
+					<option value="coding">Код бичих</option>
+					<option value="designing">Дизайн сайжруулалт хийх</option>
+					<option value="advising">Зөвлөгөө, мэдээлэл өгөх</option>
+					<option value="other">Бусад</option>
 				</select>
 			</div>
 			<div class="field">
@@ -247,7 +265,7 @@
 	</div>
 </div>
 <div class="ui small modal" id="invest-modal">
-	<div class="header">Invest</div>
+	<div class="header">Хөрөнгө оруулалт</div>
 	<div class="content">
 		<form class="ui form">
 			<div class="field">
@@ -277,6 +295,10 @@
 @push('script')
 <script type="text/javascript">
 	$(document).ready(function() {
+		$('.description .icon').popup({
+			inline     : true,
+			hoverable  : true,
+		});
 		var validationRules = {
 			email: {
 	            identifier  : 'email',

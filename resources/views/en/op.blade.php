@@ -14,14 +14,14 @@
 				<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
 				<div class="description">
 					Eej.mn Mongolian first mother site.
-					<br/>
-					<br/>
-					<br/>
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.eej.mn" target="_blank">
-						<i class="world icon"></i>
-					</a> | 
-					<a class="openContribute" data-title="Eej.mn">Contribute</a>
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
+					<a class="openContribute" data-title="Eej.mn">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -35,11 +35,14 @@
 				<div class="description">
 					Mentor who guided  us in Silicon Valley. International venture captalist.<br/><br/>
 					Managing director of Concordia Ventures
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.lhamour.mn" target="_blank">
-						<i class="world icon"></i>
-					</a> | 
-					<a class="openContribute" data-title="Lhamour.mn">Contribute</a>
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
+					<a class="openContribute" data-title="Lhamour.mn">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -53,16 +56,17 @@
 				<div class="description">
 					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system.<br/><br/>
 					Founder of Startup Mongolia
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.deelstore.mn" target="_blank">
-						<i class="shop icon"></i>
-					</a> | 
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
 					<a onclick="tweet('http://www.deelstore.mn')">
-						<i class="twitter icon"></i>
-					</a> | 
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Tweet"></i>
+					</a>
 					<a onclick="share('http://www.deelstore.mn')">
-						<i class="facebook icon"></i>
-					</a> 
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Share"></i>
+					</a>  
 				</div>
 			</div>
 		</div>
@@ -76,15 +80,16 @@
 				<div class="description">
 					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 					Founder of Startup Mongolia
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.cardmall.mn" target="_blank">
-						<i class="shop icon"></i>
-					</a> | 
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
 					<a onclick="tweet('http://www.cardmall.mn')">
-						<i class="twitter icon"></i>
-					</a> | 
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Tweet"></i>
+					</a>
 					<a onclick="share('http://www.cardmall.mn')">
-						<i class="facebook icon"></i>
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Share"></i>
 					</a>
 				</div>
 			</div>
@@ -99,12 +104,17 @@
 				<div class="description">
 					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 					Founder of Startup Mongolia
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="#">
-						<i class="apple icon"></i>
-					</a> | 
-					<a class="openInvest" data-title="Honey">Invest</a> | 
-					<a class="openContribute" data-title="Honey">Contribute</a>
+						<i class="apple icon" data-position="top center" data-variation="basic" data-title="iOS app"></i>
+					</a>
+					<a class="openInvest" data-title="Honey">
+						<i class="money icon" data-position="top center" data-variation="basic" data-title="Invest"></i>
+					</a>
+					<a class="openContribute" data-title="Honey">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -118,15 +128,16 @@
 				<div class="description">
 					Our angel investor who showed our way to market. Successfull entrprenuer. Co-founder<br/>
 					Product Manager at Dell EMC
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.ihotel.mn">
-						<i class="world icon"></i>
-					</a> | 
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
 					<a onclick="tweet('http://www.ihotel.mn')">
-						<i class="twitter icon"></i>
-					</a> | 
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Tweet"></i>
+					</a>
 					<a onclick="share('http://www.ihotel.mn')">
-						<i class="facebook icon"></i>
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Share"></i>
 					</a>
 				</div>
 			</div>
@@ -141,21 +152,22 @@
 				<div class="description">
 					Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
 					Managing director of Concordia Ventures
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.marchaakhai.mn" target="_blank">
-						<i class="world icon"></i>
-					</a> | 
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
 					<a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">
-						<i class="apple icon"></i>
-					</a>  | 
+						<i class="apple icon" data-position="top center" data-variation="basic" data-title="iOS app"></i>
+					</a>
 					<a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">
-						<i class="android icon"></i>
-					</a> | 
+						<i class="android icon" data-position="top center" data-variation="basic" data-title="Android app"></i>
+					</a>
 					<a onclick="tweet('http://www.marchaakhai.mn')">
-						<i class="twitter icon"></i>
-					</a> | 
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Tweet"></i>
+					</a>
 					<a onclick="share('http://www.marchaakhai.mn')">
-						<i class="facebook icon"></i>
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Share"></i>
 					</a>
 				</div>
 			</div>
@@ -170,18 +182,23 @@
 				<div class="description">
 					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
 					Founder of Startup Mongolia
-					<br/>
+				</div><br/>
+				<div class="description">
 					<a href="http://www.1nicething.net" target="_blank">
-						<i class="world icon"></i>
-					</a> | 
-					<a class="openInvest" data-title="1nicething.net">Invest</a> |  
+						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
+					</a>
 					<a onclick="tweet('http://www.1nicething.net')">
-						<i class="twitter icon"></i>
-					</a> | 
+						<i class="twitter icon" data-position="top center" data-variation="basic" data-title="Tweet"></i>
+					</a>
 					<a onclick="share('http://www.1nicething.net')">
-						<i class="facebook icon"></i>
-					</a> |  
-					<a class="openContribute" data-title="1nicething.net">Contribute</a>
+						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Share"></i>
+					</a>
+					<a class="openInvest" data-title="1nicething.net">
+						<i class="money icon" data-position="top center" data-variation="basic" data-title="Invest"></i>
+					</a>
+					<a class="openContribute" data-title="1nicething.net">
+						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -198,7 +215,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-speech icon"></i>
 				</div>
-				<p class="ui centered lead">You can invest our project that are labeled <a>Invest</a>. Click and leave your email for contact. Thanks.</p><br/>
+				<p class="ui centered lead">You can invest our project that are labeled <a><i class="money icon"></i></a>. Click and leave your email for contact. Thanks.</p><br/>
 			</div>
 		</div>
 	</div>
@@ -212,6 +229,8 @@
 					<option value="">Select type</option>
 					<option value="coding">Coding</option>
 					<option value="designing">Designing</option>
+					<option value="advising">Advising</option>
+					<option value="other">Other</option>
 				</select>
 			</div>
 			<div class="field">
@@ -264,6 +283,10 @@
 @push('script')
 <script type="text/javascript">
 	$(document).ready(function() {
+		$('.description .icon').popup({
+			inline     : true,
+			hoverable  : true,
+		});
 		var validationRules = {
 			email: {
 	            identifier  : 'email',
