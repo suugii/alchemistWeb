@@ -30,7 +30,7 @@
 		</div>
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Ажлын байрны мэдээ хүлээн авах</h3> 
-			<form class="ui form eight wide subscribe column" id="subscribe">
+			<form class="ui form eight wide column" id="subscribe">
 				{{ csrf_field() }}
 				<div class="field">
 					<div class="ui action input">
@@ -41,7 +41,7 @@
 			</form>
 		</div>  
 		<div class="ui stackable centered page grid" id="subscribe-status">
-			<div class="eight wide subscribe column">
+			<div class="eight wide column">
 				<div class="ui hidden success message">
 					<i class="close icon"></i>
 					<div class="header">Амжилттай</div>
@@ -68,52 +68,46 @@
 			</div>
 		</div>
 		<div class="fourteen wide column center aligned">
-			<div class="ui three column aligned stackable divided grid">
-				<div class="column">
-					<div class="ui card">
-						<div class="image small">
-							<img class="ui image small" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJDdmZTU3MzlmLWNmMzItNGNhNC05M2ViLTYzN2RhMGU5ZTM4OA.jpg">
-						</div>
-						<div class="content">
-							<div class="header">В.Баярсайхан</div>
-							<div class="description">
-								Манай анхы хөрөнгө оруулагч. Амжилттай энтерпренор. Үүсгэн байгуулагч<br/><br/>
-								Dell EMC менежер
-								<br/>
-								<a href="#">Linkedin</a> 
-							</div>
+			<div class="ui three stackable cards">
+				<div class="card">
+					<div class="image">
+						<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJDdmZTU3MzlmLWNmMzItNGNhNC05M2ViLTYzN2RhMGU5ZTM4OA.jpg">
+					</div>
+					<div class="content">
+						<div class="header">В.Баярсайхан</div>
+						<div class="description">
+							Манай анхы хөрөнгө оруулагч. Амжилттай энтерпренор. Үүсгэн байгуулагч<br/><br/>
+							Dell EMC менежер
+							<br/>
+							<a href="#">Linkedin</a> 
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui card">
-						<div class="image">
-							<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhwAAAAJDkxZmUwOTI5LWQ1N2QtNGY4NC1iNzU5LWM3MTJkNjc2YjE4ZQ.jpg">
-						</div>
-						<div class="content">
-							<div class="header">Рик Расмуссен</div>
-							<div class="description">
-								Цахиуртын хөндийн зааварлагч багш. Олон улсын хөрөнгө оруулагч. Coursera хувь эзэмшигч<br/><br/>
-								Concordia Ventures - үүсгэн байгуулагч
-								<br />
-								<a href="#">Linkedin</a>
-							</div>
+				<div class="card">
+					<div class="image">
+						<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhwAAAAJDkxZmUwOTI5LWQ1N2QtNGY4NC1iNzU5LWM3MTJkNjc2YjE4ZQ.jpg">
+					</div>
+					<div class="content">
+						<div class="header">Рик Расмуссен</div>
+						<div class="description">
+							Цахиуртын хөндийн зааварлагч багш. Олон улсын хөрөнгө оруулагч. Coursera хувь эзэмшигч<br/><br/>
+							Concordia Ventures - үүсгэн байгуулагч
+							<br />
+							<a href="#">Linkedin</a>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui card">
-						<div class="image">
-							<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/098/28e/0e636d1.jpg">
-						</div>
-						<div class="content">
-							<div class="header">Д.Око</div>
-							<div class="description">
-								Mонголын ихэнх гарааны бизнесийн ментор гэж хэлж болно. Олон улсын хөрөнгө оруулагч.<br/><br/>
-								Start Up Mongolia-н үүсгэн байгуулагч
-								<br />
-								<a href="#">Linkedin</a>
-							</div>
+				<div class="card">
+					<div class="image">
+						<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/098/28e/0e636d1.jpg">
+					</div>
+					<div class="content">
+						<div class="header">Д.Око</div>
+						<div class="description">
+							Mонголын ихэнх гарааны бизнесийн ментор гэж хэлж болно. Олон улсын хөрөнгө оруулагч.<br/><br/>
+							Start Up Mongolia-н үүсгэн байгуулагч
+							<br />
+							<a href="#">Linkedin</a>
 						</div>
 					</div>
 				</div>
@@ -133,7 +127,7 @@
 			</div>
 			<div class="ui stackable centered page grid">
 				<h3 class="subscribe-header">Уулзалт товлох уу?</h3> 
-				<form class="ui form eight wide subscribe column" id="schedule-meeting">
+				<form class="ui form eight wide column" id="schedule-meeting">
 					{{ csrf_field() }}
 					<div class="field">
 						<div class="ui action input">
@@ -144,7 +138,7 @@
 				</form>
 			</div>
 			<div class="ui stackable centered page grid" id="invest-status">
-				<div class="eight wide subscribe column">
+				<div class="eight wide column">
 					<div class="ui hidden success message">
 						<i class="close icon"></i>
 						<div class="header">Амжилттай</div>

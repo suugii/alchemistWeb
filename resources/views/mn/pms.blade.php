@@ -3,27 +3,20 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<h1 class="ui inverted centered header">Өрөөний удирдлагын систем 
-	<small style="font-size: 12px">
-		<a>Алкэмист платформ & MyAllocator </a>-р бүтээв
-	</small>
-</h1><br/>
+<h1 class="ui inverted centered header">Өрөөний удирдлагын систем</h1>
+<small style="font-size: 12px">
+	<a>Алкэмист платформ & MyAllocator </a>-р бүтээв
+</small><br/><br/><br/>
 <span class="ui centered lead" style="font-size: 18px">Зочид буудлын <strong>өрөөний зохион байгуулалт, </strong> <br>түрээслэгчийн бүртгэл, хурал, арга хэмжээ заалны уридлагын систем</span>
-<div class="ui stackable grid relaxed">
-	<div class="four wide column"></div>
-	<div class="four wide column"> 
+<div class="ui grid stackable centered center aligned">
+	<div class="three wide column"></div>
+	<div class="three wide column">
 		<a class="large basic inverted animated fade ui button" onclick="$('#request-demo').modal('show')">
 			<div class="visible content">Дэмо авах</div>
 			<div class="hidden content">14 хоног үнэгүй</div>
 		</a>
 	</div>
-	<div class="four wide column">
-		<a class="large basic inverted animated fade ui button">
-			<div class="visible content">ТАНИЛЦУУЛГА</div>
-			<div class="hidden content">PDF ТАТАХ</div>
-		</a>
-	</div>
-	<div class="four wide column"></div>
+	<div class="three wide column"></div>
 </div>
 @endsection
 
@@ -101,7 +94,7 @@
 	<div class="ui stackable centered page grid">
 		<h3 class="subscribe-header">Танд илүү тохирсон систем хайж байна уу?</h3>
 		<p class="ui centered lead large">Тэгвэл та мэдээллээ үлдээгээрэй. Бид танд цогц шийдэл санал болгох болно.</p>
-		<form class="ui form eight wide subscribe column" id="custom-pms">
+		<form class="ui form eight wide column" id="custom-pms">
 			{{ csrf_field() }}
 			<div class="field">
 				<div class="ui action input">
@@ -112,7 +105,7 @@
 		</form>
 	</div> 
 	<div class="ui stackable centered page grid" id="status">
-		<div class="eight wide subscribe column">
+		<div class="eight wide column">
 			<div class="ui hidden success message">
 				<i class="close icon"></i>
 				<div class="header">Амжилттай</div>
@@ -139,55 +132,49 @@
 			</div>
 		</div>
 		<div class="fourteen wide column">
-			<div class="ui three column aligned stackable divided grid">
-				<div class="column">
-					<div class="ui card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Зочид буудал</div>
-							<div class="description">Буудал, хостел, жуулчны баазад тохиромжтой захиалга бүртгэлийн цогц систем.<br/><br/>
-								* Өрөөний удирдлага <br/>
-								* Сервис үйлчилгээ <br/>
-								* Төлбөр тооцоо <br/>
-								* Үйлчлүүлэгчийн бүртгэл <br/> 
-								* Үнэлгээний удирдлага <br/> 
-							</div>
-							<div class="center aligned ui">
-								<h2 class="center aligned ui">69 000₮ / <small style="font-size: 16px"> сар бүр</small></h2>
-							</div>
+			<div class="ui three stackable cards ">
+				<div class="card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Зочид буудал</div>
+						<div class="description">Буудал, хостел, жуулчны баазад тохиромжтой захиалга бүртгэлийн цогц систем.<br/><br/>
+							* Өрөөний удирдлага <br/>
+							* Сервис үйлчилгээ <br/>
+							* Төлбөр тооцоо <br/>
+							* Үйлчлүүлэгчийн бүртгэл <br/> 
+							* Үнэлгээний удирдлага <br/> 
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">69 000₮ / <small style="font-size: 16px"> сар бүр</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Хөрөнгө жууч</div>
-							<div class="description">Хөрөнгө зуучийн байгууллагуудад мэдээллээ нэгтгэх төлбөр тооцооны хяналт хийх цогц систем.<br/><br/>
-								* Хөрөнгийн бүртгэл <br/>
-								* Төлбөр тооцоо <br/>
-								* Үйлчлүүлэгчийн бүртгэл <br/> 
-								* Үнэлгээний удирдлага <br/> 
-								* Автомат нэхэмжлэх,сануулга <br/> 
-							</div>
-							<div class="center aligned ui">
-								<h2 class="center aligned ui">89 000 ₮ / <small style="font-size: 16px"> сар бүр</small></h2>
-							</div>
+				<div class="card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Хөрөнгө зууч</div>
+						<div class="description">Хөрөнгө зуучийн байгууллагуудад мэдээллээ нэгтгэх төлбөр тооцооны хяналт хийх цогц систем.<br/><br/>
+							* Хөрөнгийн бүртгэл <br/>
+							* Төлбөр тооцоо <br/>
+							* Үйлчлүүлэгчийн бүртгэл <br/> 
+							* Үнэлгээний удирдлага <br/> 
+							* Автомат нэхэмжлэх,сануулга <br/> 
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">89 000₮ / <small style="font-size: 16px"> сар бүр</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Дурын загвар</div>
-							<div class="description">Бид танай байгууллагын онцлогт тааруулан хөрөнгийн бүртгэлийн цогц системийг нэвтрүүлэх боломжтой.<br/><br/>
-								* Дурын загварчлал<br/>
-								* Урт хугацааны дэмжлэг <br/>
-								* Уян хатан үнэ <br/>
-							</div>
+				<div class="card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Дурын загвар</div>
+						<div class="description">Бид танай байгууллагын онцлогт тааруулан хөрөнгийн бүртгэлийн цогц системийг нэвтрүүлэх боломжтой.<br/><br/>
+							* Дурын загварчлал<br/>
+							* Урт хугацааны дэмжлэг <br/>
+							* Уян хатан үнэ <br/>
 						</div>
-						<div class="ui two bottom attached buttons">
-							<div class="ui button" onclick="$('#cloud-price').modal('show')">Үнийн санал авах</div>
-							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Уулзалт товлох ?</div>
-						</div>
+					</div>
+					<div class="ui two bottom attached buttons">
+						<div class="ui button" onclick="$('#cloud-price').modal('show')">Үнийн санал</div>
+						<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Уулзалт товлох</div>
 					</div>
 				</div>
 			</div>

@@ -3,13 +3,12 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<h1 class="ui inverted centered header">Spend Control System 
-	<small style="font-size: 12px">powered by 
-		<a href="https://www.odoo.com/">Odoo</a>
-	</small>
-</h1>
+<h1 class="ui inverted centered header">Spend Control System</h1>
+<small style="font-size: 12px">powered by 
+	<a href="https://www.odoo.com/">Odoo</a>
+</small><br/><br/><br/>
 <p class="ui centered lead">Customized for Mongolian <strong>enterpriese</strong> companies<br/>to control and manage their daily expense and spends.</p>
-<div class="ui stackable grid relaxed">
+<div class="ui grid stackable centered center aligned">
 	<div class="four wide column"></div>
 	<div class="four wide column"> 
 		<a class="large basic inverted animated fade ui button" onclick="$('#request-demo').modal('show')">
@@ -18,7 +17,7 @@
 		</a>
 	</div>
 	<div class="four wide column">
-		<a href="#" class="large basic inverted animated fade ui button">
+		<a href="{{ asset('files/PPspendcontrol.pdf') }}" target="_blank" class="large basic inverted animated fade ui button">
 			<div class="visible content">INTRODUCTION</div>
 			<div class="hidden content">Download PDF</div>
 		</a>
@@ -127,7 +126,7 @@
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Request a price offer</h3> 
 			<p class="ui centered lead large">Check your required modules we will sent you onsite installation price offer. For server prices <a href="#">click here.</a></p>
-			<div class="eight wide subscribe column">
+			<div class="eight wide column">
 				<div class="field">
 					<div class="ui action input">
 						<input type="text" name="email" placeholder="Email">
@@ -137,7 +136,7 @@
 			</div>
 		</div>  
 		<div class="ui stackable centered page grid" id="status">
-			<div class="eight wide subscribe column">
+			<div class="eight wide column">
 				<div class="ui hidden success message">
 					<i class="close icon"></i>
 					<div class="header">Successfully</div>
@@ -164,49 +163,49 @@
 			</div>
 		</div>
 		<div class="fourteen wide column">
-			<div class="ui three column aligned stackable divided grid">
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">VPS 1 - $39 /monthly</div>
-							<div class="description">
-								Perfect for when you begin your own retail company. Ideal for selling B2C. <br / >Suitable for up to 5 employees.<br/>Billed per month.<br/><br/>
-									* 2 Core CPU <br/>
-									* 2 GB RAM <br/>
-									* Unlimited Bandwidth <br/>
-									* 50 GB Hard<br/>
-							</div>
+			<div class="ui three stackable cards">
+				<div class="card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">VPS 1</div>
+						<div class="description">
+							Perfect for when you begin your own retail company. Ideal for selling B2C. <br / >Suitable for up to 5 employees.<br/>Billed per month.<br/><br/>
+								* 2 Core CPU <br/>
+								* 2 GB RAM <br/>
+								* Unlimited Bandwidth <br/>
+								* 50 GB Hard<br/>
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">$39 / <small style="font-size: 16px"> per month</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">VPS 2 - $59/monthly</div>
-							<div class="description">
-								Most suited for mid-sized businesses. You can configure your company hierarchy and create certain roles for your employees.<br/>Billed per month.<br/><br/>
-									* 4 Core CPU <br/>
-									* 8 GB RAM <br/>
-									* Unlimited Bandwidth <br/>
-									* 150 GB Hard <br/>
-							</div>
+				<div class="card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">VPS 2</div>
+						<div class="description">
+							Most suited for mid-sized businesses. You can configure your company hierarchy and create certain roles for your employees.<br/>Billed per month.<br/><br/>
+								* 4 Core CPU <br/>
+								* 8 GB RAM <br/>
+								* Unlimited Bandwidth <br/>
+								* 150 GB Hard <br/>
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">$59 / <small style="font-size: 16px"> per month</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Enterprise Server</div>
-							<div class="description">
-								We can establish your enterprise server solutions. It will be the exact solution for your concerns. You distribute DELL, HP physical servers.<br/>
-									* Custom system <br/>
-									* Long term support <br/>
-							</div>
+				<div class="card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Enterprise Server</div>
+						<div class="description">
+							We can establish your enterprise server solutions. It will be the exact solution for your concerns. You distribute DELL, HP physical servers.<br/><br/>
+								* Custom system <br/>
+								* Long term support <br/>
 						</div>
-						<div class="ui two bottom attached buttons">
-							<div class="ui button" onclick="$('#cloud-price').modal('show')">Request price offer</div>
-							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Schedule a meeting ?</div>
-						</div>
+					</div>
+					<div class="ui two bottom attached buttons">
+						<div class="ui button" onclick="$('#cloud-price').modal('show')">Request price offer</div>
+						<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Schedule a meeting ?</div>
 					</div>
 				</div>
 			</div>

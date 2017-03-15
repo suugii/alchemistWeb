@@ -30,7 +30,7 @@
 		</div>
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Subscribe for job openings</h3> 
-			<form class="ui form eight wide subscribe column" id="subscribe">
+			<form class="ui form eight wide column" id="subscribe">
 				{{ csrf_field() }}
 				<div class="field">
 					<div class="ui action input">
@@ -41,7 +41,7 @@
 			</form>
 		</div>
 		<div class="ui stackable centered page grid" id="subscribe-status">
-			<div class="eight wide subscribe column">
+			<div class="eight wide column">
 				<div class="ui hidden success message">
 					<i class="close icon"></i>
 					<div class="header">Successfully</div>
@@ -68,52 +68,46 @@
 			</div>
 		</div>
 		<div class="fourteen wide column center aligned">
-			<div class="ui three column aligned stackable divided grid">
-				<div class="column">
-					<div class="ui fluid card">
-						<div class="image small">
-							<img class="ui image small" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJDdmZTU3MzlmLWNmMzItNGNhNC05M2ViLTYzN2RhMGU5ZTM4OA.jpg">
-						</div>
-						<div class="content">
-							<div class="header">Bayarsaikhan Volodya</div>
-							<div class="description">
-								Our angel investor who showed our way to market. Successfull entrprenuer. Co-founder<br/>
-								Product Manager at Dell EMC
-								<br/>
-								<a href="#">Linkedin</a> 
-							</div>
+			<div class="ui three stackable cards">
+				<div class="card">
+					<div class="image">
+						<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJDdmZTU3MzlmLWNmMzItNGNhNC05M2ViLTYzN2RhMGU5ZTM4OA.jpg">
+					</div>
+					<div class="content">
+						<div class="header">Bayarsaikhan Volodya</div>
+						<div class="description">
+							Our angel investor who showed our way to market. Successfull entrprenuer. Co-founder<br/>
+							Product Manager at Dell EMC
+							<br/>
+							<a href="#">Linkedin</a> 
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card">
-						<div class="image">
-							<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhwAAAAJDkxZmUwOTI5LWQ1N2QtNGY4NC1iNzU5LWM3MTJkNjc2YjE4ZQ.jpg">
-						</div>
-						<div class="content">
-							<div class="header">Rick Rasmussen</div>
-							<div class="description">
-								Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
-								Managing director of Concordia Ventures
-								<br />
-								<a href="#">Linkedin</a>
-							</div>
+				<div class="card">
+					<div class="image">
+						<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhwAAAAJDkxZmUwOTI5LWQ1N2QtNGY4NC1iNzU5LWM3MTJkNjc2YjE4ZQ.jpg">
+					</div>
+					<div class="content">
+						<div class="header">Rick Rasmussen</div>
+						<div class="description">
+							Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
+							Managing director of Concordia Ventures
+							<br />
+							<a href="#">Linkedin</a>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card">
-						<div class="image">
-							<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/098/28e/0e636d1.jpg">
-						</div>
-						<div class="content">
-							<div class="header">Oko Davaasuren</div>
-							<div class="description">
-								Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-								Founder of Startup Mongolia
-								<br />
-								<a href="#">Linkedin</a>
-							</div>
+				<div class="card">
+					<div class="image">
+						<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/098/28e/0e636d1.jpg">
+					</div>
+					<div class="content">
+						<div class="header">Oko Davaasuren</div>
+						<div class="description">
+							Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
+							Founder of Startup Mongolia
+							<br />
+							<a href="#">Linkedin</a>
 						</div>
 					</div>
 				</div>
@@ -132,7 +126,7 @@
 			</div>
 			<div class="ui stackable centered page grid">
 				<h3 class="subscribe-header">Contact us for meeing</h3> 
-				<form class="ui form eight wide subscribe column" id="schedule-meeting">
+				<form class="ui form eight wide column" id="schedule-meeting">
 					{{ csrf_field() }}
 					<div class="field">
 						<div class="ui action input">
@@ -143,7 +137,7 @@
 				</form>
 			</div> 
 			<div class="ui stackable centered page grid" id="invest-status">
-				<div class="eight wide subscribe column">
+				<div class="eight wide column">
 					<div class="ui hidden success message">
 						<i class="close icon"></i>
 						<div class="header">Successfully</div>

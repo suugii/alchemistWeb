@@ -3,11 +3,10 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<h1 class="ui inverted centered center aligned header">Харилцагчийн уялдаа холбооны систем 
-	<small style="font-size: 12px">
-		<a>Алкэмист платформ & vTiger Frontend </a>-р бүтээв
-	</small>
-</h1><br/>
+<h1 class="ui inverted centered center aligned header">Харилцагчийн уялдаа холбооны систем</h1>
+<small style="font-size: 12px">
+	<a>Алкэмист платформ & vTiger Frontend </a>-р бүтээв
+</small><br/><br/><br/>
 <span class="ui centered lead" style="font-size: 18px">Жижиг дунд борлуулалт, үйлчилгээ эрхэлсэн аж ахуйн нэгжид зориулсан <br/> <strong>агуулах, ханган нийлүүлэлт</strong>, харилцагчийн бүртгэлийн цогц шийдэл</span>
 <div class="ui grid stackable centered center aligned">
 	<div class="three wide column"></div>
@@ -118,7 +117,7 @@
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header"><strong>Үнийн санал авах</strong></h3> 
 			<p class="ui centered lead large">Хэрэв та өөрийн сервер дээр суурилуулах бол дээрх модулуудас сонгон өөрийн цахим шуудангаа үлдээгэрэй. Бид танд илгээх болно.<br/> Онлайнаар ашиглах доорх үнийн саналтай танилцана уу.</p>
-			<div class="ui form eight wide subscribe column">
+			<div class="ui form eight wide column">
 				<div class="field">
 					<div class="ui action input">
 						<input type="email" name="email" placeholder="Цахим шуудан">
@@ -128,7 +127,7 @@
 			</div>
 		</div>
 		<div class="ui stackable centered page grid" id="status">
-			<div class="eight wide subscribe column">
+			<div class="eight wide column">
 				<div class="ui hidden success message">
 					<i class="close icon"></i>
 					<div class="header">Амжилттай</div>
@@ -155,55 +154,48 @@
 			</div>
 		</div>
 		<div class="fourteen wide column">
-			<div class="ui three column stackable grid">
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Гарааны бизнес</div>
-							<div class="description">
-								Борлуулалтын үйлчилгээ эхэлж байгаа байгууллагууд хэрэглэхэд таарамжтай.<br/>10 хүртэлх ажилтантай байгууллагад илүү тохирно.<br/><br/>
-									* Агуулахын бүртгэл <br/>
-									* Үйл ажиллагааны бүртгэл <br/>
-									* Борлуулалтын удирдлага <br/>
-							</div>
-							<div class="center aligned ui">
-								<h2 class="center aligned ui">95 000₮ / <small style="font-size: 16px"> сар бүр</small></h2>
-							</div>
+			<div class="ui three stackable cards">
+				<div class="card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Гарааны бизнес</div>
+						<div class="description">
+							Борлуулалтын үйлчилгээ эхэлж байгаа байгууллагууд хэрэглэхэд таарамжтай.<br/>10 хүртэлх ажилтантай байгууллагад илүү тохирно.<br/><br/>
+								* Агуулахын бүртгэл <br/>
+								* Үйл ажиллагааны бүртгэл <br/>
+								* Борлуулалтын удирдлага <br/>
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">95 000₮ / <small style="font-size: 16px"> сар бүр</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Ретайлер</div>
-							<div class="description">
-								Борлуулалт, импорт, гаалийн бүртгэл, төсөл хэрэгжүүлэгч байгууллагад илүү тохиромжтой. Ажилтан бүрт үүргийн хуваарь хийх боломжтой.<br/>
-									* Гарааны бизнес багц <br/>
-									* Хангамжийн уридлага <br/>
-									* Төслийн удирдлага <br/>
-							</div>
-							<div class="center aligned ui">
-								<h2 class="center aligned ui">170 000 ₮/ <small style="font-size: 16px"> сар бүр</small></h2>
-							</div>
+				<div class="card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Ретайлер</div>
+						<div class="description">
+							Борлуулалт, импорт, гаалийн бүртгэл, төсөл хэрэгжүүлэгч байгууллагад илүү тохиромжтой. Ажилтан бүрт үүргийн хуваарь хийх боломжтой.<br/><br/>
+								* Гарааны бизнес багц <br/>
+								* Хангамжийн уридлага <br/>
+								* Төслийн удирдлага <br/>
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">170 000₮/ <small style="font-size: 16px"> сар бүр</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Групп компани </div>
-							<div class="description">
-								Бид танай байгууллагын бүтцэд тохирсон мэдээллийн технологийн шийдлийг
-								өөрсдийн бүтээсэн Алкэмист Платформ болон бусад олон улсад хүлээн зөвшөөрөгдсөн шийдлээр гүйцэтгэн, урт хугацааны хамтын ажиллагааг хэрэгжүүлэх болно. 
-								<br/>
-									* Яг тохирсон систем<br/>
-									* Урт хугацааны хамтын ажиллагаа<br/>
-							</div>
+				<div class="card" data-html="<div class='header'>Нэвтрүүлэлт</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Групп компани </div>
+						<div class="description">
+							Бид танай байгууллагын бүтцэд тохирсон мэдээллийн технологийн шийдлийг
+							өөрсдийн бүтээсэн Алкэмист Платформ болон бусад олон улсад хүлээн зөвшөөрөгдсөн шийдлээр гүйцэтгэн, урт хугацааны хамтын ажиллагааг хэрэгжүүлэх болно.<br/><br/>
+								* Яг тохирсон систем<br/>
+								* Урт хугацааны хамтын ажиллагаа<br/>
 						</div>
-						<div class="ui two bottom attached buttons">
-							<div class="ui button" onclick="$('#cloud-price').modal('show')">Үнийн санал авах</div>
-							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Уулзалт товлох ?</div>
-						</div>
+					</div>
+					<div class="ui two bottom attached buttons">
+						<div class="ui button" onclick="$('#cloud-price').modal('show')">Үнийн санал</div>
+						<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Уулзалт товлох</div>
 					</div>
 				</div>
 			</div>

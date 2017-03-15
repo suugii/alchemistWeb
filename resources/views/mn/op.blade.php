@@ -3,136 +3,199 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<div class="fourteen wide column center aligned">
-	<div class="ui four column aligned stackable divided grid">
-		<div class="column">
-			<div class="ui card">
-				<div class="image small">
-					<img class="ui image small" src="{{ asset('img/eejmn.jpg') }}">
-				</div>
-				<div class="content">
-					<div class="header">Eej.mn revised</div>
-					<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
-					<div class="description">
-						Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
-						<br/>
-						<a href="http://www.eej.mn" target="_blank">Web Platfrom</a> | <a class="openContribute" data-title="Eej.mn">Contribute</a>
-					</div>
-				</div>
-			</div>
+<div class="ui four stackable cards" style="text-align: left">
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/eejmn.jpg') }}">
 		</div>
-		<div class="column">
-			<div class="ui card">
-				<div class="image">
-					<img src="{{ asset('img/lhamour.png') }}">
-				</div>
-				<div class="content">
-					<div class="header">Lhamour.mn revised</div>
-					<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
-					<div class="description">
-						Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
-						<br/>
-						<a href="http://www.lhamour.mn" target="_blank">Web Platfrom</a> | <a class="openContribute" data-title="Lhamour.mn">Contribute</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="ui card">
-				<div class="image">
-					<img src="{{ asset('img/deelstore.png') }}">
-				</div>
-				<div class="content">
-					<div class="header">Deelstore.mn</div>
-					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
-					<div class="description">
-					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.<br/>
-						<a href="http://www.deelstore.mn" target="_blank">Online shop</a> | <a href="https://twitter.com/intent/tweet?text=http://www.deelstore.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.deelstore.mn" target="_blank">Share</a> 
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="ui card">
-				<div class="image">
-					<img src="{{ asset('img/cardmall.png') }}">
-				</div>
-				<div class="content">
-					<div class="header">Cardmall.mn</div>
-					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
-					<div class="description">
-						Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-						Founder of Startup Mongolia
-						<br/>
-						<a href="http://www.cardmall.mn" target="_blank">Online shop</a> | <a href="https://twitter.com/intent/tweet?text=http://www.cardmall.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.cardmall.mn" target="_blank">Share</a>
-					</div>
-				</div>
+		<div class="content">
+			<div class="header">Eej.mn revised</div>
+			<div class="description">
+				<i class="flaticon-settings icon"></i>Coming soon
+			</div><br/>
+			<div class="description">
+				Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
+			</div><br/>
+			<div class="description">
+				<a href="http://www.eej.mn" target="_blank">
+					<i class="world icon"></i>
+				</a>
+				<a class="openContribute" data-title="Eej.mn">Оролцох</a>
 			</div>
 		</div>
 	</div>
-	<div class="ui four column aligned stackable divided grid">
-		<div class="column">
-			<div class="ui card">
-				<div class="image">
-					<img src="{{ asset('img/honey.jpg') }}">
-				</div>
-				<div class="content">
-					<div class="header">Honey - Retail sales app</div>
-					<div class="description"><i class="flaticon-more icon"></i>Pre-released</div><br/>
-					<div class="description">
-						Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
-						<br/>
-						<a href="#">IOS</a> | <a href="#">PDF</a> | <a class="openInvest" data-title="Honey">Invest</a> | <a class="openContribute" data-title="Honey">Contribute</a>
-					</div>
-				</div>
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/lhamour.png') }}">
+		</div>
+		<div class="content">
+			<div class="header">Lhamour.mn revised</div>
+			<div class="description">
+				<i class="flaticon-settings icon"></i>Coming soon
+			</div><br/>
+			<div class="description">
+				Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
+			</div><br/>
+			<div class="description">
+				<a href="http://www.lhamour.mn" target="_blank">
+					<i class="world icon"></i>
+				</a>
+				<a class="openContribute" data-title="Lhamour.mn">Оролцох</a>
 			</div>
 		</div>
-		<div class="column">
-			<div class="ui card">
-				<div class="image small">
-					<img class="ui image small" src="{{ asset('img/ihotel.jpg') }}">
-				</div>
-				<div class="content">
-					<div class="header">iHotel.mn</div>
-					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
-					<div class="description">
-						Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
-						<br/>
-						<a href="http://www.ihotel.mn">Web Platfrom</a> | <a href="https://twitter.com/intent/tweet?text=http://www.ihotel.mn" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.ihotel.mn" target="_blank">Share</a>
-					</div>
-				</div>
+	</div>
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/deelstore.png') }}">
+		</div>
+		<div class="content">
+			<div class="header">Deelstore.mn</div>
+			<div class="description">
+				<i class="flaticon-tick icon"></i>Released
+			</div><br/>
+			<div class="description">
+				Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.
+			</div><br/>
+			<div class="description">
+				<a href="http://www.deelstore.mn" target="_blank">
+					<i class="shop icon"></i>
+				</a>
+				<a onclick="tweet('http://www.deelstore.mn')">
+					<i class="twitter icon"></i>
+				</a>
+				<a onclick="share('http://www.deelstore.mn')">
+					<i class="facebook icon"></i>
+				</a>  
 			</div>
 		</div>
-		<div class="column">
-			<div class="ui card">
-				<div class="image">
-					<img src="{{ asset('img/marchaakhai.jpg') }}"/>
-				</div>
-				<div class="content">
-					<div class="header">marchaahai.mn</div>
-					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
-					<div class="description">
-						Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
-						<br/>
-						<a href="http://www.marchaakhai.mn" target="_blank">Content server</a> | <a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">IOS</a>  | <a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">Android</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.marchaakhai.mn" target="_blank">Share</a>
-					</div>
-				</div>
+	</div>
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/cardmall.png') }}">
+		</div>
+		<div class="content">
+			<div class="header">Cardmall.mn</div>
+			<div class="description">
+				<i class="flaticon-tick icon"></i>Released
+			</div><br/>
+			<div class="description">
+				Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
+				Founder of Startup Mongolia
+			</div><br/>
+			<div class="description">
+				<a href="http://www.cardmall.mn" target="_blank">
+					<i class="shop icon"></i>
+				</a>
+				<a onclick="tweet('http://www.cardmall.mn')">
+					<i class="twitter icon"></i>
+				</a>
+				<a onclick="share('http://www.cardmall.mn')">
+					<i class="facebook icon"></i>
+				</a>
 			</div>
 		</div>
-		<div class="column">
-			<div class="ui card">
-				<div class="image">
-					<img src="{{ asset('img/onenicething.jpg') }}">
-				</div>
-				<div class="content">
-					<div class="header">1nicething.net</div>
-					<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
-					<div class="description">
-						Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
-						<br/>
-						<a href="http://www.1nicething.net" target="_blank">Web</a> | <a class="openInvest" data-title="1nicething.net">Invest</a> |  <a href="https://twitter.com/intent/tweet?text=http://www.1nicething.net" target="_blank">Tweet</a> | <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.1nicething.net" target="_blank">Share</a> |  <a class="openContribute" data-title="1nicething.net">Contribute</a>
-					</div>
-				</div>
+	</div>
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/honey.jpg') }}">
+		</div>
+		<div class="content">
+			<div class="header">Honey - Retail sales app</div>
+			<div class="description">
+				<i class="flaticon-more icon"></i>Pre-released
+			</div><br/>
+			<div class="description">
+				Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
+			</div><br/>
+			<div class="description">
+				<a href="#">
+					<i class="apple icon"></i>
+				</a>
+				<a class="openInvest" data-title="Honey">Хөрөнгө оруулах</a>
+				<a class="openContribute" data-title="Honey">Оролцох</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="image small">
+			<img class="ui image small" src="{{ asset('img/ihotel.jpg') }}">
+		</div>
+		<div class="content">
+			<div class="header">iHotel.mn</div>
+			<div class="description">
+				<i class="flaticon-tick icon"></i>Released
+			</div><br/>
+			<div class="description">
+				Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
+			</div><br/>
+			<div class="description">
+				<a href="http://www.ihotel.mn">
+					<i class="world icon"></i>
+				</a>
+				<a onclick="tweet('http://www.ihotel.mn')">
+					<i class="twitter icon"></i>
+				</a>
+				<a onclick="share('http://www.ihotel.mn')">
+					<i class="facebook icon"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/marchaakhai.jpg') }}"/>
+		</div>
+		<div class="content">
+			<div class="header">marchaahai.mn</div>
+			<div class="description">
+				<i class="flaticon-tick icon"></i>Released
+			</div><br/>
+			<div class="description">
+				Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
+			</div><br/>
+			<div class="description">
+				<a href="http://www.marchaakhai.mn" target="_blank">
+					<i class="world icon"></i>
+				</a>
+				<a href="https://itunes.apple.com/us/app/marcaahaj/id1130228211?mt=8" target="_blank">
+					<i class="apple icon"></i>
+				</a>
+				<a href="https://play.google.com/store/apps/details?id=com.ionicframework.myapp143522" target="_blank">
+					<i class="android icon"></i>
+				</a>
+				<a onclick="tweet('http://www.marchaakhai.mn')">
+					<i class="twitter icon"></i>
+				</a>
+				<a onclick="share('http://www.marchaakhai.mn')">
+					<i class="facebook icon"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="image">
+			<img src="{{ asset('img/onenicething.jpg') }}">
+		</div>
+		<div class="content">
+			<div class="header">1nicething.net</div>
+			<div class="description">
+				<i class="flaticon-tick icon"></i>Released
+			</div><br/>
+			<div class="description">
+				Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
+			</div><br/>
+			<div class="description">
+				<a href="http://www.1nicething.net" target="_blank">
+					<i class="world icon"></i>
+				</a>
+				<a onclick="tweet('http://www.1nicething.net')">
+					<i class="twitter icon"></i>
+				</a>
+				<a onclick="share('http://www.1nicething.net')">
+					<i class="facebook icon"></i>
+				</a>
+				<a class="openInvest" data-title="1nicething.net">Хөрөнгө оруулах</a>
+				<a class="openContribute" data-title="1nicething.net">Оролцох</a>
 			</div>
 		</div>
 	</div>
@@ -148,7 +211,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-speech icon"></i>
 				</div>
-				<p class="ui centered lead">Та дээрх төслүүдээс <a>Invest</a> гэсэн бичиглэлтэй дээр дарж харгалзах төсөлд санал илгээх боломжтой.</p><br/>
+				<p class="ui centered lead">Та дээрх төслүүдээс <a>Хөрөнгө оруулах</a> гэсэн бичиглэлтэй товч дээр дарж харгалзах төсөлд санал илгээх боломжтой.</p><br/>
 			</div>
 		</div>
 	</div>
@@ -324,5 +387,15 @@
 			}).modal('show');
 		});
 	});
+	function share(url) {
+        var winTop = (screen.height / 2) - 175;
+        var winLeft = (screen.width / 2) - 260;
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=350');
+    }
+    function tweet(url) {
+        var winTop = (screen.height / 2) - 175;
+        var winLeft = (screen.width / 2) - 260;
+        window.open('https://twitter.com/intent/tweet?text=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=520,height=350');
+    }
 </script>
 @endpush

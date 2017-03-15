@@ -3,11 +3,10 @@
 @section('title', 'Alchemist Turns into Gold')
 
 @section('masthead')
-<h1 class="ui inverted centered center aligned header">Customer relationship management 
-	<small style="font-size: 12px">powered by 
-		<a>Alchemist Platfrom & vTiger Frontend</a>
-	</small>
-</h1><br/>
+<h1 class="ui inverted centered center aligned header">Customer relationship management</h1>
+<small style="font-size: 12px">powered by 
+	<a>Alchemist Platfrom & vTiger Frontend</a>
+</small><br/><br/><br/>
 <span class="ui centered lead" style="font-size: 18px">Customized for mid-sized <strong>retail</strong> companies<br/> to document, controll and manage their sales, purchases and warehouses</span>
 <div class="ui grid stackable centered center aligned">
 	<div class="three wide column"></div>
@@ -35,7 +34,6 @@
 		</div>
 	</li>
 </ul>
-		
 @endsection
 
 @section('content')
@@ -119,7 +117,7 @@
 		<div class="ui stackable centered page grid">
 			<h3 class="subscribe-header">Request a price offer</h3> 
 			<p class="ui centered lead large">Check your required modules we will send you onsite installation price offer. For cloud price <a href="#">click here.</a></p>
-			<div class="ui form eight wide subscribe column">
+			<div class="ui form eight wide column">
 				<div class="field">
 	 				<div class="ui action input">
 						<input type="email" name="email" placeholder="Email">
@@ -129,7 +127,7 @@
 			</div>
 		</div>
 		<div class="ui stackable centered page grid" id="status">
-			<div class="eight wide subscribe column">
+			<div class="eight wide column">
 				<div class="ui hidden success message">
 					<i class="close icon"></i>
 					<div class="header">Successfully</div>
@@ -154,42 +152,36 @@
 			</div>
 		</div>
 		<div class="fourteen wide column">
-			<div class="ui three column stackable grid">
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Startup</div>
-							<div class="description">Perfect for when you begin your own retail company. Ideal for selling B2C. <br/>Suitable for up to 5 employees.<br/><br/>* Warehouse Management <br/>* Activity Management <br/>* Sales Management <br/>
-							</div>
-							<div class="center aligned ui">
-								<h2 class="center aligned ui">$39 / <small style="font-size: 16px"> per month</small></h2>
-							</div>
+			<div class="ui three stackable cards">
+				<div class="card" data-html="<div class='header'>User rating</div><div class='content'><div class='ui star rating'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Startup</div>
+						<div class="description">Perfect for when you begin your own retail company. Ideal for selling B2C. <br/>Suitable for up to 5 employees.<br/><br/>* Warehouse Management <br/>* Activity Management <br/>* Sales Management <br/>
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">$39 / <small style="font-size: 16px"> per month</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Retailer</div>
-							<div class="description">Most suited for mid-sized businesses. You can configure your company hierarchy and create certain roles for your employees.<br/><br/>* Start up pack <br/>* Supply Chain management <br/>* Project Management <br/>
-							</div>
-							<div class="center aligned ui">
-								<h2 class="center aligned ui">$69 / <small style="font-size: 16px"> per month</small></h2>
-							</div>
+				<div class="card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Retailer</div>
+						<div class="description">Most suited for mid-sized businesses. You can configure your company hierarchy and create certain roles for your employees.<br/><br/>* Start up pack <br/>* Supply Chain management <br/>* Project Management <br/>
+						</div>
+						<div class="center aligned ui">
+							<h2 class="center aligned ui">$69 / <small style="font-size: 16px"> per month</small></h2>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="ui fluid card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
-						<div class="content">
-							<div class="header">Enterprise </div>
-							<div class="description">We can establish your enterprise solution using our Alchemist Platform. It will be the exact solution for your concerns. We have built hospital, fitness, call center and many other organization softwares using our platform.<br/><br/>* Custom system <br/>* Long term support <br/>
-							</div>
+				<div class="card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">
+					<div class="content">
+						<div class="header">Enterprise </div>
+						<div class="description">We can establish your enterprise solution using our Alchemist Platform. It will be the exact solution for your concerns. We have built hospital, fitness, call center and many other organization softwares using our platform.<br/><br/>* Custom system <br/>* Long term support <br/>
 						</div>
-						<div class="ui two bottom attached buttons">
-							<div class="ui button" onclick="$('#cloud-price').modal('show')">Request price offer</div>
-							<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Schedule a meeting ?</div>
-						</div>
+					</div>
+					<div class="ui two bottom attached buttons">
+						<div class="ui button" onclick="$('#cloud-price').modal('show')">Request price offer</div>
+						<div class="ui pink button" onclick="$('#schedule-meeting').modal('show')">Schedule a meeting ?</div>
 					</div>
 				</div>
 			</div>
@@ -254,7 +246,7 @@
 			{{ csrf_field() }}
 			<div class="field">
 				<div class="ui calendar" id="calendar">
-					<div class="ui input left icon">
+					<div class="ui left icon input">
 						<i class="calendar icon"></i>
 						<input type="text" name="datepicker" placeholder="Date">
 					</div>

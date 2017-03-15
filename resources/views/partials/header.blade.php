@@ -1,7 +1,9 @@
 <div class="ui top fixed hidden menu" >
 	<div class="ui container">
 		<div class="item">
-			<img class="ui small  image" src="{{ asset('img/logo.png') }}">
+			<a href="{{ url('/') }}">
+				<img class="ui small  image" src="{{ asset('img/logo.png') }}">
+			</a>
 		</div>
 		<a class="item {{ (Request::is('/') ? 'active' : '') }}" href="{{ url('/') }}" style="color: rgba(81, 79, 79, 0.73);">{{ trans('messages.crm') }}</a>
 		<a class="item {{ (Request::is('pms') ? 'active' : '') }}" href="{{ url('pms') }}" style="color: rgba(81, 79, 79, 0.73);">{{ trans('messages.pms') }}</a>

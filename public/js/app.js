@@ -36,7 +36,8 @@ var slider = $("#slider").lightSlider({
     auto: true,
     loop: true,
     pauseOnHover: true,
-    speed: 600,
+    speed: 1000,
+    pause: 5000,
     onSliderLoad: function() {
         $('#slider').removeClass('cS-hidden');
     },
