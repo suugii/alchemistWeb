@@ -13,14 +13,12 @@
 				<div class="header">Eej.mn revised</div>
 				<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
 				<div class="description">
-					Eej.mn Mongolian first mother site.
+					A portal website integrated with “Eej” application. Mongolia’s first mobile application for women who are pregnant or have recently given birth.
 				</div><br/>
 				<div class="description">
+					<a class="openContribute" data-title="Eej.mn">Contribute</a><br/><br/>
 					<a href="http://www.eej.mn" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
-					</a>
-					<a class="openContribute" data-title="Eej.mn">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
 					</a>
 				</div>
 			</div>
@@ -33,15 +31,12 @@
 				<div class="header">Lhamour.mn revised</div>
 				<div class="description"><i class="flaticon-settings icon"></i>Coming soon</div><br/>
 				<div class="description">
-					Mentor who guided  us in Silicon Valley. International venture captalist.<br/><br/>
-					Managing director of Concordia Ventures
+					An online market website for LHAMOUR brand. Mongolia’s first manufacturer of Organic beauty products.
 				</div><br/>
 				<div class="description">
+					<a class="openContribute" data-title="Lhamour.mn">Contribute</a><br/><br/>
 					<a href="http://www.lhamour.mn" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
-					</a>
-					<a class="openContribute" data-title="Lhamour.mn">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
 					</a>
 				</div>
 			</div>
@@ -54,8 +49,7 @@
 				<div class="header">Deelstore.mn</div>
 				<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 				<div class="description">
-					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system.<br/><br/>
-					Founder of Startup Mongolia
+					An online market website for “Torgo”. Manufacturer and retailer of traditional deel clothing.
 				</div><br/>
 				<div class="description">
 					<a href="http://www.deelstore.mn" target="_blank">
@@ -78,8 +72,7 @@
 				<div class="header">Cardmall.mn</div>
 				<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 				<div class="description">
-					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-					Founder of Startup Mongolia
+					CardMall is online shop for all kinds of gift cards. Also you can send gift cards to your facebook friends.
 				</div><br/>
 				<div class="description">
 					<a href="http://www.cardmall.mn" target="_blank">
@@ -102,18 +95,13 @@
 				<div class="header">Honey - Retail sales app</div>
 				<div class="description"><i class="flaticon-more icon"></i>Pre-released</div><br/>
 				<div class="description">
-					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-					Founder of Startup Mongolia
+					A retail sales application system for smart phones and devices.
 				</div><br/>
 				<div class="description">
+					<a class="openInvest" data-title="Honey">Invest</a> | 
+					<a class="openContribute" data-title="Honey">Contribute</a><br/><br/>
 					<a href="#">
 						<i class="apple icon" data-position="top center" data-variation="basic" data-title="iOS app"></i>
-					</a>
-					<a class="openInvest" data-title="Honey">
-						<i class="money icon" data-position="top center" data-variation="basic" data-title="Invest"></i>
-					</a>
-					<a class="openContribute" data-title="Honey">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
 					</a>
 				</div>
 			</div>
@@ -126,8 +114,7 @@
 				<div class="header">iHotel.mn</div>
 				<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 				<div class="description">
-					Our angel investor who showed our way to market. Successfull entrprenuer. Co-founder<br/>
-					Product Manager at Dell EMC
+					An online web platform for making hotel reservations and payments.
 				</div><br/>
 				<div class="description">
 					<a href="http://www.ihotel.mn">
@@ -150,10 +137,10 @@
 				<div class="header">Marchaakhai.mn</div>
 				<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 				<div class="description">
-					Mentor who guided  us in Silicon Valley. International venture captalist. <br/>
-					Managing director of Concordia Ventures
+					An online web platform of “Marchaakhai”, a company creating video contents for children.
 				</div><br/>
 				<div class="description">
+					<a class="openInvest" data-title="Marchaakhai.mn">Invest</a><br/><br/>
 					<a href="http://www.marchaakhai.mn" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
 					</a>
@@ -180,10 +167,11 @@
 				<div class="header">1nicething.net</div>
 				<div class="description"><i class="flaticon-tick icon"></i>Released</div><br/>
 				<div class="description">
-					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-					Founder of Startup Mongolia
+					An online web platform for building a social network to promote charitable acts.
 				</div><br/>
 				<div class="description">
+					<a class="openInvest" data-title="1nicething.net">Invest</a> | 
+					<a class="openContribute" data-title="1nicething.net">Contribute</a><br/><br/>
 					<a href="http://www.1nicething.net" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Web Platform"></i>
 					</a>
@@ -192,12 +180,6 @@
 					</a>
 					<a onclick="share('http://www.1nicething.net')">
 						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Share"></i>
-					</a>
-					<a class="openInvest" data-title="1nicething.net">
-						<i class="money icon" data-position="top center" data-variation="basic" data-title="Invest"></i>
-					</a>
-					<a class="openContribute" data-title="1nicething.net">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Contribute"></i>
 					</a>
 				</div>
 			</div>
@@ -215,7 +197,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-speech icon"></i>
 				</div>
-				<p class="ui centered lead">You can invest our project that are labeled <a><i class="money icon"></i></a>. Click and leave your email for contact. Thanks.</p><br/>
+				<p class="ui centered lead">You can invest our project that are labeled <a>Invest</a>. Click and leave your email for contact. Thanks.</p><br/>
 			</div>
 		</div>
 	</div>

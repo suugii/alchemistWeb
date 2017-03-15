@@ -70,7 +70,7 @@
 						</div>
 						<p>Байгууллагын үйл ажиллагаатай холбоотой <strong>бүх зардлыг бүртгэж</strong>, тэдгээрийг төсөвтэй холбон, төсвийн зарцуулалтыг ажлын урсгалаар дамжуулан хянана.</p>
 						<div class="ui checkbox">
-							<input type="checkbox" name="payment-management">
+							<input type="checkbox" name="payment-management" checked>
 							<label>Үндсэн модуль</label>
 						</div>
 					</div>
@@ -81,7 +81,7 @@
 						</div>
 						<p> Худалдан авалтын захиалга түүний төлбөр тооцоо, <strong>захиалга нь бэлтгэн нийлүүлэлт болж агуулахад хүргэгдэн,</strong> анхны захиалагчид ирэх хүртэлх бүх процессийг гүйцэтгэнэ. </p>
 						<div class="ui checkbox">
-							<input type="checkbox" name="asset-management">
+							<input type="checkbox" name="asset-management" checked>
 							<label>Үндсэн модуль</label>
 						</div>
 					</div>

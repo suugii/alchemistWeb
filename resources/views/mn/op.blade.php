@@ -15,14 +15,12 @@
 					<i class="flaticon-settings icon"></i>Тун удахгүй
 				</div><br/>
 				<div class="description">
-					Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
+					Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
 				</div><br/>
 				<div class="description">
+					<a class="openContribute" data-title="Eej.mn">Оролцох</a><br/><br/>
 					<a href="http://www.eej.mn" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
-					</a>
-					<a class="openContribute" data-title="Eej.mn">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
 					</a>
 				</div>
 			</div>
@@ -40,11 +38,9 @@
 					Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
 				</div><br/>
 				<div class="description">
+					<a class="openContribute" data-title="Lhamour.mn">Оролцох</a><br/><br/>
 					<a href="http://www.lhamour.mn" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
-					</a>
-					<a class="openContribute" data-title="Lhamour.mn">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
 					</a>
 				</div>
 			</div>
@@ -59,7 +55,7 @@
 					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
-					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.
+					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб
 				</div><br/>
 				<div class="description">
 					<a href="http://www.deelstore.mn" target="_blank">
@@ -84,7 +80,7 @@
 					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
-					Дотоод болон гадаад Төрөл бүрийн картны борлуулалт хийдэг вэб сайт.
+					Дотоод болон гадаад төрөл бүрийн картны борлуулалт хийдэг вэб сайт.
 				</div><br/>
 				<div class="description">
 					<a href="http://www.cardmall.mn" target="_blank">
@@ -109,17 +105,13 @@
 					<i class="flaticon-more icon"></i>Туршилтанд
 				</div><br/>
 				<div class="description">
-					Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
+					Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм. 
 				</div><br/>
 				<div class="description">
+					<a class="openContribute" data-title="Honey">Оролцох</a> | 
+					<a class="openInvest" data-title="Honey">Хөрөнгө оруулах</a><br/><br/>
 					<a href="#">
 						<i class="apple icon" data-position="top center" data-variation="basic" data-title="iOS апп"></i>
-					</a>
-					<a class="openInvest" data-title="Honey">
-						<i class="money icon" data-position="top center" data-variation="basic" data-title="Хөрөнгө оруулах"></i>
-					</a>
-					<a class="openContribute" data-title="Honey">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
 					</a>
 				</div>
 			</div>
@@ -134,7 +126,7 @@
 					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
-					Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
+					Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ. 
 				</div><br/>
 				<div class="description">
 					<a href="http://www.ihotel.mn">
@@ -159,9 +151,10 @@
 					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
-					Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
+					Зөвхөн хүүхдэд зориулсан <strong>видео контент</strong> үйлдвэрлэгч "Марчаахай" компанийн вэб платформ.
 				</div><br/>
 				<div class="description">
+					<a class="openInvest" data-title="Marchaakhai.mn">Хөрөнгө оруулах</a><br/><br/>
 					<a href="http://www.marchaakhai.mn" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
 					</a>
@@ -193,6 +186,8 @@
 					Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.
 				</div><br/>
 				<div class="description">
+					<a class="openContribute" data-title="1nicething.net">Оролцох</a> | 
+					<a class="openInvest" data-title="1nicething.net">Хөрөнгө оруулах</a><br/><br/>
 					<a href="http://www.1nicething.net" target="_blank">
 						<i class="world icon" data-position="top center" data-variation="basic" data-title="Веб сайт"></i>
 					</a>
@@ -201,12 +196,6 @@
 					</a>
 					<a onclick="share('http://www.1nicething.net')">
 						<i class="facebook icon" data-position="top center" data-variation="basic" data-title="Хуваалцах"></i>
-					</a>
-					<a class="openInvest" data-title="1nicething.net">
-						<i class="money icon" data-position="top center" data-variation="basic" data-title="Хөрөнгө оруулах"></i>
-					</a>
-					<a class="openContribute" data-title="1nicething.net">
-						<i class="user icon" data-position="top center" data-variation="basic" data-title="Оролцох"></i>
 					</a>
 				</div>
 			</div>
@@ -224,9 +213,7 @@
 				<div class="ui horizontal divider">
 					<i class="flaticon-speech icon"></i>
 				</div>
-				<p class="ui centered lead">Та дээрх төслүүдээс <a>
-					<i class="money icon" data-position="top center" data-variation="basic" data-title="Хөрөнгө оруулах"></i>
-				</a> гэсэн тэмдэглэгээтэй товч дээр дарж харгалзах төсөлд санал илгээх боломжтой.</p><br/>
+				<p class="ui centered lead">Та дээрх төслүүдээс <a>Хөрөнгө оруулах</a> гэсэн бичиглэлтэй товч дээр дарж харгалзах төсөлд санал илгээх боломжтой.</p><br/>
 			</div>
 		</div>
 	</div>
