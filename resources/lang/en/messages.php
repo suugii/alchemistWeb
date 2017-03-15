@@ -35,5 +35,6 @@ return [
     'mentors' => 'Mentors',
     'invest' => 'Invest',
     'socials' => 'Socials',
+    'alchemist' => 'Alchemist',
     'dream it & then do it' => 'Dream it & then do it.',
 ];

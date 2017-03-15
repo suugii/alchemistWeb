@@ -12,7 +12,7 @@
 			<div class="content">
 				<div class="header">Eej.mn revised</div>
 				<div class="description">
-					<i class="flaticon-settings icon"></i>Coming soon
+					<i class="flaticon-settings icon"></i>Тун удахгүй
 				</div><br/>
 				<div class="description">
 					Жирэмсэн болон дөнгөж төрсөн ээжүүдэд зориулсан Монголын анхны "Ээж" Гар утасны аппликэйшнд суурилсан бүрэн хэмжээний портал сайт.
@@ -34,7 +34,7 @@
 			<div class="content">
 				<div class="header">Lhamour.mn revised</div>
 				<div class="description">
-					<i class="flaticon-settings icon"></i>Coming soon
+					<i class="flaticon-settings icon"></i>Тун удахгүй
 				</div><br/>
 				<div class="description">
 					Монголын анхны Органик гоо сайхны бүтээгдэхүүн үйлдвэрлэгч, үндэсний шилдэг брэнд LHAMOUR-н онлайн худалдааны вэб.
@@ -56,7 +56,7 @@
 			<div class="content">
 				<div class="header">Deelstore.mn</div>
 				<div class="description">
-					<i class="flaticon-tick icon"></i>Released
+					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
 					Үндэсний дээл хувцасны үйлдвэрлэл, худалдаа эрхэлдэг "Торго" салоны онлайн худалдааны вэб.
@@ -81,11 +81,10 @@
 			<div class="content">
 				<div class="header">Cardmall.mn</div>
 				<div class="description">
-					<i class="flaticon-tick icon"></i>Released
+					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
-					Mentor to almost all Mongolian startups. Founder of Mongolian startup eco system. <br/>
-					Founder of Startup Mongolia
+					Дотоод болон гадаад Төрөл бүрийн картны борлуулалт хийдэг вэб сайт.
 				</div><br/>
 				<div class="description">
 					<a href="http://www.cardmall.mn" target="_blank">
@@ -107,7 +106,7 @@
 			<div class="content">
 				<div class="header">Honey - Retail sales app</div>
 				<div class="description">
-					<i class="flaticon-more icon"></i>Pre-released
+					<i class="flaticon-more icon"></i>Туршилтанд
 				</div><br/>
 				<div class="description">
 					Борлуулалтын цахим дэвтэр буюу гар утас болон ухаалаг төхөөрөмжид суурилсан борлуулалтын систем юм.
@@ -132,7 +131,7 @@
 			<div class="content">
 				<div class="header">iHotel.mn</div>
 				<div class="description">
-					<i class="flaticon-tick icon"></i>Released
+					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
 					Зочид буудлын өрөө захиалга тэдгээрийн төлбөр тооцоог хийдэг цогц вэб платформ.
@@ -157,7 +156,7 @@
 			<div class="content">
 				<div class="header">marchaahai.mn</div>
 				<div class="description">
-					<i class="flaticon-tick icon"></i>Released
+					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
 					Зөвхөн хүүхдэд зориулсан <strong>videocontent</strong> үйлдвэрлэгч Марчаахай компанийн вэб платформ.
@@ -188,7 +187,7 @@
 			<div class="content">
 				<div class="header">1nicething.net</div>
 				<div class="description">
-					<i class="flaticon-tick icon"></i>Released
+					<i class="flaticon-tick icon"></i>Нэвтрүүлсэн
 				</div><br/>
 				<div class="description">
 					Сайн үйлсийг түгээн дэлгэрүүлэх олон нийтийн сүлжээг үүсгэх үндсэн санаа бүхий вэб платформ.

@@ -29,7 +29,7 @@
 				</div>
 			</div>
 			<div class="column">
-				<h5 class="ui inverted header">Alchemist</h5>
+				<h5 class="ui inverted header">{{ trans('messages.alchemist') }}</h5>
 				<addr>
 					<p>"{{ trans('messages.dream it & then do it') }}"</p>
 					<p>+976-88021087<br/>

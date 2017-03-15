@@ -70,8 +70,8 @@
 						</div>
 						<p>Control your dailly payments in real-time. <strong>Manage your unplaned payments</strong> with in person and departmentsof your organization.</p>
 						<div class="ui checkbox">
-							<input type="checkbox" name="payment-management">
-							<label>Optional module</label>
+							<input type="checkbox" name="payment-management" checked>
+							<label>Primary module</label>
 						</div>
 					</div>
 					<div class="column column-feature">
@@ -81,8 +81,8 @@
 						</div>
 						<p>Register your across company assets to have better usability and <strong>manage loss items.</strong> Support your assets in clients. </p>
 						<div class="ui checkbox">
-							<input type="checkbox" name="asset-management">
-							<label>Optional module</label>
+							<input type="checkbox" name="asset-management" checked>
+							<label>Primary module</label>
 						</div>
 					</div>
 				</div>
