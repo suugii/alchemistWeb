@@ -258,7 +258,7 @@
 			</div>
 			<div class="field">
  				<div class="ui action input">
-					<input type="number" name="phone" placeholder="Phone">
+					<input type="text" name="phone" placeholder="Phone">
 					<button type="submit" class="ui submit button">Schedule</button>
 				</div>
 			</div>
@@ -304,6 +304,10 @@
 	                {
 	                    type   : 'empty',
 	                    prompt : 'Please enter a phone number'
+	                },
+	                {
+	                    type   : 'integer',
+	                    prompt : 'Please enter a valid phone number'
 	                },
 	                {
 	                    type   : 'maxLength[191]',

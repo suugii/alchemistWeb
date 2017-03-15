@@ -272,7 +272,7 @@
 			</div>
 			<div class="field">
  				<div class="ui action input">
-					<input type="number" name="phone" placeholder="Утасны дугаар">
+					<input type="text" name="phone" placeholder="Утасны дугаар">
 					<button type="submit" class="ui submit button">Уулзалт товлох</button>
 				</div>
 			</div>
@@ -317,6 +317,10 @@
 	            rules: [
 	                {
 	                    type   : 'empty',
+	                    prompt : 'Утасны дугаар оруулна уу'
+	                },
+	                {
+	                    type   : 'integer',
 	                    prompt : 'Утасны дугаар оруулна уу'
 	                },
 	                {

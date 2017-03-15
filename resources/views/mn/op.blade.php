@@ -272,7 +272,7 @@
 			</div>
 			<div class="field">
  				<div class="ui action input">
-					<input type="number" name="phone" placeholder="Утасны дугаар">
+					<input type="text" name="phone" placeholder="Утасны дугаар">
 					<button class="ui submit button" type="submit">Илгээх</button>
 				</div>
 			</div>
@@ -324,7 +324,7 @@
 	                    prompt : 'Утасны дугаар оруулна уу'
 	                },
 	                {
-	                    type   : 'number',
+	                    type   : 'integer',
 	                    prompt : 'Утасны дугаар оруулна уу'
 	                },
 	                {
