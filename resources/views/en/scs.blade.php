@@ -103,7 +103,7 @@
 							<i class="flaticon-tick icon"></i>
 							PURCHASE MANAGEMENT
 						</div>
-						<p>Controll your purchase and estimate your warehouse earnings. Choose your <strong>best vendor</strong> compare price offers.</p>
+						<p>Control your purchase and estimate your warehouse earnings. Choose your <strong>best vendor</strong> compare price offers.</p>
 						<div class="ui checkbox">
 							<input type="checkbox" name="purchase-management">
 							<label>Optional module</label>

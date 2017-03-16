@@ -7,7 +7,7 @@
 <small style="font-size: 12px">powered by 
 	<a>Alchemist Platfrom & vTiger Frontend</a>
 </small><br/><br/><br/>
-<span class="ui centered lead" style="font-size: 18px">Customized for mid-sized <strong>retail</strong> companies<br/> to document, controll and manage their sales, purchases and warehouses</span>
+<span class="ui centered lead" style="font-size: 18px">Customized for mid-sized <strong>retail</strong> companies<br/> to document, control and manage their sales, purchases and warehouses</span>
 <div class="ui grid stackable centered center aligned">
 	<div class="three wide column"></div>
 	<div class="three wide column"> 
@@ -83,7 +83,7 @@
 							<i class="flaticon-tick icon"></i>
 							PROJECT MANAGEMENT
 						</div>
-						<p>Define your project managemnet and team members. Use <strong>task management</strong> for each project. Manage duration based task list.</p>
+						<p>Define your project management and team members. Use <strong>task management</strong> for each project. Manage duration based task list.</p>
 						<div class="ui checkbox">
 							<input type="checkbox" name="project-management">
 							<label>Optional module</label>
@@ -94,7 +94,7 @@
 							<i class="flaticon-tick icon"></i>
 							SUPPLY CHAIN
 						</div>
-						<p>Controll your purchase and estimate your warehouse earnings. Choose your <strong>best vendor</strong> compare price offers.</p>
+						<p>Control your purchase and estimate your warehouse earnings. Choose your <strong>best vendor</strong> compare price offers.</p>
 						<div class="ui checkbox">
 							<input type="checkbox" name="supply-chain">
 							<label>Optional module</label>
