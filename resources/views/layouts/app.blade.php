@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/flaticon.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/lightslider.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/flexslider.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 	<title>@yield('title')</title>
 </head>
