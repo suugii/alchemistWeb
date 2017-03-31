@@ -28,22 +28,22 @@ class SCSController extends Controller
 	public function price(Request $request) {
 		$options = [];
 		if ($request->get('budget-management') == 'on') {
-			$options[] = 'Budget management - Агуулахын бүртгэл';
+			$options[] = 'Budget management - Төсвийн удирдлага';
 		}
 		if ($request->get('payment-management') == 'on') {
-			$options[] = 'Payment management - Борлуулалт харилцагчийн дэвтэр';
+			$options[] = 'Payment management - Төлбөрийн удирдлага';
 		}
 		if ($request->get('asset-management') == 'on') {
-			$options[] = 'Asset management - Үйл ажиллагааны бүртгэл';
+			$options[] = 'Asset management - Худалдан авалтын удирдлага';
 		}
 		if ($request->get('business-trip-management') == 'on') {
-			$options[] = 'Business trip management - Төслийн удирдлага';
+			$options[] = 'Business trip management - Томилолтын удирдлага';
 		}
 		if ($request->get('purchase-management') == 'on') {
-			$options[] = 'Purchase management - Ханган нийлүүлэлт';
+			$options[] = 'Purchase management - Хөрөнгийн удирдлага';
 		}
 		if ($request->get('onsite') == 'on') {
-			$options[] = 'Onsite - Суурилуулалт';
+			$options[] = 'Onsite - Гэрээний удирдлага';
 		}
 		$email = $request->get('email');
 
